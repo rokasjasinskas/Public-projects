@@ -71,18 +71,18 @@ Structure
 ##################################################################################
 
 
-#def start
+# def start
 	# create dec of cards
 	# put them in random order
 	# return dec as library
 
-#def get_card:
+# def get_card:
 	# split to two parts 
 	# Part 1 is player 1 
 	# Part 2 is player 2 
 	# return players decs as library 
 
-#def round(player 1, player2): 
+# def round(player 1, player2): 
 	
 	# if input = begin, round starts
 		# top card from each deck is picked and compared 
