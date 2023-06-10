@@ -60,12 +60,6 @@ class game:
 
 
 
-
-
-
-
-
-
 #def start
 # create dec of cards
 # put them in random order
