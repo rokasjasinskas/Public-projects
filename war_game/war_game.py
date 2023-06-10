@@ -1,11 +1,11 @@
 import random
 
 class Card:
-    def init(self, suit, rank):
+    def __init__(self, suit, rank):
         self.suit = suit
         self.rank = rank
 
-    def str(self):
+    def __str__(self):
         return f"{self.rank} of {self.suit}"
 
 
@@ -13,9 +13,10 @@ class Deck:
     suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 
-    def init(self):
+    def __init__(self):
         self.cards = []
         self.build()
+        self.shuffle()
 
     def build(self):
         for suit in Deck.suits:
@@ -37,91 +38,90 @@ class Player:
     def add_card(self, card):
         self.cards.append(card)
 
-    def add_cards(self, card1, card2):
-        self.cards.extend(card1, card2)
+    def add_cards(self, cards):
+        self.cards.extend(cards)
 
-    def remove_card(self, card):
-        for i, c in enumerate(self.cards):
-            if c == card:
-                return self.cards.pop(i)
-        return None
+    def remove_card(self):
+        if self.cards:
+            return self.cards.pop(0)
+        else:
+            return None
 
     def get_card_count(self):
         return len(self.cards)
 
 
+def main():
+    player1_name = input("Player 1 name: ")
+    player2_name = input("Player 2 name: ")
 
-class game: 
-    @staticmethod 
-    def comparison(1card, 2card):
-        if 1card = 2card: 
-            war(1card, 2card)
+    deck = Deck()
+
+    player1 = Player(player1_name)
+    player2 = Player(player2_name)
+
+    while deck.cards:
+        player1.add_card(deck.draw_card())
+        player2.add_card(deck.draw_card())
+
+    round_count = 0
+
+    while player1.get_card_count() > 0 and player2.get_card_count() > 0:
+        round_count += 1
+        print(f"Round {round_count}:")
+
+        card1 = player1.remove_card()
+        card2 = player2.remove_card()
+
+        print(f"{player1.name} plays {card1}")
+        print(f"{player2.name} plays {card2}")
+
+        if card1.rank > card2.rank:
+            player1.add_cards([card1, card2])
+            print(f"{player1.name} wins the round!")
+        elif card1.rank < card2.rank:
+            player2.add_cards([card1, card2])
+            print(f"{player2.name} wins the round!")
         else:
-           Player.add_cards (1card, 2card) 
+            print("War!")
 
-    def war_game: 
-        try: 
-            deck1 = 
-            deck2 = 
-    
-    def war: 
-        pass
+            war_cards = [card1, card2]
+            war_continue = True
 
-    def end_game: 
-        pass 
+            while war_continue:
+                if player1.get_card_count() < 3 or player2.get_card_count() < 3:
+                    war_continue = False
+                    break
 
+                for _ in range(3):
+                    war_cards.append(player1.remove_card())
+                    war_cards.append(player2.remove_card())
 
+                war_card1 = player1.remove_card()
+                war_card2 = player2.remove_card()
 
+                war_cards.extend([war_card1, war_card2])
 
+                print(f"{player1.name} plays {war_card1}")
+                print(f"{player2.name} plays {war_card2}")
 
+                if war_card1.rank > war_card2.rank:
+                    player1.add_cards(war_cards)
+                    print(f"{player1.name} wins the war!")
+                    war_continue = False
+                elif war_card1.rank < war_card2.rank:
+                    player2.add_cards(war_cards)
+                    print(f"{player2.name} wins the war!")
+                    war_continue = False
+                else:
+                    print("War continues!")
 
+    if player1.get_card_count() == 0:
+        print(f"{player2.name} wins the game!")
+    elif player2.get_card_count() == 0:
+        print(f"{player1.name} wins the game!")
+    else:
+        print("It's a tie! The game ends in a draw.")
 
-
-
-#def start
-# create dec of cards
-# put them in random order
-# return dec as library
-
-
-#def get_card:
-# split to two parts 
-# Part 1 is player 1 
-# Part 2 is player 2 
-# return players decs as library 
-
-
-
-#def round(player 1, player2):
-# if input = begin, round starts
-	# top card from each deck is picked and compared 
-	# cards are putted into round library --- not sure than I should implent it before or after comparison
-	# if players cards is higher:
-		# takes both of cards
-		#its library is updated with round library. 
-	# elif players cards are equal:
-		# additional card from each dect is added
-		# one more additiona card from each dect is added to round library 
-		# last added cards is compared player whose card is higher takes both of cards - its library is updated with round library
-	# return number of cards in decs after round
-#else: 
-	#sys.exit
-
-
-
-#def winner:
-# compare player 1 and player 2 decs size. 
-# if player decs = 0
-	# lost
-# else:
-	# Won
-	# return player name
-
-
-#def main
-# input player 1 and player 2 names
-# mix of cards
-# players gets cards
-# try unit one of players dec is != 0; 
-	# goes round - return number of cards in dec
-# Announce winner
+if __name__ == "__main__":
+    main()
