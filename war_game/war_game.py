@@ -1,8 +1,44 @@
+
+
+class Deck: 
+	rank = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+	suit = ["Spades", "Hearts", "Diamonds", "Clubs"]
+
+	def __init__(self, suit, rank): 
+		self.suit = suit
+		self.rank = rank
+
+
+	def hold_deck():
+		cards = []
+		for suit in Deck.suit: 
+			for rank in Deck.rank:
+				cards.append(suit, rank)
+		print(cards)
+
+		
+
+Deck.hold_deck()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #def start
 # create dec of cards
 # put them in random order
 # return dec as library
-
 
 
 #def get_card:
