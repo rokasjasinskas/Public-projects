@@ -37,8 +37,8 @@ class Player:
     def add_card(self, card):
         self.cards.append(card)
 
-    def add_cards(self, cards):
-        self.cards.extend(cards)
+    def add_cards(self, card1, card2):
+        self.cards.extend(card1, card2)
 
     def remove_card(self, card):
         for i, c in enumerate(self.cards):
@@ -52,7 +52,25 @@ class Player:
 
 
 class game: 
-    pass 
+    @staticmethod 
+    def comparison(1card, 2card):
+        if 1card = 2card: 
+            war(1card, 2card)
+        else:
+           Player.add_cards (1card, 2card) 
+
+    def war_game: 
+        try: 
+            deck1 = 
+            deck2 = 
+    
+    def war: 
+        pass
+
+    def end_game: 
+        pass 
+
+
 
 
 
