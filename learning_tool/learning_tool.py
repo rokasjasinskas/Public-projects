@@ -1,165 +1,93 @@
-import random
-import datetime
+import re
+import sys
 
-class Question:
-    def __init__(self, question_id, question_text, is_active):
-        self.question_id = question_id
-        self.question_text = question_text
-        self.is_active = is_active
-        self.num_shown = 0
-        self.num_correct = 0
-    
-    def show_question(self):
-        self.num_shown += 1
-    
-    def check_answer(self, user_answer):
-        pass
 
-class QuizQuestion(Question):
-    def __init__(self, question_id, question_text, is_active, answer_options, correct_answer):
-        super().__init__(question_id, question_text, is_active)
-        self.answer_options = answer_options
-        self.correct_answer = correct_answer
-    
-    def show_question(self):
-        super().show_question()
-        # Display question and answer options to the user
-        pass
-    
-    def check_answer(self, user_answer):
-        is_correct = user_answer == self.correct_answer
-        if is_correct:
-            self.num_correct += 1
-        return is_correct
 
-class FreeFormQuestion(Question):
-    def __init__(self, question_id, question_text, is_active, expected_answer):
-        super().__init__(question_id, question_text, is_active)
-        self.expected_answer = expected_answer
-    
-    def show_question(self):
-        super().show_question()
-        # Display question to the user
-        pass
-    
-    def check_answer(self, user_answer):
-        is_correct = user_answer == self.expected_answer
-        if is_correct:
-            self.num_correct += 1
-        return is_correct
 
-class Profile:
-    def __init__(self, profile_name):
-        self.profile_name = profile_name
-        self.question_stats = {}
-    
-    def update_question_stats(self, question_id, is_correct):
-        if question_id not in self.question_stats:
-            self.question_stats[question_id] = {'num_shown': 0, 'num_correct': 0}
-        self.question_stats[question_id]['num_shown'] += 1
-        if is_correct:
-            self.question_stats[question_id]['num_correct'] += 1
+    ter input program has to get input in order to choose what what to do next. User should be able to choose one of these solutions: 
+    # Adding questions.
+    # Statistics viewing.
+    # Disable/enable questions.
+    # Practice mode.
+    # Test mode.
+    # (Bonus) Profile Select
+# Ask for input and test it if it is in library.     
+   
 
-class LearningTool:
-    def __init__(self):
-        self.questions = {}
-        self.profiles = {}
-        self.current_profile = None
-    
-    def add_question(self, question):
-        self.questions[question.question_id] = question
-    
-    def disable_question(self, question_id):
-        if question_id in self.questions:
-            self.questions[question_id].is_active = False
-    
-    def enable_question(self, question_id):
-        if question_id in self.questions:
-            self.questions[question_id].is_active = True
-    
-    def create_profile(self, profile_name):
-        if profile_name not in self.profiles:
-            self.profiles[profile_name] = Profile(profile_name)
-    
-    def select_profile(self, profile_name):
-        if profile_name in self.profiles:
-            self.current_profile = self.profiles[profile_name]
-    
-    def practice_mode(self):
-        if len(self.questions) < 5:
-            print("At least 5 questions are required to enter practice mode.")
-            return
+# Adding questions mode: 
+# use class to describe question mode 
+    # def quiz questions 
+        #abc type. User decides input Questions and 3 answers A B C 
+    #def free-from questions 
+        # user give input Questions and Answer
+        # input stored in file 
+    # Questions should be saved on separate file so that once the program is close and opened again the questions remain same 
+    # user has to input 5 questions before moving forward. 
+    # use try len(questions) < 5: 
+    # Need to determine how file are stored 
         
-        while True:
-            # Choose a question using weighted random selection
-            question = random.choices(list(self.questions.values()), weights=[q.num_shown for q in self.questions.values()])[0]
-            question.show_question()
-            user_answer = input("Your answer: ")
-            is_correct = question.check_answer(user_answer)
-            if self.current_profile:
-                self.current_profile.update_question_stats(question.question_id, is_correct)
-            print("Correct!" if is_correct else "Incorrect!")
-            if input("Continue practicing? (y/n): ").lower() != "y":
-                break
+
+# Statistics viewing mode: 
+    # This mode should print out questions which are in the system. 
+    # Each questions should have: 
+        # ID number 
+        # Active questions or not
+        # The question text
+        # The number of times is was shown during practise or test 
+        # The percentage of time is was shoen correct
+s
+# Disable/Enable questions mode: 
+    # If user inputs questions ID code: 
+        # prompt message with  question and answer with question if this one should be enablad or disabled. 
+        # if disable it should not be used in practise or test stages 
+        # enable/disable should be stored in main file 
+
+# Practise mode: 
+    # the mode there questions are given non-stop till hard stop
+    # the questions are chosen in such a way that the questions that answered should apear less likely. 
+    # This info should be stored in file with correct answered questions counted 
+
+# Test mode: 
+    # The mode there knowledge is tested 
+    # Number of questions is sellected with no more than current questions number. 
+    # Questions are sellected randomly, Only once 
+    # Result of test are shown with score 
+    # Results are stored in separate file results.txt with date and time added next to score 
+
     
-    def test_mode(self, num_questions):
-        if num_questions > len(self.questions):
-            print("Insufficient number of questions.")
-            return
         
-        test_questions = random.sample(list(self.questions.values()), num_questions)
-        score = 0
-        
-        for question in test_questions:
-            question.show_question()
-            user_answer = input("Your answer: ")
-            is_correct = question.check_answer(user_answer)
-            if self.current_profile:
-                self.current_profile.update_question_stats(question.question_id, is_correct)
-            if is_correct:
-                score += 1
-        
-        print("Test completed.")
-        print("Score:", score)
-        self.save_test_result(score)
+# def main: 
+    # Ask what solutions should proceed with input
+    # Check if input is in library 
+        # if answer is A: 
+            # try: 
+                # add questions
+            # except ctrl + c: 
+                # if lenght (questions) > 5 
+                    #sys.exit 
+                # else:
+                    # print message 
+                    # add questions
     
-    def save_test_result(self, score):
-        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        result = f"{timestamp}: {self.current_profile.profile_name} - Score: {score}\n"
-        with open("results.txt", "a") as file:
-            file.write(result)
+        # if answer is B: 
+            # statistics_viewing()
+        
+        # if answer is C: 
+            # disable_enable mode()
+    
+        # if answer is D: 
+            # practise_mode ()
+    
+        # if answer is E: 
+            # test_mode()
+    
+        
+# Technical requirements:
+    # use regular expresion
+    # use classes 
+    # use file i/o
+    # write 3 unit tests
+    # store output files in github 
 
-# Usage example
-learning_tool = LearningTool()
-
-# Adding questions
-quiz_question = QuizQuestion(1, "What is the capital of France?", True, ["Paris", "London", "Madrid"], "Paris")
-learning_tool.add_question(quiz_question)
-
-freeform_question = FreeFormQuestion(2, "What is the full form of CPU?", True, "Central Processing Unit")
-learning_tool.add_question(freeform_question)
-
-# Disable/Enable questions
-learning_tool.disable_question(2)
-
-# Statistics viewing
-for question in learning_tool.questions.values():
-    print("Question ID:", question.question_id)
-    print("Active:", question.is_active)
-    print("Question Text:", question.question_text)
-    print("Number of times shown:", question.num_shown)
-    print("Percentage of correct answers:", (question.num_correct / question.num_shown) * 100)
-
-# Practice mode
-learning_tool.practice_mode()
-
-# Test mode
-learning_tool.test_mode(3)
-
-# Profile Select
-learning_tool.create_profile("Profile1")
-learning_tool.create_profile("Profile2")
-learning_tool.select_profile("Profile1")
-learning_tool.practice_mode()
-learning_tool.select_profile("Profile2")
-learning_tool.test_mode(2)
+            
+    
