@@ -3,14 +3,42 @@ import sys
 import datetime
 
 class Question: 
-    def __init__(self, question_text, answer): 
+    def __init__(self, question_text, answer, choice): 
+        self.id = id
+        self.question_type = question_type
         self.question_text = question_text
         self.answer = answer 
         self.active = True
         self.show_count = 0 
         self.correct_count = 0
-        self.id = id
+        
+    def question_type(self, choise):
+        
+        valid_options = [
+            "Adding questions",
+            "Statistics viewing",
+            "Disable/enable",
+            "Practice mode",
+            "Test mode",
+            "Quit"
+        ]
 
+        try: 
+            if choice.lower() == "adding questions":
+                return valid_options[0]
+            elif choice.lower() == "statistics viewing":
+                return valid_options[1]
+            elif choice.lower() == "disable/enable":
+                return valid_options[2]
+            elif choice.lower() == "practice mode":
+                return valid_options[3]
+            elif choice.lower() == "test mode":
+                return valid_options[4]
+            elif choice.lower() == "quit":
+                sys.exit()
+        except KeyboardInterrupt: 
+            sys.exit()
+        
         
     def disable(self):
         self.active = False 
@@ -61,3 +89,8 @@ class InteractiveLearninTool:
             
     def load_questions(self):
         try: 
+            with open("questions.txt", "r") as file: 
+                lines = file.readlines()
+                for line in lines: 
+                        question_data = line.strip.split(;)
+                        if len(question_data) == 4 

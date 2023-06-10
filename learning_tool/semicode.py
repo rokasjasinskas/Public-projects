@@ -94,7 +94,7 @@ s
 
 
 
-    import re
+import re
 import sys
 import datetime
 
@@ -314,3 +314,34 @@ class InteractiveLearningTool:
 if __name__ == "__main__":
     tool = InteractiveLearningTool()
     tool.main()
+
+
+
+
+
+
+
+
+
+NOTES:
+
+            valid_options = [
+                "Adding questions",
+                "Statistics viewing",
+                "Disable/enable",
+                "Practice mode",
+                "Test mode"
+            	"Quit"
+            ]
+        try:
+            choise = print(
+        f"""
+Select an option:
+A. {valid_options[0]}
+B. {valid_options[1]}
+C. {valid_options[2]}
+D. {valid_options[3]}
+E. {valid_options[4]}
+Q. {valid_options[5]}
+        """
+                )
