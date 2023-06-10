@@ -1,10 +1,10 @@
 import re
 import sys
+import datetime
 
 
 
-
-    ter input program has to get input in order to choose what what to do next. User should be able to choose one of these solutions: 
+# after input program has to get input in order to choose what what to do next. User should be able to choose one of these solutions: 
     # Adding questions.
     # Statistics viewing.
     # Disable/enable questions.
