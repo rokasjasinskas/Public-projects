@@ -38,8 +38,11 @@ class Player:
     def add_cards(self, cards):
         self.cards.extend(cards)
 
-    def remove_card(self):
-        return self.cards.pop(0)
+    def remove_card(self, card):
+        for i, c in enumerate(self.cards):
+            if c == card:
+                return self.cards.pop(i)
+        return None
 
     def get_card_count(self):
         return len(self.cards)

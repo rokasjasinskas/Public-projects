@@ -29,7 +29,30 @@ class Deck:
         return self.cards.pop()
 
 
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.cards = []
 
+    def add_card(self, card):
+        self.cards.append(card)
+
+    def add_cards(self, cards):
+        self.cards.extend(cards)
+
+    def remove_card(self, card):
+        for i, c in enumerate(self.cards):
+            if c == card:
+                return self.cards.pop(i)
+        return None
+
+    def get_card_count(self):
+        return len(self.cards)
+
+
+
+class game: 
+    pass 
 
 
 
