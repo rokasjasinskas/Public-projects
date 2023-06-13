@@ -1,5 +1,5 @@
 import csv
-import sys
+import re
 import datetime
 import random
 
@@ -121,6 +121,11 @@ class InteractiveLearningTool:
         question_type = input("Select question type (quiz/freeform): ")
         question_text = input("Enter the question: ")
         answer = input("Enter the answer: ")
+
+        if  not re.match(r'^[a-zA-ZO9\s]+$', answer):
+            print ("Invalid answer format. Only alphanumeric characters and space are allowed")
+            return 
+        
 
         if question_type.lower() == "quiz":
             options = []
