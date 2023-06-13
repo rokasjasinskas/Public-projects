@@ -3,6 +3,7 @@ import sys
 import datetime
 import random
 
+
 class Question:
     def __init__(self, question_text, answer, question_type):
         self.id = id
@@ -20,7 +21,9 @@ class Question:
         self.active = True
 
     def display_statistics(self):
-        percentage = self.correct_count / self.show_count * 100 if self.show_count != 0 else 0
+        percentage = (
+            self.correct_count / self.show_count * 100 if self.show_count != 0 else 0
+        )
         print(f"ID: {self.id}")
         print(f"Question: {self.question_text}")
         print(f"Answer: {self.answer}")
@@ -67,13 +70,11 @@ class InteractiveLearningTool:
                             row["Question Text"],
                             row["Answer"],
                             row["Options"].split(";"),
-                            row["Question Type"]
+                            row["Question Type"],
                         )
                     elif row["Question Type"].lower() == "freeform":
                         question = FreeFormQuestion(
-                            row["Question Text"],
-                            row["Answer"],
-                            row["Question Type"]
+                            row["Question Text"], row["Answer"], row["Question Type"]
                         )
                     else:
                         continue
@@ -96,7 +97,7 @@ class InteractiveLearningTool:
             "Options",
             "Active",
             "Show Count",
-            "Correct Count"
+            "Correct Count",
         ]
         with open("questions.csv", "w", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
@@ -107,10 +108,12 @@ class InteractiveLearningTool:
                     "Question Type": question.question_type,
                     "Question Text": question.question_text,
                     "Answer": question.answer,
-                    "Options": ";".join(question.options) if isinstance(question, QuizQuestion) else "",
+                    "Options": ";".join(question.options)
+                    if isinstance(question, QuizQuestion)
+                    else "",
                     "Active": "True" if question.active else "False",
                     "Show Count": question.show_count,
-                    "Correct Count": question.correct_count
+                    "Correct Count": question.correct_count,
                 }
                 writer.writerow(row)
 
@@ -145,19 +148,28 @@ class InteractiveLearningTool:
         question_id = input("Enter the question ID: ")
         try:
             question_id = int(question_id)
-            question = self.questions[question_id - 1]
-            print("Question details:")
-            question.display_question()
-            action = input("Disable or enable the question (d/e): ")
-            if action.lower() == "d":
-                question.disable()
-                print("Question disabled.")
-            elif action.lower() == "e":
-                question.enable()
-                print("Question enabled.")
+            question = None
+            for q in self.questions:
+                if int(q.id) == question_id:
+                    question = q
+                    break
+            if question is not None:
+                print("Question details:")
+                question.display_question()
+                action = input("disable or enable the question (d/e):")
+                if action.lower() == "d":
+                    question.disable()
+                    self.save_questions()
+                    print("Question disabled.")
+                elif action.lower() == "e":
+                    question.enable()
+                    self.save_questions()
+                    print("Question enabled.")
+                else:
+                    print("Invalid choice.")
             else:
-                print("Invalid choice.")
-        except (ValueError, IndexError):
+                print("Invalid question ID.")
+        except ValueError:
             print("Invalid question ID.")
 
     def practice_mode(self):
