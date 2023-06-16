@@ -1,5 +1,4 @@
 from learning_tool import Question
-
 import pytest
 from learning_tool import Question
 
