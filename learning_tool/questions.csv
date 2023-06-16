@@ -1,7 +1,11 @@
 ID,Question Type,Question Text,Answer,Options,Active,Show Count,Correct Count
-301,quiz,What goes after a? ,b,a;b;c,True,2,2
+301,quiz,What goes after a? ,b,a;b;c,True,3,3
 811,quiz,What goes after b? ,c,a;b;c,True,2,2
-778,quiz,What goes before d? ,c,a;b;c,True,1,1
-295,freeform,What color is grass? ,Green,,True,1,1
+778,quiz,What goes before d? ,c,a;b;c,True,2,2
+295,freeform,What color is grass? ,Green,,True,2,2
 361,freeform,What color is sky? ,Blue,,True,1,1
 939,freeform,What is my name? ,Rokas ,,True,0,0
+920,quiz,Do I have dog? ,yes,Yes;No ;Maybe,True,0,0
+966,freeform,Do I have cat? ,No ,,False,0,0
+506,quiz,What is the capital of France?,Paris,London;Berlin;Madrid,True,0,0
+744,freeform,What is the capital of France?,Paris,,True,0,0
