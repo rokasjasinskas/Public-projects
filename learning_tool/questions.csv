@@ -1,6 +1,6 @@
 ID,Question Type,Question Text,Answer,Options,Active,Show Count,Correct Count
-301,quiz,What goes after a? ,b,a;b;c,True,0,0
-811,quiz,What goes after b? ,c,a;b;c,True,0,0
-778,quiz,What goes before d? ,c,a;b;c,True,0,0
-295,freeform,What color is grass? ,Green,,True,0,0
-361,freeform,What color is sky? ,Blue,,False,0,0
+301,quiz,What goes after a? ,b,a;b;c,True,2,2
+811,quiz,What goes after b? ,c,a;b;c,True,2,2
+778,quiz,What goes before d? ,c,a;b;c,True,1,1
+295,freeform,What color is grass? ,Green,,True,1,1
+361,freeform,What color is sky? ,Blue,,True,1,1
