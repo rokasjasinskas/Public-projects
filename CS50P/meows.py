@@ -1,20 +1,9 @@
-class Cat: 
-    _MEOWS = 3 
+import argparse
 
-    @property
-    def MEOWS(self): 
-        return Cat._MEOWS
-        
-    @MEOWS.setter
-    def MEOWS(self, value):
-        raise AttributeError("Cannot modify MEOWS. It is a constant.")
-            
-    def meow(self): 
-        for _ in range(self.MEOWS): 
-            print("meow")   
+parser = argparse.ArgumentParser(description="Meow like a cat")
 
-Cat.MEOWS = 5 
+parser.add_argument("-n", default=1, help="number of time to meow", type=int)
+args = parser.parse_args()
 
-cat = Cat()
-print(cat.MEOWS)
-cat.meow()
+for _ in range (args.n):
+    print("meow")
