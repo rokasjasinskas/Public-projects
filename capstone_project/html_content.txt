@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>supergarden.lt</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="Džiovintos šaltyje (liofilizuotos) uogos supergarden.lt, uogos, vaisiai, daržovės, prieskoniai. Sveikas, greitas, lengvas užkandis." name="description"/>
+<meta content="džiovinta šaltyje, liofilizuoti, supergarden, džiovintos šaltyje uogos, liofilizuotos uogos, džiovinti šaltyje prieskoniai, liofilizuoti prieskoniai" name="keywords"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="https://www.supergarden.lt/images/favicon/favicon.ico" rel="icon"/>
+<link href="https://www.supergarden.lt/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.supergarden.lt/images/favicon/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="https://www.supergarden.lt/images/favicon/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="https://www.supergarden.lt/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.supergarden.lt/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.supergarden.lt/images/favicon/ms-icon-150x150.png" name="msapplication-TileImage"/>
+<link href="https://www.supergarden.lt/res/less/bootstrap.css?v=202300005" rel="stylesheet" type="text/css">
+<link href="https://www.supergarden.lt/res/css/default.css?v=202300005" rel="stylesheet" type="text/css">
+<link href="/core/vendors/sweetalert-master/lib/sweet-alert.css" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+<link href="https://www.supergarden.lt/vendors/custom_scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+<link href="https://www.supergarden.lt/vendors/slick-1.6.0/slick/slick.css?v=202300005" rel="stylesheet" type="text/css">
+<link href="https://www.supergarden.lt/vendors/slick-1.6.0/slick/slick-theme.css?v=202300005" rel="stylesheet" type="text/css"/>
+<link href="https://www.supergarden.lt/vendors/owl.carousel/dist/assets/owl.carousel.min.css?v=202300005" rel="stylesheet" type="text/css"/>
+<link href="https://www.supergarden.lt/vendors/owl.carousel/dist/assets/owl.theme.default.min.css?v=202300005" rel="stylesheet" type="text/css"/>
+<link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.supergarden.lt/res/less/frontend.css?v=202300005" rel="stylesheet" type="text/css"/>
+<link as="style" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start':
+                    new Date().getTime(),event:'gtm.js' });var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WHMG8TR');</script>
+<!-- End Google Tag Manager -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="/core/vendors/bootstrap-3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/vendors/bootstrap-select/js/bootstrap-select.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/vendors/bootstrap-select/js/i18n/defaults-en_US.js" type="text/javascript"></script>
+<script src="/core/vendors/sweetalert-master/lib/sweet-alert.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/vendors/custom_scrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/vendors/slick-1.6.0/slick/slick.min.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/vendors/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/res/js/frontend/filters.js?v=202300005" type="text/javascript"></script>
+<script src="/core/js/ajax_submit.js" type="text/javascript"></script>
+<script src="/core/vendors/jquery-form/jquery.form.js" type="text/javascript"></script>
+<script src="https://www.supergarden.lt/res/js/frontend/frontend.js?v=202300005" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</link></link></link></link></link></link></meta></head>
+<body id="type_index">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WHMG8TR" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=QUPWkQ" type="application/javascript"></script>
+<div class="content_layout_index" id="content_layout">
+<div class="" id="head">
+<div class="container-fluid">
+<div id="sticky_menu">
+<div class="left_side">
+<div id="logo">
+<a href="https://www.supergarden.lt/lt/">
+<img alt="Supergarden.lt" class="img-responsive normal_logo" src="https://www.supergarden.lt/cache/images/560c379d2deb33f30692d8fc0bc014e1.png"/>
+</a>
+</div>
+<nav id="pages_mega_menu">
+<div class="container-fluid">
+<ul class="horizontal-desktop" id="mega_menu">
+<li class="mega_element">
+<div class="list-dropdown list-collapse-mobile" data-hover-delay="100">
+<h4 class="title">Produktai</h4>
+<div class="submenu_list submenu_mega">
+<div class="container-fluid">
+<div class="row submenu_groups col-6">
+<a class="go-back visible-xs visible-sm" nohref="" role="button">Atgal</a>
+<h4 class="title mobile-head list-collapse-mobile visible-xs visible-sm">Produktai</h4>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Išpardavimas">
+<img alt="Išpardavimas" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1684739884_ispardavimas.png"/>
+<h5 class="banner-title text-center">Išpardavimas</h5>
+</a>
+</div>
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Kalendoriai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635324534_advento-kalendor.png"/>
+<h5 class="banner-title text-center">Kalendoriai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/glotnuciai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635489153_smutis50.png"/>
+<h5 class="banner-title text-center">Glotnučiai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/ledai-ir-saldumynai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1632313211_ledai-jpg.jpg"/>
+<h5 class="banner-title text-center">Ledai ir Saldumynai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Uogos">
+<img alt="Freeze dried (lyophilized) berries" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760469_uogos.png"/>
+<h5 class="banner-title text-center">Uogos</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Vaisiai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760548_1498464293-vaisiai.png"/>
+<h5 class="banner-title text-center">Vaisiai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/nauji-produktai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644241087_freeze-dried-lyophilized-new-products.jpg"/>
+<h5 class="banner-title text-center">Nauji produktai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/uzkandziai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1620999053_uzkandziai.png"/>
+<h5 class="banner-title text-center">Užkandžiai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/granola">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635490083_granola-2.png"/>
+<h5 class="banner-title text-center">Granola</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/drinkeat">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619759934_arbatos-ikonele-230x240.png"/>
+<h5 class="banner-title text-center">Gėrimai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Kake-Make">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760714_km-ikonele-230x240.png"/>
+<h5 class="banner-title text-center">Kakė Makė</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/darzoves">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760655_1498464385-darzoves.png"/>
+<h5 class="banner-title text-center">Daržovės</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/pabarstukai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635489436_pabarstukai.png"/>
+<h5 class="banner-title text-center">Pabarstukai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/milteliai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635489522_milteliai.png"/>
+<h5 class="banner-title text-center">Milteliai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/prieskoniai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760676_supergarden-prieskoniai.png"/>
+<h5 class="banner-title text-center">Prieskoniai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/suriai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1632313175_suriai-jpg.jpg"/>
+<h5 class="banner-title text-center">Sūriai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/rinkiniai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760730_dovanu-rinkiniai.png"/>
+<h5 class="banner-title text-center">Rinkiniai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/Priedai">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1624627625_ikonele-priedai-230x240.png"/>
+<h5 class="banner-title text-center">Priedai</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/eko">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1619760756_1572864917-super-garden-eko.png"/>
+<h5 class="banner-title text-center">EKO</h5>
+</a>
+</div>
+</div>
+<div class="col-md-1">
+<div class="menu_column banner">
+<a href="https://www.supergarden.lt/lt/katalogas/pasidarykite-savo-misini/?item=16753">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1620710612_ikonele-susikurk-savo-produkta-230x240.png"/>
+<h5 class="banner-title text-center">Mixeat</h5>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/receptai">
+<h4 class="title">Receptai</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/katalogas/rinkiniai">
+<h4 class="title">Rinkiniai</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/blogas">
+<h4 class="title">Blogas</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/apie mus">
+<h4 class="title">Apie mus</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/verslui">
+<h4 class="title">Verslui</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/katalogas/pasidarykite-savo-misini/?item=16753">
+<h4 class="title">MIXEAT</h4>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/es-projektai">
+<h4 class="title">ES Projektai</h4>
+</a>
+</li>
+<li class="mega_element">
+<div class="list-dropdown list-collapse-mobile" data-hover-delay="100">
+<h4 class="title">Paslaugos</h4>
+<div class="submenu_list submenu_mega">
+<div class="container-fluid">
+<div class="row submenu_groups col-1">
+<a class="go-back visible-xs visible-sm" nohref="" role="button">Atgal</a>
+<h4 class="title mobile-head list-collapse-mobile visible-xs visible-sm">Paslaugos</h4>
+<div class="col-md-1">
+<div class="menu_column pages">
+<a href="https://www.supergarden.lt/lt/verslo-dovanos">
+<h5 class="title">Verslo Dovanos</h5>
+</a>
+</div>
+<div class="menu_column pages">
+<a href="https://www.supergarden.lt/lt/biurui">
+<h5 class="title">Biurui</h5>
+</a>
+</div>
+<div class="menu_column pages">
+<a href="https://www.supergarden.lt/lt/privacios-etiketes-paslauga">
+<h5 class="title">Privačios Etiketės</h5>
+</a>
+</div>
+<div class="menu_column pages">
+<a href="https://www.supergarden.lt/lt/restoranams">
+<h5 class="title">Restoranams</h5>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="visible-xs visible-sm" id="languages_menu_mobile">
+<div class="list-dropdown list-collapse-mobile">
+<h4 class="title">
+<img class="img-responsive" src="https://www.supergarden.lt/images/languages/lt.png"/>
+                LT
+            </h4>
+<div class="submenu_list">
+<ul>
+<li>
+<a class="go-back" nohref="" role="button">Atgal</a>
+<h4 class="title mobile-head list-collapse-mobile level-2">Pasirinkite kalbą</h4>
+</li>
+<li>
+<a class="lang_element" href="https://www.supergarden.lt/lt">
+<img class="img-responsive" src="https://www.supergarden.lt/images/languages/lt.png"/>
+                                LT
+                            </a>
+</li>
+<li>
+<a class="lang_element" href="https://www.supergarden.lt/ru">
+<img class="img-responsive" src="https://www.supergarden.lt/images/languages/ru.png"/>
+                                RU
+                            </a>
+</li>
+<li>
+<a class="lang_element" href="https://www.supergarden.lt/en">
+<img class="img-responsive" src="https://www.supergarden.lt/images/languages/en.png"/>
+                                EN
+                            </a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<script>
+    $(function () {
+        $('.list-dropdown').each(function () {
+            let listDropdown = $(this);
+
+            listDropdown.find('.go-back').on('click', function () {
+                listDropdown.removeClass('open').removeClass('hover');
+                listDropdown.find('.submenu_list').removeAttr('style');
+            });
+        });
+
+        $('.mega_element').each(function () {
+            let megaElement = $(this);
+
+            megaElement.find('.go-back').on('click', function () {
+                megaElement.find('.menu_column').removeClass('open');
+            });
+        })
+    })
+</script>
+<div id="quick_search">
+<a href="" id="quick_search_show" rel="nofollow">
+<svg fill="none" height="19" id="searchBtn" viewbox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.8594 16.7383L13.6055 12.4844C13.5 12.4141 13.3945 12.3438 13.2891 12.3438H12.832C13.9219 11.0781 14.625 9.39062 14.625 7.5625C14.625 3.55469 11.3203 0.25 7.3125 0.25C3.26953 0.25 0 3.55469 0 7.5625C0 11.6055 3.26953 14.875 7.3125 14.875C9.14062 14.875 10.793 14.207 12.0938 13.1172V13.5742C12.0938 13.6797 12.1289 13.7852 12.1992 13.8906L16.4531 18.1445C16.6289 18.3203 16.9102 18.3203 17.0508 18.1445L17.8594 17.3359C18.0352 17.1953 18.0352 16.9141 17.8594 16.7383ZM7.3125 13.1875C4.18359 13.1875 1.6875 10.6914 1.6875 7.5625C1.6875 4.46875 4.18359 1.9375 7.3125 1.9375C10.4062 1.9375 12.9375 4.46875 12.9375 7.5625C12.9375 10.6914 10.4062 13.1875 7.3125 13.1875Z" fill="#262626"></path>
+</svg>
+</a>
+<form action="https://www.supergarden.lt/lt/katalogas/" id="quickSearchForm" method="get">
+<button class="btn btn-primary inverted" id="quick_search_hide" type="button">
+<i class="icon icon-close"></i>
+</button>
+<div class="container-fluid">
+<div class="quickSearchForm-inner-wrp">
+<button type="submit">
+<svg fill="none" height="25" viewbox="0 0 24 25" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.8125 21.9844L18.1406 16.3125C18 16.2188 17.8594 16.125 17.7188 16.125H17.1094C18.5625 14.4375 19.5 12.1875 19.5 9.75C19.5 4.40625 15.0938 0 9.75 0C4.35938 0 0 4.40625 0 9.75C0 15.1406 4.35938 19.5 9.75 19.5C12.1875 19.5 14.3906 18.6094 16.125 17.1562V17.7656C16.125 17.9062 16.1719 18.0469 16.2656 18.1875L21.9375 23.8594C22.1719 24.0938 22.5469 24.0938 22.7344 23.8594L23.8125 22.7812C24.0469 22.5938 24.0469 22.2188 23.8125 21.9844ZM9.75 17.25C5.57812 17.25 2.25 13.9219 2.25 9.75C2.25 5.625 5.57812 2.25 9.75 2.25C13.875 2.25 17.25 5.625 17.25 9.75C17.25 13.9219 13.875 17.25 9.75 17.25Z" fill="#262626"></path>
+</svg>
+</button>
+<input class="form-control" name="search" placeholder="Paieška" type="text"/>
+<div id="search_suggestions_wrp" style="position: relative;">
+<div id="search_suggestions_block"></div>
+</div>
+</div>
+</div>
+</form>
+<script>
+		
+		var search_delay = null;
+		$(function() {
+			$('#quick_search_show').click(function (e) {
+				e.preventDefault();
+				$('#quick_search').addClass('active');
+				$('.overlay').fadeIn(300);
+				setTimeout(function() {
+					$('#quick_search input').focus();
+				}, 100);
+			});
+			$('#quick_search_hide').click(function (e) {
+				e.preventDefault();
+				$('.overlay').fadeOut(300);
+				$('#quick_search').removeClass('active');
+			});
+		});
+
+		$(document).ready(function() {
+			$("#quick_search input[name='search']").keyup(function(){
+				var val = $(this).val();
+				if (val.length > 2) {
+					if(search_delay != null) clearTimeout(search_delay);
+					search_delay = setTimeout(function(){
+						search_request = $.ajax({
+							type: 'POST',
+							url: '?display=content_types/search/suggestions.tpl',
+							data: { q: val },
+							success: function(data) {
+								$("#search_suggestions_block").html(data).show();
+								// $("#search_suggestions_mobile_block").html(data).show();
+								$('#search_suggestions_wrp').show();
+								// $('#search_suggestions_mobile_wrp').show();
+								//fix_suggestions_height();
+
+								window.dataLayer = window.dataLayer || [];
+								window.dataLayer.push({
+									'event' : 'search',
+									'search_term' : val // this should be replaced with an actual login method (email, google, facebook)
+																	});
+							}
+						});
+					}, 300);
+				}
+			});
+		});
+		
+	</script>
+</div>
+</div>
+<div class="right_side">
+<ul class="hidden-xs hidden-sm" id="languages_menu">
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" role="button">
+<i class="icon-kalba icon"></i>
+<img src="https://www.supergarden.lt/images/languages/lt.png"/>
+<i class="icon-arrow_down arrow"></i>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="https://www.supergarden.lt/lt">
+<img src="https://www.supergarden.lt/images/languages/lt.png"/>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/ru">
+<img src="https://www.supergarden.lt/images/languages/ru.png"/>
+</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/en">
+<img src="https://www.supergarden.lt/images/languages/en.png"/>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<script>
+		$(function () {
+			let languages_menu = $('#languages_menu');
+
+			// Add slideDown animation to Bootstrap dropdown when expanding.
+			languages_menu.on('show.bs.dropdown', function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+			});
+
+			// Add slideUp animation to Bootstrap dropdown when collapsing.
+			languages_menu.on('hide.bs.dropdown', function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+			});
+		})
+	</script>
+<ul class="horizontal-desktop" id="menu_functional">
+<li>
+<div>
+<span id="popupClick">
+<i class="icon-user-new"><span class="hidden-md hidden-lg"> Vartotojo menu</span></i>
+</span>
+<div class="sidebar-wrp" id="loginPopup">
+<a class="close-sidebar" nohref="" role="button"><i class="icon-close"></i></a>
+<div class="side-content-wrp">
+<div id="customers_authorize">
+<div class="center-block">
+<div class="text-left">
+<div id="customers_prelogin">
+<h1 class="page_title">Prisistatykite</h1>
+<p>Įveskite el. pašto adresą, kuriuo esate prisiregistravę, arba norėtumėte prisiregistruoti.</p>
+<div class="form-wrapper">
+<form action="?prelogin" data-ajaxnav="true" data-ajaxnav-container="#customers_authorize" data-ajaxnav-template="content_types/customers/authorize" id="login_form" method="post">
+<input name="state" type="hidden" value="prelogin"/>
+<div class="form-group form-group-lg">
+<input class="form-control" id="email" name="email" placeholder="Jūsų el. pašto adresas" type="text" value=""/>
+</div>
+<div class="form-group form-group-lg">
+<button class="btn btn-lg btn-primary btn-block" type="submit">Tęsti</button>
+</div>
+</form>
+</div>
+<script>
+		$(function(){
+			$('#customers_prelogin form input[name="email"]').focus().select();
+		});
+	</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="cart_info" id="cart_info">
+<div class="cart_box">
+<i class="icon-shopping-bag-new"></i>
+<em class="cnt">0</em>
+</div>
+<div class="sidebar-wrp" id="cartPopup">
+<a class="close-sidebar" nohref="" role="button"><i class="icon-close"></i></a>
+<div class="side-content-wrp" id="cartPopupInner"><div class="centered" id="cart_detailed">
+<h2 class="page-title">Jūsų krepšelis</h2>
+<div class="empty-list">
+<figure>
+<img alt="Krepšelis yra tuščias" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/mazesne_pakuote.png"/>
+<figcaption>Krepšelis yra tuščias</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="main-nav-button">
+<span></span>
+<span class="c"></span>
+<span></span>
+<i class="icon-close"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay"></div>
+<div id="content_wrapper">
+<div class="parallax-container" id="introBlock">
+<div class="parallax-item parallax-item-9" style="background: url('https://www.supergarden.lt/images/frontend/parallax/uogos_draw.png');"></div>
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/produktas-1.png');"></div>
+<div class="parallax-item parallax-item-2" style="background: url('https://www.supergarden.lt/images/frontend/parallax/produktas-2.png');"></div>
+<div class="parallax-item parallax-item-3" style="background: url('https://www.supergarden.lt/images/frontend/parallax/dump_draw.png');"></div>
+<div class="parallax-item parallax-item-4" style="background: url('https://www.supergarden.lt/images/frontend/parallax/strawberry_draw.png');"></div>
+<div class="parallax-item parallax-item-5" data-rotate="-138deg" style="background: url('https://www.supergarden.lt/images/frontend/parallax/strawberry_draw.png');"></div>
+<div class="parallax-item parallax-item-6" style="background: url('https://www.supergarden.lt/images/frontend/parallax/cherry_draw.png');"></div>
+<div class="parallax-item parallax-item-7" style="background: url('https://www.supergarden.lt/images/frontend/parallax/carrot_draw.png');"></div>
+<div class="parallax-item parallax-item-8" style="background: url('https://www.supergarden.lt/images/frontend/parallax/raspberry_draw.png');"></div>
+<div class="container-fluid">
+<div class="text-wrp">
+<h1 class="page-title">Vasaros SUPER skoniai visus metus</h1>
+<h2 class="page-subtitle">susikurk savo skonių paletę!</h2>
+<ul class="hidden-xs hidden-sm">
+<li>
+<figure>
+<img alt="Išsaugomos medžiagos" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/medziagos.jpg"/>
+<figcaption>Išsaugomos medžiagos</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<img alt="Ypač platus asortimentas" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/asortimentas.jpg"/>
+<figcaption>Ypač platus asortimentas</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<img alt="Susikurk savo produktus" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/susikurk.jpg"/>
+<figcaption>Susikurk savo produktus</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<img alt="Natūralūs produktai" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/naturalus.jpg"/>
+<figcaption>Natūralūs produktai</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<img alt="Ekologiški produktai" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/ekologiski.jpg"/>
+<figcaption>Ekologiški produktai</figcaption>
+</figure>
+</li>
+</ul>
+<a class="btn btn-primary btn-lg" href="https://www.supergarden.lt/lt/katalogas/" role="button">Visi produktai</a>
+</div>
+</div>
+</div>
+<div class="parallax-container" id="mergedBanners">
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/raspberry_draw.png');"></div>
+<div class="parallax-item parallax-item-2" style="background: url('https://www.supergarden.lt/images/frontend/parallax/dump_draw.png');"></div>
+<div class="parallax-item parallax-item-3" data-rotate="81deg" style="background: url('https://www.supergarden.lt/images/frontend/parallax/cherry_draw.png');"></div>
+<div class="container-fluid">
+<div class="grid_1_2 hidden-xs hidden-sm" id="mergedBannersDesktop">
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/suris">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1688364664_1-1-emmental-gouda-1080-1080-piks.png');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Įsigyti <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/Kake-Make">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1687247102_ispardavimas-kakes-makes-produkcijai.png');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Įsigyti <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/pinjata-quot-braske-quot?item=16963">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1687759655_pinjata.gif');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Pirkti dabar <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+</div>
+<div class="owl-dots-scroll visible-xs visible-sm" id="mergedBannersMobile">
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/suris">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1688364664_1-1-emmental-gouda-1080-1080-piks.png');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Įsigyti <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/Kake-Make">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1687247102_ispardavimas-kakes-makes-produkcijai.png');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Įsigyti <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+<a class="banner_block item" href="https://www.supergarden.lt/lt/katalogas/pinjata-quot-braske-quot?item=16963">
+<div class="img-bg" style="background-image:url('https://www.supergarden.lt/images/galleries/1687759655_pinjata.gif');"></div>
+<div class="inner_wrp">
+<p class="banner_read_more" style="color: #ffffff;">
+                Pirkti dabar <span class="icon-small-arrow" style="background-color: #ffffff;"></span>
+</p>
+</div>
+</a>
+</div>
+<script type="text/javascript">
+                    
+                        $(function() {
+                            $('#mergedBannersMobile').addClass('owl-carousel');
+                            var owl = $('#mergedBannersMobile');
+
+                            owl.owlCarousel({
+                                autoWidth: true,
+                                autoHeight: true,
+                                loop: false,
+                                nav: false,
+                                items: 1,
+                                dots: true,
+                            });
+
+                            owl.on('changed.owl.carousel', function(event) {
+                                owl.find('.owl-dots').attr('data-count', event.page.count);
+                                owl.find('.owl-dots').attr('data-index', event.page.index + 1);
+                            })
+                        });
+                    
+                </script>
+</div>
+</div>
+<div class="content_body">
+<div class="container-fluid"></div>
+<div class="parallax-container" id="index_categories">
+<div class="parallax-item parallax-item-3" style="background: url('https://www.supergarden.lt/images/frontend/parallax/strawberry_draw.png');"></div>
+<div class="parallax-item parallax-item-1" data-rotate="222deg" style="background: url('https://www.supergarden.lt/images/frontend/parallax/strawberry_draw.png');"></div>
+<div class="parallax-item parallax-item-2" style="background: url('https://www.supergarden.lt/images/frontend/parallax/carrot_draw.png');"></div>
+<div class="container-fluid">
+<h2 class="heading">Top produktai</h2>
+<div class="index-categories-listing owl-dots-scroll">
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/nauji-produktai/">
+<img alt="Freeze dried (lyophilized) strawberry ice cream, candies, sweets" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1656653268_freeze-dried-lyophilized-spice-blend-for-bbq.jpg"/>
+<h3>Nauji produktai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/uogos/">
+<img alt="Freeze dried (lyophilized) berries" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644245022_freeze-dried-lyophilized-raspberries.png"/>
+<h3>Uogos</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/vaisiai/">
+<img alt="Freeze dried (lyophilized) fruits" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644245097_freeze-dried-lyophilized-pineapple.png"/>
+<h3>Vaisiai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/ledai-ir-saldumynai/">
+<img alt="Freeze dried (lyophilized) ice cream" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644245476_freeze-dried-lyophilized-bubble-gum-ice-cream.jpg"/>
+<h3>Ledai ir Saldumynai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/suriai/">
+<img alt="freeze dried (lyophilized) cheese" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644245275_freeze-dried-lyophilized-cheddar-cheese.jpg"/>
+<h3>Sūriai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/milteliai/">
+<img alt="Freeze dried (lyophilized) powders" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1644245884_freeze-dried-lyophilized-sea-buckthorn-powder.png"/>
+<h3>Milteliai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/uzkandziai/">
+<img alt="Freeze dried (lyophilized) healthy snacks" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645080695_freeze-dried-lyophilized-exotic-snack-bites.jpg"/>
+<h3>Užkandžiai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas//pasidarykite-savo-misini/?item=16753/">
+<img alt="Freeze dried (lyophilized) Mixeat products" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635313646_granolos-pakuote.jpg"/>
+<h3>Mixeat</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/glotnuciai/">
+<img alt="" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635489089_glotnutis-tasty-spirulina.png"/>
+<h3>Glotnučiai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/rinkiniai/">
+<img alt="Freeze dried (lyophilized) berries, fruits set" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645080930_freeze-dried-lyophilized-berries-fruits-set.jpg"/>
+<h3>Rinkiniai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/granola/">
+<img alt="granola with freeze dried (lyophilized) strawberries, blueberries, apples" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645081299_kake-make-granola-with-freeze-dried-lyophilized-strawberries-blueberries-apples.jpg"/>
+<h3>Granola</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/prieskoniai/">
+<img alt="Freeze dried (lyophilized) Spices and Seasonings" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645081405_freeze-dried-lyophilized-spicy-spices-mix.jpg"/>
+<h3>Prieskoniai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/kake-make/">
+<img alt="Kakė Makė freeze dried (lyophilized) vegetables, fruits, berries, spices" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645081492_freeze-dried-lyophilized-kake-make-strawberry-pieces.jpg"/>
+<h3>Kakė Makė</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/darzoves/">
+<img alt="Freeze dried (lyophilized) vegetables" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645082874_freeze-dried-lyophilized-peas.jpg"/>
+<h3>Daržovės</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/drinkeat/">
+<img alt="Drinks from freeze dried (lyophilized) vegetables, fruits, berries" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645081982_freeze-dried-lyophilized-drinkeat-wild-mango.jpg"/>
+<h3>Gėrimai</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/eko/">
+<img alt="Freeze dried (lyophilized) ecological and organic products" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1645082241_freeze-dried-lyophilized-organic-strawberries.jpg"/>
+<h3>EKO</h3>
+</a>
+<a class="item" href="https://www.supergarden.lt/lt/katalogas/Kalendoriai/">
+<img alt="freeze dried (lyophilized) ice cream, sweets, candies, fruits, berries, vegetables, spices.jpg" class="img-responsive" src="https://www.supergarden.lt/images/galleries/1635314537_advento-kalendorius.jpg"/>
+<h3>Kalendoriai</h3>
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        
+            function categories_slider() {
+                var owl = $('.index-categories-listing');
+
+                if (get_vw() > screen_md_min) {
+                    if (typeof owl.data('owl.carousel') != 'undefined') {
+                        owl.data('owl.carousel').destroy();
+                    }
+                    $('.index-categories-listing').removeClass('owl-carousel');
+                } else {
+                    $('.index-categories-listing').addClass('owl-carousel');
+
+                    owl.owlCarousel({
+                        autoWidth: true,
+                        autoHeight: true,
+                        loop: false,
+                        nav: false,
+                        items: 1,
+                        dots: true,
+                        margin: 12,
+                    });
+
+                    owl.on('changed.owl.carousel', function(event) {
+                        owl.find('.owl-dots').attr('data-count', event.page.count);
+                        owl.find('.owl-dots').attr('data-index', event.page.index + 1);
+                    })
+                }
+            }
+
+            $(function() {
+                categories_slider();
+                $(window).resize(categories_slider);
+            });
+        
+    </script>
+<section class="parallax-container" id="howItWorks">
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/raspberry_draw.png');"></div>
+<div class="container-fluid">
+<h2 class="heading">Kaip tai veikia?</h2>
+<p>Liofilizacijos procesas</p>
+<div class="process-wrp">
+<ul>
+<li>
+<figure>
+<img alt="Šviežia uoga" class="img-responsive" src="https://www.supergarden.lt/images/frontend/kaip_tai_veikia/ktv-sviezia-uoga.png">
+<figcaption>Šviežia uoga</figcaption>
+</img></figure>
+</li>
+<li>
+<figure>
+<img alt="Giluminis šaldymas" class="img-responsive" src="https://www.supergarden.lt/images/frontend/kaip_tai_veikia/ktv-giluminis-saldymas.png">
+<figcaption>Giluminis šaldymas</figcaption>
+</img></figure>
+</li>
+<li>
+<figure>
+<img alt="Liofilizacija" class="img-responsive" src="https://www.supergarden.lt/images/frontend/kaip_tai_veikia/ktv-liofilizacija.png">
+<figcaption>Liofilizacija</figcaption>
+</img></figure>
+</li>
+<li>
+<figure>
+<img alt="Liofilizuota uogytė" class="img-responsive" src="https://www.supergarden.lt/images/frontend/kaip_tai_veikia/ktv-liofilizuota-uoga.png">
+<figcaption>Liofilizuota uogytė</figcaption>
+</img></figure>
+</li>
+</ul>
+</div>
+<a class="btn btn-primary btn-lg" href="https://www.supergarden.lt/lt/liofilizavimo-paslauga">
+                    Sužinokite daugiau
+                </a>
+</div>
+</section>
+<section class="parallax-container" id="indexFeatures">
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/dump_draw.png');"></div>
+<div class="parallax-item parallax-item-2" style="background: url('https://www.supergarden.lt/images/frontend/parallax/corn_draw.png');"></div>
+<div class="container-fluid">
+<div class="features-list-wrp owl-simple-dots">
+<ul>
+<li class="item">
+<figure>
+<img alt="Mažesnė pakuotė" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/mazesne_pakuote.png">
+</img></figure>
+<h2>Mažesnė pakuotė</h2>
+<p>Džiovinto šaltyje Supergarden produkto skonis prilygsta šviežiems</p>
+</li>
+<li>
+<figure>
+<img alt="Kvapas ir forma" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/kvapas_ir_forma.png">
+</img></figure>
+<h2>Kvapas ir forma</h2>
+<p>Pašalinus beveik visą vandenį, produktų kvapas ir forma išlieka nepakitę</p>
+</li>
+<li>
+<figure>
+<img alt="Tikras skonis" class="img-responsive" src="https://www.supergarden.lt/images/frontend/features/tikras_skonis.png">
+</img></figure>
+<h2>Tikras skonis</h2>
+<p>Iš 100 g šviežių uogų, vaisių ar daržovių gaunasi apie 10 g Supergarden</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="parallax-container" id="subscribers_subscribe">
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/cherry_draw.png');"></div>
+<div class="container-fluid">
+<form data-ajaxnav="true" data-ajaxnav-container="#subscribers_subscribe" data-ajaxnav-template="content_types/subscribers/subscribe" id="newsletter_form" method="post">
+<input name="state" type="hidden" value="subscribe"/>
+<h2 class="heading">Naujienlaiškis</h2>
+<p>Sužinokite naujienas pirmieji</p>
+<div class="fields-wrp form-group">
+<input class="form-control" name="email" placeholder="El. pašto adresas
+" type="text" value=""/>
+<button class="btn btn-primary btn-lg" type="submit">
+                    Užsisakyti
+                </button>
+</div>
+</form>
+</div>
+</div>
+<div class="parallax-container" id="footer">
+<div class="parallax-item parallax-item-1" style="background: url('https://www.supergarden.lt/images/frontend/parallax/raspberry_draw.png');"></div>
+<div class="container-fluid">
+<div class="footer-top">
+<div class="left-column">
+<div>
+<a class="logo-wrp" href="https://www.supergarden.lt/lt/">
+<img alt="Super Garden freeze dried (lyophilized) products" class="img-responsive" src="https://www.supergarden.lt/cache/images/560c379d2deb33f30692d8fc0bc014e1.png">
+</img></a>
+<div class="logo-wrp">
+<img alt="Stock-m" class="img-responsive" src="https://www.supergarden.lt/cache/images/688ca2c7ac7cad8e8bead7a99688a346.png">
+						Atsargas valdome su StockM
+					</img></div>
+</div>
+<div class="social-icons visible-xs visible-sm">
+<a href="https://www.facebook.com/SupergardenDziovintaSaltyje">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://www.instagram.com/supergarden.lt">
+<i class="fa fa-instagram"></i>
+</a>
+</div>
+</div>
+<div class="center-column">
+<div class="list-default">
+<h4 class="title">
+<i class="icon icon-info-circled-alt hidden-md hidden-lg"></i>                        Informacija
+        </h4>
+<div class="submenu_list">
+<ul>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/apie mus" title="Apie mus">Apie mus</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/duk" title="DUK">DUK</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/pristatymas" title="Pristatymas">Pristatymas</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/privatumo-politika" title="Privatumo politika">Privatumo politika</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/taisykles" title="Taisyklės">Taisyklės</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/kur-isigyti" title="Kur įsigyti?">Kur įsigyti?</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/Edukacijos" title="Edukacijos">Edukacijos</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/Liofilizacijos procesas" title="Liofilizacijos procesas">Liofilizacijos procesas</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/atsiliepimu-registracijos-forma" title="Atsiliepimai">Atsiliepimai</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/informacija-pirkejui/atsiskaitymas" title="Atsiskaitymas">Atsiskaitymas</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="list-default">
+<h4 class="title">
+<i class="icon icon-s-letter hidden-md hidden-lg"></i>            Supergarden
+        </h4>
+<div class="submenu_list">
+<ul>
+<li>
+<a href="https://www.supergarden.lt/lt/supergarden/kontaktai" title="Kontaktai">Kontaktai</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/supergarden/asmeninis-prekiu-zenklinimas" title="Asmeninis prekių ženklinimas">Asmeninis prekių ženklinimas</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/supergarden/kokybes-ir-maisto-saugos-politika" title="Kokybės ir maisto saugos politika">Kokybės ir maisto saugos politika</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/supergarden/socialines-atsakomybes-politika" title="Socialinės atsakomybės politika">Socialinės atsakomybės politika</a>
+</li>
+<li>
+<a href="https://www.supergarden.lt/lt/supergarden/aplinkosaugos-politika" title="Aplinkosaugos politika">Aplinkosaugos politika</a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+        $(function () {
+            $('#footer .list-default .title').on('click', function() {
+                var list_h = $(this).parent().find('.submenu_list ul').outerHeight();
+                var el = $(this).parent();
+                el.toggleClass('open');
+                if (el.hasClass('open')) {
+                    $(this).parent().find('.submenu_list').css('max-height', list_h + 'px');
+                } else {
+                    $(this).parent().find('.submenu_list').css('max-height', '0px');
+                }
+            });
+        });
+    </script>
+<div class="moblie-contacts visible-xs visible-sm">
+<a class="phone" href="tel:+370 656 74381">
+<i class="icon icon-phone-outline"></i>
+						+370 656 74381
+					</a>
+</div>
+<div class="moblie-contacts visible-xs visible-sm">
+<a class="email" href="mailto:eshop@supergarden.lt">
+<i class="icon icon-mail"></i>
+						eshop@supergarden.lt
+					</a>
+</div>
+<div class="contacts-list list-default hidden-xs hidden-sm">
+<h4 class="title">Susisiekite!</h4>
+<div class="submenu_list">
+<ul>
+<li>
+<a class="phone" href="tel:+370 656 74381">
+<i class="icon icon-phone-outline"></i>
+									+370 656 74381
+								</a>
+</li>
+<li>
+<a class="email" href="mailto:eshop@supergarden.lt">
+<i class="icon icon-mail"></i>
+									eshop@supergarden.lt
+								</a>
+</li>
+<li>
+<a class="social-link" href="https://www.facebook.com/SupergardenDziovintaSaltyje">
+<i class="fa fa-facebook"></i>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a class="social-link" href="https://www.instagram.com/supergarden.lt">
+<i class="fa fa-instagram"></i>
+<span>Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="right-column">
+<div class="awards-wrp">
+<ul class="first-row">
+<li><img alt="The Best Food Product of Lithuania 2020" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/The_Best_Food_Product_of_Lithuania_2020.png"/></li>
+<li><img alt="The Best Food Product of Lithuania 2019" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/The_Best_Food_Product_of_Lithuania_2019.png"/></li>
+<li><img alt="The Best Food Product of Lithuania 2018" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/The_Best_Food_Product_of_Lithuania_2018.png"/></li>
+</ul>
+<ul class="second-row">
+<li><img alt="Best New Free-Form Food Product 2021 WINNER" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/Best_New_Free-Form_Food_Product_2021_WINNER.png"/></li>
+<li><img alt="Best New Snack Product 2019 WINNER" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/Best_New_Snack_Product_2019_WINNER.png"/></li>
+<li><img alt="Best New Natural Food Product 2018 WINNER" class="img-responsive" src="https://www.supergarden.lt/images/frontend/awards/Best_New_Natural_Food_Product_2018_WINNER.png"/></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="copyright">
+<div class="container-fluid">
+<div class="row">
+<div class="copyright">
+                2021 Supergarden. Privatumo politika.
+            </div>
+<div class="credits">Sprendimas: <a href="http://e-lab.lt" target="_blank">ELECTRONIC LAB</a></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+	$(function(){
+		function position_footer() {
+			$('#content_wrapper').css('min-height', $(window).height()-$('#head').outerHeight()-$('#footer').outerHeight()+'px');
+		}
+		position_footer();
+		setInterval(function(){
+			position_footer();
+		}, 100);
+	});
+</script>
+<script>
+	$(function(){
+		$('#main-nav-button').click(function(){
+			$('body').toggleClass('main-nav-active');
+
+			if (!$('body').hasClass('main-nav-active')) {
+				$('nav .list-dropdown.open').removeClass('open');
+			}
+		});
+	});
+
+	function head_animate() {
+		if ($(window).scrollTop() > 50) {
+			$('#head').addClass('scrolled');
+		} else {
+			$('#head').removeClass('scrolled');
+		}
+	}
+	head_animate();
+	$(window).scroll(head_animate);
+
+
+</script>
+<div id="ajax_loader"><span class="icon-spin fa-spin"></span></div>
+<div id="scrollup"><span class="icon icon-up"></span></div>
+</body>
+</html>
