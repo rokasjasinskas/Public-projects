@@ -51,15 +51,33 @@ class Sorter:
         return self.algorithms[algorithm_name](lst)
 
     def quicksort_1(self, lst: List[int]) -> List[int]:
-        # TODO: Implement the quicksort algorithm
-        return lst
+        # Pivot is first from the list
+        if len(lst) <= 1:
+            return lst
+        else:
+            pivot = lst[0]
+            smaller = [x for x in lst[1:] if x <= pivot]
+            greater = [x for x in lst[1:] if x > pivot]
+            return self.quicksort_1(smaller) + [pivot] + self.quicksort_1(greater)
+
 
     def quicksort_2(self, lst: List[int]) -> List[int]:
-        # TODO: Implement the quicksort algorithm with a different pivot choice
-        return lst
+        if len(lst) <= 1:
+            return lst
+        else:
+            pivot_index = len(lst) // 2
+            pivot = lst[pivot_index]
+            smaller = [x for x in lst[:pivot_index] + lst[pivot_index+1:] if x <= pivot]
+            greater = [x for x in lst[:pivot_index] + lst[pivot_index+1:] if x > pivot]
+            return self.quicksort_2(smaller) + [pivot] + self.quicksort_2(greater)
+
 
     def my_algorithm(self, lst: List[int]) -> List[int]:
-    # TODO: Implement at least one other sorting algorithm of your choice
+        n = len(lst)
+        for i in range(n):
+            for j in range(n - i - 1):
+                if lst[j] > lst[j + 1]:
+                    lst[j], lst[j + 1] = lst[j + 1], lst[j]
         return lst
 
 # Test the sorting functionality
@@ -79,5 +97,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-sorter.py
-Displaying sorter.py.
