@@ -1,0 +1,73 @@
+This program should be dedicated to extact data from website. 
+
+From website i need to scrap following info: 
+
+#####Product Information:
+Product names
+Descriptions
+Prices
+Ingredients
+Nutritional information
+?Product images
+
+#####Reviews and Ratings:
+Customer reviews
+Ratings or scores given by customers
+
+#####Promotions and Discounts:
+
+Discounted prices
+Promotion details
+Coupon codes (if applicable)
+
+Websites for scraping:
+* www.supergarden.lt 
+* www.summmer.lt 
+
+
+All info could be stored in CSV or jstor files 
+
+Program requirements: 
+* OOP 
+* Should have loops
+* Unit tests
+* Handling of exeptions 
+* Additional API connection 
+* Regular expresions
+* new libraries instalations 
+* use scraping method
+* has finite website list for scraping
+* Exit via ctr+c or drop down meniu
+
+Program structure: 
+* Log in to program with username and pasword hardcoded in the program. It is Local variables. 
+* Greets user with random anime quote by https://animechan.xyz/docs API 
+* Drop down meniu: 
+    a. Info from website gathering
+    b. View of stored information
+        -Asks if wants short conclusion or not. For conclusion use chatGPT API
+    c. Comparing information from two websites
+        -Asks if wants short conclusion or not. For conclusion use chatGPT API
+    d. Exit 
+* if a (gather):
+    -URL input by user
+    -User input check with regular expresions 
+    -Gather information from website (scraping)
+    -Data cleaning
+    -Data stored in separate files with date stamp
+    -/File name and date is added to separate file which stores all files names
+* if b (view)
+    -Choose website from the list (stored files names)
+    -Choose date from the list
+    -Print file in user friendly form
+* if c (compare)
+    -Choose website 1
+        -Check if such is already tested today
+        -if not do gather info
+    -Choose website 2 
+        -Check if such is already tested today
+        -if not do gather info
+    -Compare gathered information
+    -Print differences
+* if d (exit)
+    -exit program 
