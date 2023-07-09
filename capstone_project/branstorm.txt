@@ -43,7 +43,7 @@ Program structure:
 * Log in to program with username and pasword hardcoded in the program. It is Local variables. 
 * Greets user with random anime quote by https://animechan.xyz/docs API 
 * Drop down meniu: 
-    a. Info from website gathering
+    a. gather info from website
     b. View of stored information
         -Asks if wants short conclusion or not. For conclusion use chatGPT API
     c. Comparing information from two websites
@@ -52,9 +52,9 @@ Program structure:
 * if a (gather):
     -URL input by user
     -User input check with regular expresions 
-    -Gather information from website (scraping)
-    -Data cleaning
-    -Data stored in separate files with date stamp
+    -Gather information from website (scraping) + 
+    -Data cleaning +
+    -Data stored in separate files with date stamp +
     -/File name and date is added to separate file which stores all files names
 * if b (view)
     -Choose website from the list (stored files names)
