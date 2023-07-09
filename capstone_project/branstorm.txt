@@ -55,7 +55,7 @@ Program structure:
     -Gather information from website (scraping) + 
     -Data cleaning +
     -Data stored in separate files with date stamp +
-    -/File name and date is added to separate file which stores all files names
+    -/File name and date is added to separate file which stores all files names+ 
 * if b (view)
     -Choose website from the list (stored files names)
     -Choose date from the list

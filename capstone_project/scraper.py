@@ -3,6 +3,9 @@ import requests
 import csv
 from datetime import date
 import re
+from urllib.parse import urljoin
+
+
 
 class Product:
     def __init__(self, name, item_id, id, price, old_price, url):
@@ -76,31 +79,46 @@ class Scraper_SuperGarden:
         return filename  # Return the generated CSV filename
 
 
-class Scraper_Summmer:
+class Scraper_Trusthemp:
     def __init__(self, urls):
         self.urls = urls
         self.products = []
 
-    def scrape_summmer(self, url):
+    def scrape_trusthemp(self, url):
         response = requests.get(url)
         content = response.text
         soup = BeautifulSoup(content, 'html.parser')
-        product_elements = soup.find_all('div', class_='product')
+        product_elements = soup.find_all('div', class_='ProductItem__Info ProductItem__Info--center')
 
         for product_element in product_elements:
             # Scrape product information
-            product_name_element = product_element.find('h3')
+            product_name_element = product_element.find('a', href=True)
             product_name = product_name_element.text.strip() if product_name_element else None
-            product_price_element = product_element.find('span', class_='price')
+
+            product_price_element = product_element.find('span', class_='ProductItem__Price Price Price--highlight Text--subdued')
             product_price = product_price_element.text.strip() if product_price_element else None
 
+            product_old_price_element = product_element.find('span', class_=['ProductItem__Price Price Price--compareAt Text--subdued', 'ProductItem__Price Price Text--subdued'])
+            product_old_price = product_old_price_element.text.strip() if product_old_price_element else None
+
+            product_url_ending = product_name_element['href']
+            product_url = urljoin(url, product_url_ending)
+
+            # Extract data-id
+            data_element = product_element.find('img', class_='data-media-id')
+            data_id = data_element.get('data-media-id') if data_element else None
+
+            product_id_name = None
+
             # Create a Product object and add it to the products list
-            product = Product(product_name, None, None, product_price, None, None)
+            product = Product(product_name, product_id_name, data_id, product_price, product_old_price, product_url)
             self.products.append(product)
+
+
     def scrape_all(self):
         for url in self.urls:
             # Call the scrape_SG method for each URL
-            self.scrape_summmer(url)
+            self.scrape_trusthemp(url)
 
     def display_products(self):
         for product in self.products:
@@ -150,25 +168,25 @@ class FileManager:
                 })
 
 def main():
-    sg_urls = ['https://www.supergarden.lt/lt/katalogas', 'https://www.supergarden.lt/lt/katalogas?&page=2']
-    sg_scraper = Scraper_SuperGarden(sg_urls)
-    sg_scraper.scrape_all()
-    # sg_scraper.display_products()
-    sg_filename = sg_scraper.save_to_csv()
+    # sg_urls = ['https://www.supergarden.lt/lt/katalogas', 'https://www.supergarden.lt/lt/katalogas?&page=2']
+    # sg_scraper = Scraper_SuperGarden(sg_urls)
+    # sg_scraper.scrape_all()
+    # # sg_scraper.display_products()
+    # # sg_filename = sg_scraper.save_to_csv()
 
-    summmer_urls = ['https://www.summmer.lt/en/freeze-dried-fruits-and-berries']
-    summmer_scraper = Scraper_Summmer(summmer_urls)
-    summmer_scraper.scrape_all()
-    # summmer_scraper.display_products()
-    summmer_filename = summmer_scraper.save_to_csv()
+    trusthemp_urls = ['https://www.trusthemp.eu/collections/all']
+    trusthemp_scraper = Scraper_Trusthemp(trusthemp_urls)
+    trusthemp_scraper.scrape_all()
+    trusthemp_scraper.display_products()
+    #trusthemp_filename = trusthemp_scraper.save_to_csv()
 
-    file_list = [
-        {"filename": sg_filename.split('_')[0], "date": sg_filename.split('_')[1].split('.')[0]},
-        {"filename": summmer_filename.split('_')[0], "date": summmer_filename.split('_')[1].split('.')[0]},
-    ]
+    # file_list = [
+    #     {"filename": sg_filename.split('_')[0], "date": sg_filename.split('_')[1].split('.')[0]},
+    #     {"filename": summmer_filename.split('_')[0], "date": summmer_filename.split('_')[1].split('.')[0]},
+    # ]
 
-    file_manager = FileManager(file_list)
-    file_manager.save_file_list()
+    # file_manager = FileManager(file_list)
+    # file_manager.save_file_list()
 
 if __name__ == "__main__":
     main()
