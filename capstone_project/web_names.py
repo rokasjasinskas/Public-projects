@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 
 main_url = "https://www.supergarden.lt"  # Replace with the main website URL
 
@@ -14,5 +15,15 @@ for link in soup.find_all("a"):
     if href:
         links.append(href)
 
-# Process the extracted links as needed
-print(links)
+# Clean the links
+links = list(set(links))
+links = [link for link in links if link]
+irrelevant_keywords = ["facebook", "instagram", "mailto", "tel:"]
+cleaned_links = [link for link in links if not any(keyword in link for keyword in irrelevant_keywords)]
+
+# Join cleaned links with the main URL
+full_links = [urljoin(main_url, link) for link in cleaned_links]
+
+print("Full URLs:")
+for link in full_links:
+    print(link)
