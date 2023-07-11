@@ -1,0 +1,50 @@
+This program should be dedicated to extact data from website. 
+
+From website i need to scrap following info: 
+
+#####Product Information:
+Product name
+Item ID
+Price
+Old price
+URL
+
+Websites for scraping:
+* www.supergarden.lt 
+* www.summmer.lt 
+
+
+Program requirements: 
+* All info could be stored in CSV or jstor files 
+* Made accorinding OOP 
+* Should have loops
+* Atleast 3 unit tests
+* Handling of exeptions 
+* Additional API connection 
+* Regular expresions
+* Should use libraries 
+* Use scraping method
+* Has finite website list for scraping
+* Exit via ctr+c or drop down meniu
+
+Program structure: 
+* Log in to program with username and pasword. Credentials  stored in local variables. 
+* Greets user with random anime quote by https://animechan.xyz/docs API 
+* Drop down meniu: 
+    a. gather info from website
+    b. View of stored information
+    c. Exit 
+* if a (gather):
+    -URL input by user
+    -User input check with regular expresions 
+    -Gather information from website (scraping)
+    -Data stored in separate files with date stamp
+    -/File name and date is added to separate file which stores all files names
+* if b (view)
+    -Print stored files names
+    -Convert fifles to .csv format from jstor
+    -Print file content
+    -Print number of products in the file. User give info which files he wants investigate 
+
+* if c (exit)
+    -exit program 

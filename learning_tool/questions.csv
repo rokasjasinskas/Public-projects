@@ -1,3 +1,13 @@
 ID,Question Type,Question Text,Answer,Options,Active,Show Count,Correct Count
-902,quiz,2+2,1,1;2;3,True,0,0
-403,quiz,What is my name? ,Rokas,Rokas;Testas;Du testai ,True,0,0
+301,quiz,What goes after a? ,b,a;b;c,True,3,3
+811,quiz,What goes after b? ,c,a;b;c,True,2,2
+778,quiz,What goes before d? ,c,a;b;c,True,3,3
+295,freeform,What color is grass? ,Green,,True,3,2
+361,freeform,What color is sky? ,Blue,,True,1,1
+939,freeform,What is my name? ,Rokas ,,True,1,1
+920,quiz,Do I have dog? ,yes,Yes;No ;Maybe,True,0,0
+966,freeform,Do I have cat? ,No ,,False,0,0
+506,quiz,What is the capital of France?,Paris,London;Berlin;Madrid,True,0,0
+744,freeform,What is the capital of France?,Paris,,True,0,0
+710,quiz,What is my name? ,Rokas,Test;abc;Rokas,True,0,0
+894,freeform,Do I have dog? ,yes,,False,0,0

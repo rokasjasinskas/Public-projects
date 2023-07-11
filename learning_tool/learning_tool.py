@@ -86,6 +86,7 @@ class InteractiveLearningTool:
 
                     self.questions.append(question)
         except FileNotFoundError:
+            # inform user about file 
             pass
 
     def save_questions(self):

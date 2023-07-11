@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="lt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script crossorigin="" src="https://userapp.zyrosite.com/1688106198/assets/js/index-c477ed73.js" type="module"></script>
+<link href="https://userapp.zyrosite.com/1688106198/assets/css/index-53113e90.css" rel="stylesheet"/>
+<style data-el-id="custom-fonts">
+	
+		@font-face {
+			font-family: HelveticaNeueLT Pro  Lt Regular;
+			src: url('https://assets.zyrosite.com/mv0yxN4v57FlQxNK/HelveticaNeueLT Pro  Lt Regular.woff2') format('woff2');
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: HelveticaNeueLT Pro  Roman Bold;
+			src: url('https://assets.zyrosite.com/mv0yxN4v57FlQxNK/HelveticaNeueLT Pro  Roman Bold.woff2') format('woff2');
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: HelveticaNeueLT Pro  Roman Regular;
+			src: url('https://assets.zyrosite.com/mv0yxN4v57FlQxNK/HelveticaNeueLT Pro  Roman Regular.woff2') format('woff2');
+			font-display: swap;
+		}
+	</style><link data-el-id="https://assets.zyrosite.com" href="https://assets.zyrosite.com" rel="preconnect"/><title data-el-id="title">Å altyje dÅ¾iovinti vaisiai ir uogos | Summmer â Å¡altyje dÅ¾iovintos uogos ir vaisiai</title><meta content="Å altyje dÅ¾iovinti vaisiai ir uogos | Summmer â Å¡altyje dÅ¾iovintos uogos ir vaisiai" data-el-id="og:title" property="og:title"/><meta content="website" data-el-id="og:type" property="og:type"/><meta content="https://www.summmer.lt/produktai" data-el-id="og:url" property="og:url"/><link data-el-id="canonical" href="https://www.summmer.lt/produktai" rel="canonical"/><meta content="summary_large_image" data-el-id="twitter:card" name="twitter:card"/><meta content="Å altyje dÅ¾iovinti vaisiai ir uogos | Summmer â Å¡altyje dÅ¾iovintos uogos ir vaisiai" data-el-id="twitter:title" name="twitter:title"/><link data-el-id="favicon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/mv0yxN4v57FlQxNK/logo-01-m5KxrXaN00tybzog.png" rel="icon"/><link data-el-id="apple-touch-icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=32,h=32,fit=crop,f=png/mv0yxN4v57FlQxNK/logo-01-m5KxrXaN00tybzog.png" rel="apple-touch-icon"/><meta content="Hostinger Website builder" data-el-id="wappalyzer" name="generator"/><meta content="Summmer â Å¡altyje dÅ¾iovintos uogos ir vaisiai" data-el-id="og:site_name"/><meta content="Å altyje dÅ¾iovinti vaisiai ir uogos iÅ¡saugo net 98 % savo vitaminÅ³ ir yra sveikas uÅ¾kandis be jokio pridÄtinio cukraus, kuriuo galima mÄgautis visus metus. " data-el-id="description" name="description"/><meta content="Å altyje dÅ¾iovinti vaisiai ir uogos iÅ¡saugo net 98 % savo vitaminÅ³ ir yra sveikas uÅ¾kandis be jokio pridÄtinio cukraus, kuriuo galima mÄgautis visus metus. " data-el-id="og:description" property="og:description"/><meta content="Å altyje dÅ¾iovinti vaisiai ir uogos iÅ¡saugo net 98 % savo vitaminÅ³ ir yra sveikas uÅ¾kandis be jokio pridÄtinio cukraus, kuriuo galima mÄgautis visus metus. " data-el-id="twitter:description" name="twitter:description"/><meta content="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/mv0yxN4v57FlQxNK/mix-7-_amazon_sumazintas-m6LxlED9evIgv2re.jpg?no-cache=1688112752680" data-el-id="og:image" property="og:image"/><meta content="" data-el-id="og:image:alt"/><meta content="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/mv0yxN4v57FlQxNK/mix-7-_amazon_sumazintas-m6LxlED9evIgv2re.jpg?no-cache=1688112752680" data-el-id="twitter:image" name="twitter:image"/><meta content="" data-el-id="twitter:image:alt" name="twitter:image:alt"/><link data-el-id="hreflang-en" href="https://www.summmer.lt/en/products" hreflang="en" rel="alternate"/><link data-el-id="hreflang-x-default" href="https://www.summmer.lt/produktai" hreflang="x-default" rel="alternate"/><link crossorigin="true" data-el-id="gstatic-preconnect" href="https://cdn.zyrosite.com" rel="preconnect"/><link as="style" data-el-id="google-fonts-preload" href="https://cdn.zyrosite.com/u1/google-fonts/font-faces?family=Nunito+Sans:wght@300;400;600;700;800&amp;family=Work+Sans:wght@300;400;500;700&amp;display=swap" rel="preload"/><link data-el-id="google-fonts-stylesheet" href="https://cdn.zyrosite.com/u1/google-fonts/font-faces?family=Nunito+Sans:wght@300;400;600;700;800&amp;family=Work+Sans:wght@300;400;500;700&amp;display=swap" referrerpolicy="no-referrer" rel="stylesheet"/><script>window._isAppHydrating=true</script><style data-rehype="">
+    .block-product__button--english,
+    .site-drawer__english .cart__content-title,
+    .site-drawer__english .cart__quantity-title,
+    .site-drawer__english .cart__title[data-qa="shoppingcart-text-subtotal"],
+    .site-drawer__english .cart__checkout-button {
+        font-size: 0px !important;
+    }
+
+    .block-product__button--english:after {
+        font-size: 16px;
+        content: 'Add to bag';
+    }
+
+    .site-drawer__english .cart__content-title:after {
+        font-size: 22px;
+        content: 'Shopping bag';
+    }
+
+    .site-drawer__english .cart__quantity-title:after {
+        font-size: 16px;
+        content: 'Quantity';
+    }
+
+    .site-drawer__english .cart__title[data-qa="shoppingcart-text-subtotal"] span,
+    .site-drawer__english .cart__title[data-qa="shoppingcart-text-subtotal"]:before {
+        font-size: 18px;
+    }
+
+    .site-drawer__english .cart__title[data-qa="shoppingcart-text-subtotal"]:before {
+        content: 'Subtotal: ';
+    }
+
+    .site-drawer__english .cart__checkout-button:after {
+        font-size: 16px;
+        content: 'Checkout';
+    }
+</style><link data-rehype="" href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css"/><style data-rehype="" type="text/css">
+    #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 600px;
+    }
+
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style><meta content="3arp8sj28vwpu3szzbb0ki3ije4w3o" data-rehype="" name="facebook-domain-verification"/></head>
+<body>
+<div data-server-rendered="true" data-v-app="" id="app"><div><main class="page" style='--h1-font-size:72px; --h1-font-style:normal; --h1-font-family:var(--font-primary); --h1-font-weight:700; --h1-line-height:1.2; --h1-m-font-size:40px; --h1-letter-spacing:normal; --h1-text-transform:none; --h1-text-decoration:none; --h2-font-size:54px; --h2-font-style:normal; --h2-font-family:var(--font-primary); --h2-font-weight:700; --h2-line-height:1.2; --h2-m-font-size:36px; --h2-letter-spacing:normal; --h2-text-transform:none; --h2-text-decoration:none; --h3-font-size:44px; --h3-font-style:normal; --h3-font-family:var(--font-primary); --h3-font-weight:700; --h3-line-height:1.2; --h3-m-font-size:32px; --h3-letter-spacing:normal; --h3-text-transform:none; --h3-text-decoration:none; --h4-font-size:32px; --h4-font-style:normal; --h4-font-family:var(--font-primary); --h4-font-weight:700; --h4-line-height:1.2; --h4-m-font-size:28px; --h4-letter-spacing:normal; --h4-text-transform:none; --h4-text-decoration:none; --h5-font-size:24px; --h5-font-style:normal; --h5-font-family:var(--font-primary); --h5-font-weight:700; --h5-line-height:1.2; --h5-m-font-size:24px; --h5-letter-spacing:normal; --h5-text-transform:none; --h5-text-decoration:none; --h6-font-size:15px; --h6-font-style:normal; --h6-font-family:var(--font-primary); --h6-font-weight:800; --h6-line-height:1.2; --h6-m-font-size:15px; --h6-letter-spacing:0.12em; --h6-text-transform:none; --h6-text-decoration:none; --body-font-size:16px; --body-font-style:normal; --body-font-family:var(--font-secondary); --body-font-weight:300; --body-line-height:1.5em; --body-m-font-size:16px; --body-letter-spacing:0; --body-text-transform:none; --body-text-decoration:none; --font-primary:"Nunito Sans",sans-serif; --font-secondary:"Nunito Sans", sans-serif; --nav-link-color:rgb(23, 31, 34); --nav-link-font-size:16px; --nav-link-font-style:normal; --nav-link-color-hover:rgb(241, 241, 241); --nav-link-font-family:var(--font-secondary); --nav-link-font-weight:600; --nav-link-line-height:1.5em; --nav-link-m-font-size:16px; --nav-link-letter-spacing:0; --nav-link-text-transform:none; --nav-link-text-decoration:none; --body-large-font-size:18px; --body-large-font-style:normal; --body-large-font-family:var(--font-secondary); --body-large-font-weight:300; --body-large-line-height:1.5em; --body-large-m-font-size:18px; --body-large-letter-spacing:0; --body-large-text-transform:none; --body-large-text-decoration:none; --body-small-font-size:14px; --body-small-font-style:normal; --body-small-font-family:var(--font-secondary); --body-small-font-weight:400; --body-small-line-height:1.5em; --body-small-m-font-size:14px; --body-small-letter-spacing:0; --body-small-text-transform:none; --body-small-text-decoration:none; --grid-button-primary-font-size:16px; --grid-button-primary-padding-x:40px; --grid-button-primary-padding-y:16px; --grid-button-primary-font-style:normal; --grid-button-primary-font-family:var(--font-primary); --grid-button-primary-font-weight:700; --grid-button-primary-line-height:1.4; --grid-button-primary-m-font-size:16px; --grid-button-primary-m-padding-x:36px; --grid-button-primary-m-padding-y:14px; --grid-button-primary-box-shadow-x:0px; --grid-button-primary-box-shadow-y:0px; --grid-button-primary-border-radius:999px; --grid-button-primary-letter-spacing:normal; --grid-button-primary-text-transform:none; --grid-button-primary-box-shadow-blur:0px; --grid-button-primary-m-border-radius:999px; --grid-button-primary-text-decoration:none; --grid-button-primary-box-shadow-color:rgba(0, 0, 0, 0); --grid-button-primary-box-shadow-spread:0px; --grid-button-primary-box-shadow-x-hover:0px; --grid-button-primary-box-shadow-y-hover:0px; --grid-button-primary-transition-duration:0.2s; --grid-button-primary-box-shadow-blur-hover:0px; --grid-button-primary-box-shadow-color-hover:0px; --grid-button-primary-box-shadow-spread-hover:0px; --grid-button-primary-transition-timing-function:ease; --grid-button-secondary-font-size:16px; --grid-button-secondary-padding-x:40px; --grid-button-secondary-padding-y:16px; --grid-button-secondary-font-style:normal; --grid-button-secondary-font-family:var(--font-primary); --grid-button-secondary-font-weight:700; --grid-button-secondary-line-height:1.4; --grid-button-secondary-m-font-size:16px; --grid-button-secondary-m-padding-x:36px; --grid-button-secondary-m-padding-y:14px; --grid-button-secondary-box-shadow-x:0px; --grid-button-secondary-box-shadow-y:0px; --grid-button-secondary-border-radius:999px; --grid-button-secondary-letter-spacing:normal; --grid-button-secondary-text-transform:none; --grid-button-secondary-box-shadow-blur:0px; --grid-button-secondary-m-border-radius:999px; --grid-button-secondary-text-decoration:none; --grid-button-secondary-box-shadow-color:rgba(0, 0, 0, 0); --grid-button-secondary-box-shadow-spread:0px; --grid-button-secondary-box-shadow-x-hover:0px; --grid-button-secondary-box-shadow-y-hover:0px; --grid-button-secondary-transition-duration:0.2s; --grid-button-secondary-box-shadow-blur-hover:0px; --grid-button-secondary-box-shadow-color-hover:0px; --grid-button-secondary-box-shadow-spread-hover:0px; --grid-button-secondary-transition-timing-function:ease;'><!-- --><header class="block-header" data-v-8a24e8aa="" height="107.40625" style="--width:1240px; --padding-top:11px; --padding:11px 16px 11px 16px; --padding-right:16px; --padding-bottom:11px; --padding-left:16px; --m-padding-top:24px; --m-padding:24px 16px 24px 16px; --m-padding-right:16px; --m-padding-bottom:24px; --m-padding-left:16px; --logo-width:161px; --cartIconSize:24px; --m-logo-width:70px; --oldContentWidth:1600px; --menu-item-spacing:40px; --space-between-menu:59px; --m-menu-item-spacing:20px; --contrastBackgroundColor:rgb(210, 210, 210); --background-color:rgb(241, 241, 241); --2d9aae19:flex-end; --20cc2549:none; --4111f382:right;"><div class="background" data-v-8a24e8aa="" style="--background-color:rgb(241, 241, 241);"></div><div class="block-header__content" data-v-8a24e8aa="" style="--navigation-grid-template-columns:minmax(calc(var(--logo-width) + var(--space-between-menu)), auto) 1fr; --m-navigation-grid-template-columns:auto minmax(0, calc(var(--m-logo-width) + var(--space-between-menu) * 2)) 1fr; --logo-grid-row:1/3; --m-logo-grid-row:1/3; --logo-grid-column:1/2; --m-logo-grid-column:1/2; --logo-justify-self:flex-start; --m-logo-justify-self:flex-start; --logo-image-object-position:left center; --m-logo-image-object-position:left center; --links-grid-row:1/3; --m-links-grid-row:1/3; --links-grid-column:2/3; --m-links-grid-column:2/3; --cart-grid-row:1/3; --cart-grid-column:3/3; --logo-spacing:0 var(--space-between-menu) 0 0; --m-logo-spacing:0 var(--space-between-menu); --navigation-text-align:right; --m-navigation-text-align:right; --navigation-justify-self:flex-end; --m-navigation-justify-self:flex-end; --mobile-background:var(--background-color, var(--background-image)); --dropdown-background-color:rgb(241, 241, 241); --m-dropdown-background-color:rgb(241, 241, 241); --dropdown-background-contrast-color:rgb(210, 210, 210); --text-font-family:HelveticaNeueLT Pro Roman Bold; --text-font-weight:400; --nav-link-text-color:rgb(23, 31, 34); --nav-link-text-color-hover:rgb(241, 241, 241);"><a class="block-header-logo block-header__logo block-header__logo--m-with-cart" data-v-8a24e8aa="" data-v-fb585256="" href="/" style="--height:35.4229px; --m-height:15.4012px; --width:161px; --m-width:70px;"><img alt="Summmer â Å¡altyje dÅ¾iovintos uogos ir vaisiai logo" class="block-header-logo__image" data-qa="builder-siteheader-img-logo" data-v-fb585256="" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=322,fit=crop,q=95/mv0yxN4v57FlQxNK/summmer-black_transparent-01-AoPE741k66fBqNvw.png"/></a><button class="burger block-header__burger block-header__burger--m-with-cart" data-qa="builder-siteheader-btn-hamburger" data-v-1f7d7080="" data-v-8a24e8aa="" style="--burger-color:var(--nav-link-text-color);" title="Menu" type="button"><span class="burger__bun" data-v-1f7d7080=""></span><span class="burger__meat" data-v-1f7d7080=""></span><span class="burger__bun" data-v-1f7d7080=""></span></button><nav class="block-header__nav" data-v-8a24e8aa=""><ul class="block-header__links block-header__links--align-right" data-qa="builder-siteheader-emptyspace" data-v-8a24e8aa=""><li class="block-header-item" data-v-8a24e8aa="" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-apiemus" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-apiemus" data-v-71b59201="" href="/apie-mus">Apie mus</a><!-- --></div><!-- --></label></li><li class="block-header-item" data-v-8a24e8aa="" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><input class="block-header-item__mobile-dropdown-trigger" data-v-ee55214b="" type="checkbox"/><div aria-haspopup="true" class="item-content-wrapper item-content-wrapper--active block-header-item__item" data-qa="navigation-item-produktai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-active-produktai" data-v-71b59201="" href="/produktai">Produktai</a><div class="item-content__icon-container-wrapper" data-v-71b59201=""><span class="item-content__icon-container" data-v-71b59201=""><svg class="item-content__icon" data-v-71b59201="" fill="none" height="7" viewbox="0 0 10 7" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M5 6.5L0.669873 0.5L9.33013 0.500001L5 6.5Z" data-v-71b59201="" fill="currentColor"></path></svg></span></div></div><div class="block-header-item__dropdown-area" data-v-ee55214b=""><ul class="block-header-item__dropdown" data-v-ee55214b=""><li class="block-header-item" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-uogosirvaisiai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-uogosirvaisiai" data-v-71b59201="" href="/uogos-ir-vaisiai">Uogos ir vaisiai</a><!-- --></div><!-- --></label></li><li class="block-header-item" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-uÅ¾kandÅ¾iai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-uÅ¾kandÅ¾iai" data-v-71b59201="" href="/uzkandziai">UÅ¾kandÅ¾iai</a><!-- --></div><!-- --></label></li><li class="block-header-item" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-ingredientai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-ingredientai" data-v-71b59201="" href="/ingredientai">Ingredientai</a><!-- --></div><!-- --></label></li><li class="block-header-item" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-gÄrimams" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-gÄrimams" data-v-71b59201="" href="/gerimams">GÄrimams</a><!-- --></div><!-- --></label></li><li class="block-header-item" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-rinkiniai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-rinkiniai" data-v-71b59201="" href="/rinkiniai">Rinkiniai</a><!-- --></div><!-- --></label></li></ul></div></label></li><li class="block-header-item" data-v-8a24e8aa="" data-v-ee55214b=""><label class="block-header-item__label" data-v-ee55214b=""><!-- --><div aria-haspopup="false" class="item-content-wrapper block-header-item__item" data-qa="navigation-item-kontaktai" data-v-71b59201="" data-v-ee55214b=""><a class="item-content" data-qa="navigationblock-page-kontaktai" data-v-71b59201="" href="/kontaktai">Kontaktai</a><!-- --></div><!-- --></label></li><div class="language-switcher" data-v-8a24e8aa="" tabindex="0"><div class="language-switcher__button" data-qa="navigation-language-switcher"><div class="flag language-switcher__flag" data-qa="navigation-selected-language-lietuviÅ¡kai"><img alt="lt flag" class="flag__img" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/lt.svg"/><div class="flag__shadow"></div></div><svg class="language-switcher__icon" fill="none" height="7" viewbox="0 0 10 7" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M5 6.5L0.669873 0.5L9.33013 0.500001L5 6.5Z" fill="currentColor"></path></svg></div><div class="language-switcher__dropdown-area"><ul class="language-switcher__dropdown"><li class="language-switcher__dropdown-item" data-qa="navigation-language-switcher-en"><a class="language-switcher__dropdown-link" href="/en"><div class="flag language-switcher__dropdown-flag"><img alt="en flag" class="flag__img" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/gb.svg"/><div class="flag__shadow"></div></div> English (GB)</a></li><li class="language-switcher__dropdown-item" data-qa="navigation-language-switcher-lt"><a class="language-switcher__dropdown-link --current" href="/"><div class="flag language-switcher__dropdown-flag"><img alt="lt flag" class="flag__img" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/lt.svg"/><div class="flag__shadow"></div></div> LietuviÅ¡kai</a></li></ul></div></div><!-- --></ul></nav><div class="block-header-cart-wrapper block-header__cart" data-v-807ba98d="" data-v-8a24e8aa="" style="--cart-icon-size:24px;"><a class="block-header-cart" data-v-807ba98d=""><button class="block-header-cart__button" data-qa="header-btn-shoppingbag" data-v-807ba98d="" title="Go to cart"><div class="block-header-cart__icon-container" data-v-807ba98d=""><svg class="block-header-cart__icon" data-v-807ba98d="" fill="none" height="24" viewbox="0 0 19 24" width="19" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.94636 5.35922C6.29451 3.00506 7.9363 1.39824 9.67973
+						1.39824C11.4232 1.39824 13.0649 3.00506
+						13.4131 5.35922H5.94636ZM4.53847 5.35922C4.90317 2.43147
+						6.95866 0.000183105 9.67973 0.000183105C12.4008
+						0.000183105 14.4563 2.43147 14.821 5.35922H17.2816H18.6797V6.75728V21.2039C18.6797
+						22.7481 17.4278 24 15.8836
+						24H3.4758C1.93155 24 0.679688 22.7481 0.679688
+						21.2039V6.75728V5.35922H2.07775H4.53847ZM2.07775 6.75728H4.52596V9.08752C4.52596
+						9.47359 4.83893 9.78655 5.22499 9.78655C5.61105 9.78655 5.92402 9.47359
+						5.92402 9.08752V6.75728H13.5259V9.08752C13.5259 9.47359
+						13.8389 9.78655 14.2249 9.78655C14.611 9.78655 14.9239
+						9.47359 14.9239 9.08752V6.75728H17.2816V21.2039C17.2816 21.976 16.6557 22.6019
+						15.8836 22.6019H3.4758C2.70368 22.6019 2.07775 21.976 2.07775 21.2039V6.75728Z" data-v-807ba98d="" fill="currentColor" fill-rule="evenodd"></path></svg><span data-v-807ba98d="">KrepÅ¡elis (0)</span></div></button></a></div><!-- --></div></header><section class="block transition transition--undefined transition--root-hidden block--grid" data-v-5f050507="" id="zgAbVR" style="--block-padding-top:100px; --block-padding:100px 16px; --block-padding-right:16px; --block-padding-bottom:100px; --block-padding-left:16px; --content-width:1224px; --m-block-padding:56px 16px;"><div class="block-background" data-v-5f050507="" style="--background-color:rgb(255, 255, 255); --background-overlay-opacity:0;"><!-- --><!-- --></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><div class="block-product-list-wrapper" data-v-5f050507="" data-v-9223b736="" id="zgAbVR" style="--image-max-width:392px; --gap-size:24px; --h1-color:rgb(26, 26, 26); --h2-color:rgb(26, 26, 26); --h3-color:rgb(26, 26, 26); --h4-color:rgb(26, 26, 26); --h5-color:rgb(26, 26, 26); --h6-color:rgb(26, 26, 26); --body-color:rgb(26, 26, 26); --body-large-color:rgb(26, 26, 26);"><div class="skeleton-loader" data-v-9223b736="" data-v-c0f30deb=""><div class="skeleton-loader__item" data-v-c0f30deb=""><div class="skeleton-loader__image-placeholder" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div></div><div class="skeleton-loader__item" data-v-c0f30deb=""><div class="skeleton-loader__image-placeholder" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div></div><div class="skeleton-loader__item" data-v-c0f30deb=""><div class="skeleton-loader__image-placeholder" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div><div class="skeleton-loader__text" data-v-c0f30deb=""></div></div></div></div></section><section class="block block--grid block--footer" data-v-5f050507="" id="zlN8x4" style="--cols:12; --rows:6; --width:1224px; --m-rows:1; --col-gap:24px; --row-gap:16px; --row-size:48px; --column-gap:24px; --block-padding-top:16px; --block-padding:16px 0 16px 0; --block-padding-right:0; --block-padding-bottom:16px; --block-padding-left:0; --m-block-padding:40px 16px 40px 16px;"><div class="block-background" data-v-5f050507="" style="--background-color:rgb(255, 255, 255); --background-overlay-opacity:0;"><!-- --><!-- --></div><!-- --><div class="block-layout block-layout--layout" data-v-5f050507="" style="--m-grid-template-rows:auto 7.72947vw auto 7.48792vw 1.20773vw auto 2.17391vw auto 0.241546vw 27px; --t-grid-template-rows:minmax(272px, auto) minmax(32px, auto) minmax(65px, auto) minmax(31px, auto) minmax(5px, auto) minmax(19px, auto) minmax(9px, auto) minmax(31px, auto) minmax(1px, auto) 1fr; --small-desktop-grid-template-rows:0.571895vw 1.38889vw auto 4.90196vw 0.816993vw auto 2.45098vw auto 0.490196vw 1.47059vw 47px; --grid-template-rows:minmax(7px, auto) minmax(17px, auto) minmax(76px, auto) minmax(60px, auto) minmax(10px, auto) minmax(9px, auto) minmax(30px, auto) minmax(31px, auto) minmax(6px, auto) minmax(18px, auto) 1fr; --m-grid-template-columns:29.3194% 10.733% 8.37696% 3.14136% 48.4293%; --grid-template-columns:23.5294% 0.735294% 0.980392% 9.23203% 14.2974% 14.7059% 36.5196%; --m-block-min-height:auto; --t-block-min-height:492px; --small-desktop-block-min-height:auto; --block-min-height:311px; --142fb9e6:1224px; --49cbbb0f:414px; --804b95de:0 3.86473vw; --728879d5:0 16px;"><div class="layout-element layout-element--layout layout-element transition transition--undefined" style="--text:left; --align:flex-start; --justify:flex-start; --m-element-margin:0 0 24px 0; --z-index:1; --grid-row:3/4; --grid-column:1/2; --m-grid-row:3/4; --m-grid-column:1/4;"><!-- --><!-- --><!-- --><!-- --><!-- --><div class="text-box layout-element__component layout-element__component--GridTextBox" data-qa="gridtextbox:zkzwen" id="zkzWen"><h6 style="color: rgb(50, 50, 50); --lineHeightMobile: 1.3; --fontSizeMobile: 14px"><span style="color: rgb(0, 0, 0); font-family: HelveticaNeueLT Pro Roman Bold; font-weight: 400">Adresas</span></h6><p class="body" style="color: rgb(50, 50, 50); --lineHeightMobile:  1.3; --fontSizeMobile:  14px"><span style="color: rgb(0, 0, 0); font-family: HelveticaNeueLT Pro Roman Regular; font-weight: 400">SvietlikiÅ³ g. 39, VileikiÅ¡kiai,<br/>Å irvintÅ³ raj. LT-19182</span></p></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --></div><div class="layout-element layout-element--layout layout-element transition transition--undefined" style="--text:left; --align:flex-start; --justify:flex-start; --m-element-margin:0 0 32px 0; --z-index:2; --grid-row:3/4; --grid-column:4/6; --m-grid-row:3/4; --m-grid-column:5/6;"><!-- --><!-- --><!-- --><!-- --><!-- --><div class="text-box layout-element__component layout-element__component--GridTextBox" data-qa="gridtextbox:zerxm-" id="zErxm-"><h6 style="color: rgb(50, 50, 50); --lineHeightMobile:  1.3; --fontSizeMobile:  14px"><span style="color: rgb(0, 0, 0); font-family: HelveticaNeueLT Pro Roman Bold; font-weight: 400">Susisiekime</span></h6><p class="body" style="color: rgb(50, 50, 50); --lineHeightMobile:  1.3; --fontSizeMobile:  14px"><span style="color: rgb(0, 0, 0); font-family: HelveticaNeueLT Pro Roman Regular; font-weight: 400">El. p.: eshop@dehidra.com<br/>Tel.: +370 687 70489</span></p></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --></div><div class="layout-element layout-element--layout layout-element transition transition--undefined" style="--text:left; --align:flex-start; --justify:flex-start; --m-element-margin:0 0 32px 0; --z-index:3; --grid-row:5/7; --grid-column:4/6; --m-grid-row:6/7; --m-grid-column:1/3;"><!-- --><!-- --><!-- --><!-- --><!-- --><div class="text-box layout-element__component layout-element__component--GridTextBox" data-qa="gridtextbox:zihzvs" id="zIhzvS"><h6 style="color: rgb(50, 50, 50); --lineHeightMobile: 1.3; --fontSizeMobile: 14px"><span style="color: rgb(0, 0, 0); font-family: HelveticaNeueLT Pro Roman Bold; font-weight: 400">Bendraukime</span></h6></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --></div><div class="layout-element layout-element--layout layout-element transition transition--undefined" style="--text:left; --align:flex-start; --justify:flex-start; --m-element-margin:0 0 24px 0; --z-index:4; --grid-row:6/10; --grid-column:1/3; --m-grid-row:5/10; --m-grid-column:5/6;"><!-- --><!-- --><!-- --><!-- --><!-- --><div class="text-box layout-element__component layout-element__component--GridTextBox" data-qa="gridtextbox:zn2d77" id="zn2D77"><h6 style="color: rgb(26, 26, 26); --lineHeightMobile: 1.3; --fontSizeMobile: 14px"><span style="color: rgb(26, 26, 26); font-family: HelveticaNeueLT Pro Roman Bold; font-weight: 400">Klientams</span></h6><p class="body" style="color: rgb(26, 26, 26); --lineHeightMobile:  1.3; --fontSizeMobile:  14px"><span style="font-family: HelveticaNeueLT Pro Roman Regular; font-weight: 400"><u><a data-page-id="zpytC4" href="/elparduotuves-privatumo-politika" style="text-decoration: none;" target="">Privatumo politika</a></u><br/><u><a data-page-id="ziA1Bw" href="/el-parduotuves-taisykles" style="text-decoration: none;" target="">El. parduotuvÄs taisyklÄs</a></u></span></p></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --></div><div class="layout-element layout-element--layout layout-element transition transition--undefined" style="--justify:center; --icon-size:31px; --icon-color:rgb(0, 0, 0); --icon-spacing:space-between; --icon-direction:row; --icon-color-hover:rgb(58, 58, 58); --m-element-margin:0 0 16px 0; --space-between-icons:20px; --z-index:5; --grid-row:8/9; --grid-column:4/5; --m-grid-row:8/9; --m-grid-column:1/2;"><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><div class="social-icons social-icons--row layout-element__component layout-element__component--GridSocialIcons" data-qa="gridsocialicons:zpezwo" data-v-db746e32="" id="zpEZwo" style="--m-icon-direction:row; --icon-padding-vertical:0; --icon-padding-horizontal:var(--space-between-icons);"><a class="social-icons__link" data-v-db746e32="" href="https://www.facebook.com/summmer.lt/" rel="noopener" target="_blank" title="Go to Facebook page"><svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 12.0726C24 5.44354 18.629 0.0725708 12 0.0725708C5.37097 0.0725708 0 5.44354 0 12.0726C0 18.0619 4.38823 23.0264 10.125 23.9274V15.5414H7.07661V12.0726H10.125V9.4287C10.125 6.42144 11.9153 4.76031 14.6574 4.76031C15.9706 4.76031 17.3439 4.99451 17.3439 4.99451V7.94612H15.8303C14.34 7.94612 13.875 8.87128 13.875 9.82015V12.0726H17.2031L16.6708 15.5414H13.875V23.9274C19.6118 23.0264 24 18.0619 24 12.0726Z" fill="currentColor"></path>
+</svg>
+</a><a class="social-icons__link" data-v-db746e32="" href="https://www.instagram.com/summmer_lt/" rel="noopener" target="_blank" title="Go to Instagram page"><svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0027 5.84808C8.59743 5.84808 5.85075 8.59477 5.85075 12C5.85075 15.4053 8.59743 18.1519 12.0027 18.1519C15.4079 18.1519 18.1546 15.4053 18.1546 12C18.1546 8.59477 15.4079 5.84808 12.0027 5.84808ZM12.0027 15.9996C9.80212 15.9996 8.00312 14.2059 8.00312 12C8.00312 9.7941 9.79677 8.00046 12.0027 8.00046C14.2086 8.00046 16.0022 9.7941 16.0022 12C16.0022 14.2059 14.2032 15.9996 12.0027 15.9996ZM19.8412 5.59644C19.8412 6.39421 19.1987 7.03135 18.4062 7.03135C17.6085 7.03135 16.9713 6.38885 16.9713 5.59644C16.9713 4.80402 17.6138 4.16153 18.4062 4.16153C19.1987 4.16153 19.8412 4.80402 19.8412 5.59644ZM23.9157 7.05277C23.8247 5.13063 23.3856 3.42801 21.9775 2.02522C20.5747 0.622429 18.8721 0.183388 16.9499 0.0870135C14.9689 -0.0254238 9.03112 -0.0254238 7.05008 0.0870135C5.1333 0.178034 3.43068 0.617075 2.02253 2.01986C0.614389 3.42265 0.180703 5.12527 0.0843279 7.04742C-0.0281093 9.02845 -0.0281093 14.9662 0.0843279 16.9472C0.175349 18.8694 0.614389 20.572 2.02253 21.9748C3.43068 23.3776 5.12794 23.8166 7.05008 23.913C9.03112 24.0254 14.9689 24.0254 16.9499 23.913C18.8721 23.822 20.5747 23.3829 21.9775 21.9748C23.3803 20.572 23.8193 18.8694 23.9157 16.9472C24.0281 14.9662 24.0281 9.03381 23.9157 7.05277ZM21.3564 19.0728C20.9388 20.1223 20.1303 20.9307 19.0755 21.3537C17.496 21.9802 13.7481 21.8356 12.0027 21.8356C10.2572 21.8356 6.50396 21.9748 4.92984 21.3537C3.88042 20.9361 3.07195 20.1276 2.64897 19.0728C2.02253 17.4934 2.16709 13.7455 2.16709 12C2.16709 10.2546 2.02789 6.50129 2.64897 4.92717C3.06659 3.87776 3.87507 3.06928 4.92984 2.6463C6.50931 2.01986 10.2572 2.16443 12.0027 2.16443C13.7481 2.16443 17.5014 2.02522 19.0755 2.6463C20.1249 3.06392 20.9334 3.8724 21.3564 4.92717C21.9828 6.50665 21.8383 10.2546 21.8383 12C21.8383 13.7455 21.9828 17.4987 21.3564 19.0728Z" fill="currentColor"></path>
+</svg>
+</a></div><!-- --><!-- --><!-- --><!-- --><!-- --></div><div class="layout-element layout-element--layout layout-element" style="--height:283.953; --z-index:6; --grid-row:2/11; --grid-column:7/8; --m-grid-row:1/2; --m-grid-column:1/6;"><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><div class="grid-embed layout-element__component layout-element__component--GridEmbed" data-qa="gridembed:zgc6f1" id="zGc6F1" style="--height:283.953px;"><!-- --></div><!-- --></div></div><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- --></section><!-- --><div data-qa="user-section-zyroecommerceshoppingcart" data-v-246bf222="" data-v-99d75f1e="" header-height="0" style="--image-width:90px;"><div class="site-drawer-overlay" data-v-99d75f1e=""></div><!-- --></div><!-- --></main><!-- --><div><!-- --><!-- --></div></div></div>
+<script data-rehype="" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b4cd564013985f2e14044af70/9bd6c70bbfc08929734aa32d0.js");</script><script data-rehype="">
+    setInterval(() => {
+        if (document.querySelector('.block-product-wrapper')) {
+            if (document.querySelector('.block-product__title').innerHTML.includes('Freeze-dried')) {
+                document.querySelector('.block-product__button').classList.add('block-product__button--english');
+            }
+
+            else {
+                document.querySelector('.block-product__button').classList.remove('block-product__button--english');
+            }
+        }
+
+        if (document.querySelector('.site-drawer')) {
+            if (document.querySelector('.flag[data-qa="navigation-selected-language-english(gb)"]') || document.querySelector('.block-product__title').innerHTML.includes('Freeze-dried')) {
+                document.querySelector('.site-drawer').classList.add('site-drawer__english');
+            }
+            else {
+                document.querySelector('.site-drawer').classList.remove('site-drawer__english');
+            }
+        }
+    });
+</script><script data-rehype="" id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/b4cd564013985f2e14044af70/9bd6c70bbfc08929734aa32d0.js");</script><script data-rehype="" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" type="text/javascript"></script><script data-rehype="" type="text/javascript">(function ($) {
+        window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; /*
+* Translated default messages for the $ validation plugin in lithuanian.
+* Locale: LT
+*/
+        $.extend($.validator.messages, {
+            required: "Å is laukas yra privalomas.",
+            remote: "PraÅ¡au pataisyti Å¡Ä¯ laukÄ.",
+            email: "PraÅ¡au Ä¯vesti teisingÄ elektroninio paÅ¡to adresÄ.",
+            url: "PraÅ¡au Ä¯vesti teisingÄ URL.",
+            date: "PraÅ¡au Ä¯vesti teisingÄ datÄ.",
+            dateISO: "PraÅ¡au Ä¯vesti teisingÄ datÄ (ISO).",
+            number: "PraÅ¡au Ä¯vesti teisingÄ skaiÄiÅ³.",
+            digits: "PraÅ¡au naudoti tik skaitmenis.",
+            creditcard: "PraÅ¡au Ä¯vesti teisingÄ kreditinÄs kortelÄs numerÄ¯.",
+            equalTo: "PraÅ¡au Ä¯vestÄ¯ tÄ paÄiÄ reikÅ¡mÄ dar kartÄ.",
+            accept: "PraÅ¡au Ä¯vesti reikÅ¡mÄ su teisingu plÄtiniu.",
+            maxlength: $.format("PraÅ¡au Ä¯vesti ne daugiau kaip {0} simboliÅ³."),
+            minlength: $.format("PraÅ¡au Ä¯vesti bent {0} simbolius."),
+            rangelength: $.format("PraÅ¡au Ä¯vesti reikÅ¡mes, kuriÅ³ ilgis nuo {0} iki {1} simboliÅ³."),
+            range: $.format("PraÅ¡au Ä¯vesti reikÅ¡mÄ intervale nuo {0} iki {1}."),
+            max: $.format("PraÅ¡au Ä¯vesti reikÅ¡mÄ maÅ¾esnÄ arba lygiÄ {0}."),
+            min: $.format("PraÅ¡au Ä¯vesti reikÅ¡mÄ didesnÄ arba lygiÄ {0}.")
+        });
+    }(jQuery)); var $mcj = jQuery.noConflict(true);</script><script data-rehype="" id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b4cd564013985f2e14044af70/64a512c761841ae0d0b147203.js");</script><script data-rehype="">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'GTM-KQXCFDD');
+  </script><script data-rehype="" type="text/javascript">
+  // GTM integration
+  const currency = 'EUR';
+  const currecySymbol = 'â¬';
+  let globalQuantity = 1;
+
+  let viewItemTimeout, retryCount = 0;
+
+  function quantityChanged() {
+    var quantityString = $('.quantity-picker .quantity-picker__amount').val();
+    globalQuantity = isNaN(parseFloat(quantityString)) ? quantityString : parseFloat(quantityString);
+  }
+
+  function pushEventToDataLayer(event) {
+    if(event && event.event) {
+      console.log(event.event, event);
+      dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+      dataLayer.push(event);
+    }
+    globalQuantity = 1;
+  }
+
+  function addViewItemGTMEvent() {
+    if(viewItemTimeout) return;
+
+    console.log('View item retry: ' + retryCount);
+
+    viewItemTimeout = setTimeout(function() {
+      var itemName = $('.block-product__title').text();
+      if(!itemName) {
+        clearTimeout(viewItemTimeout);
+        viewItemTimeout = undefined;
+        if(retryCount <= 5) {
+          addViewItemGTMEvent();
+          retryCount++;
+        } else {
+          retryCount = 0;
+        }
+        return;
+      } else {
+        clearTimeout(viewItemTimeout);
+        viewItemTimeout = undefined;
+        retryCount = 0;
+      }
+
+      var priceString = $('.block-product__price').text()?.replace('â¬', '');
+      var price = parseFloat(priceString);
+      if(isNaN(price)) {
+          price = priceString;
+      }
+      var quantityString = $('.quantity-picker .quantity-picker__amount').val();
+      var quantity = isNaN(parseFloat(quantityString)) ? quantityString : parseFloat(quantityString);
+
+      var value = isNaN(price * quantity) ? price : price * quantity;
+      
+      const gtmEvent = {
+        event: "view_item",
+        ecommerce: {
+          currency: currency,
+          value: value,
+          items: [
+            {
+              item_name: itemName,
+              price: price,
+              quantity: quantity
+            }
+          ]
+        }
+      }
+
+      pushEventToDataLayer(gtmEvent);
+    }, 500);
+
+  }
+
+  function addToCartGTMEvent(itemName, price, quantity) {
+    var value = isNaN(price * quantity) ? price : price * quantity;
+    
+    const gtmEvent = {
+      event: "add_to_cart",
+      ecommerce: {
+        currency: currency,
+        value: value,
+        items: [
+          {
+            item_name: itemName,
+            price: price,
+            quantity: quantity
+          }
+        ]
+      }
+    };
+
+    pushEventToDataLayer(gtmEvent);
+  }
+
+  function addBeginCheckoutGTMEvent() {
+    const gtmEvent = {
+      event: "begin_checkout",
+      ecommerce: {
+        currency: currency,
+        value: 0,
+        items: []
+      }
+    };
+
+    const cartItems = $('.cart .cart__list .cart__list-item');
+    cartItems.each(index => {
+      const $element = $(cartItems[index]);
+      var itemName = $element.find('.cart__title').text();
+      var priceString =  $element.find('.cart__price').text()?.replace('â¬', '');
+      var price = parseFloat(priceString);
+      if(isNaN(price)) {
+          price = priceString;
+      }
+      var quantityString = $element.find('.quantity-picker .quantity-picker__amount').val();
+      var quantity =  isNaN(parseFloat(quantityString)) ? quantityString : parseFloat(quantityString);
+
+      // add value
+      gtmEvent.ecommerce.value += isNaN(price * quantity) ? price : price * quantity;
+      // add item
+      gtmEvent.ecommerce.items.push({
+        item_name: itemName,
+        price: price,
+        quantity: quantity
+      });
+    });
+
+    pushEventToDataLayer(gtmEvent);
+    localStorage.setItem('summmer_lastBeginCheckout', gtmEvent);
+  }
+
+  function addPurchaseGTMEvent() {
+    
+    let gtmEvent;
+    try {
+      gtmEvent = JSON.parse(localStorage.getItem('summmer_lastBeginCheckout'));
+    } catch (error) { 
+      console.warn('Failed to parse last checkout items.')
+    }
+
+    if(gtmEvent) {
+      gtmEvent.event = 'purchase';
+      localStorage.removeItem('summmer_lastBeginCheckout');
+    } else {
+      gtmEvent = {
+        event: "purchase",
+        ecommerce: {
+          currency: currency,
+          value: 0,
+          items: []
+        }
+      };
+    }
+    
+    pushEventToDataLayer(gtmEvent);
+  }
+  
+
+  $(document).ready(function() {
+      addViewItemGTMEvent();
+
+      if(location.href.toLocaleLowerCase()?.indexOf('ecommercecheckoutsuccess') > -1) {
+        addPurchaseGTMEvent();
+      }
+
+      $(document).on('change', '.quantity-picker .quantity-picker__amount', function () {
+        quantityChanged();
+      });
+
+      $(document).on('click', '.quantity-picker .quantity-picker__control', function () {
+        quantityChanged();
+      });
+
+      $(document).on('click', '[data-qa="productsection-btn-addtobag"]', function() {
+        var itemName = $('.block-product__title').text();
+        var priceString = $('.block-product__price').text()?.replace('â¬', '');
+        var price = parseFloat(priceString);
+        if(isNaN(price)) {
+            price = priceString;
+        }
+        var quantityString = globalQuantity || $('.quantity-picker .quantity-picker__amount').val();
+        var quantity =  isNaN(parseFloat(quantityString)) ? quantityString : parseFloat(quantityString);
+
+        addToCartGTMEvent(itemName, price, quantity);
+      });
+
+      $(document).on('mousedown', '[data-qa="productlistsection-btn-addtobag"]', function($event) {
+        var $container = $($event).closest('.product-list-item');
+        var itemName = $container.find('[data-qa="product-list-section-item-title"]').text();
+
+        var priceString = $container.find('.product-list-item__price-wrapper').text()?.replace('â¬', '');
+        var price = parseFloat(priceString);
+        if(isNaN(price)) {
+          price = priceString;
+        }
+
+        addToCartGTMEvent(itemName, price, 1);
+      });
+
+      $(document).on('click', '.product-list-item', function($event) {
+        addViewItemGTMEvent();
+      });
+      
+
+      $(document).on('click', '.cart .cart__checkout-button', function (e) {
+        e.stopPropagation();
+        addBeginCheckoutGTMEvent();
+      });
+  });
+</script></body></html>
