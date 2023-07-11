@@ -73,6 +73,7 @@ def main():
         card1 = player1.remove_card()
         card2 = player2.remove_card()
 
+
         print(f"{player1.name} plays {card1}")
         print(f"{player2.name} plays {card2}")
 
@@ -84,6 +85,12 @@ def main():
             print(f"{player2.name} wins the round!")
         else:
             print("War!")
+#def start
+# create dec of cards
+# put them in random order
+# return dec as library
+
+
 
             war_cards = [card1, card2]
             war_continue = True
