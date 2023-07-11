@@ -10,8 +10,10 @@ import os
 from dotenv import load_dotenv
 import json
 
+# List of domains
 DOMAINS = ["www.supergarden.lt", "www.trusthemp.eu"]
 
+# Load environment variables from .env file
 load_dotenv()
 
 # Program structure:
@@ -20,10 +22,13 @@ load_dotenv()
 
 class Login:
     def __init__(self):
+    # Get the username and password from environment variables
+
         self.username = os.getenv("USERNAME")
         self.password = os.getenv("PASSWORD")
 
     def greet_user(self):
+        
         # * Greets user with random anime quote by https://animechan.xyz/docs API
         # Added simple API to greet user with random anime qoutes
         try:
@@ -55,6 +60,8 @@ class Login:
         print("Please log in to continue.")
 # 
     def login(self):
+        #Login with username and password
+
         username = input("Username: ")
         password = getpass.getpass("Password: ")
 
@@ -67,6 +74,7 @@ class Login:
 
 
 class Web_Names:
+    #Gather urls from the main domain so scraper could scan as much urls as he can 
     @staticmethod
     def get_cleaned_links(web_url):
         main_url = f"https://{web_url}"  # Replace with the main website URL
@@ -97,7 +105,7 @@ class Web_Names:
 
         return full_links
 
-
+#Save product info in onle place. Is used for scrape program 
 class Product:
     def __init__(self, name, item_id, id, price, old_price, url):
         self.name = name
@@ -106,7 +114,7 @@ class Product:
         self.price = price
         self.old_price = old_price
         self.url = url
-
+#return string with desction of product
     def __str__(self):
         return f"Product: {self.name}\nItem ID: {self.item_id}\nID: {self.id}\nPrice: {self.price}\nOld price: {self.old_price}\nURL: {self.url}\n"
 
@@ -116,22 +124,32 @@ class Scraper:
         self.urls = urls
         self.products = []
 
+#Defines which domain it should scrape. It it will be more domain this part should be extended 
     def scrape_all(self, domain):
+        #Supergarden
         if domain == DOMAINS[0]:
             self.scrape_supergarden()
+            #Trusthemp
         elif domain == DOMAINS[1]:
             self.scrape_trusthemp()
         else:
             print("Error in domain name")
 
+#Scrape logic made according Supergarden website.
     def scrape_supergarden(self):
         for url in self.urls:
+            #Retrieves info from website via response and BeutifulSoup
             response = requests.get(url)
             content = response.text
             soup = BeautifulSoup(content, "html.parser")
+
+            #Defines where it should look info 
             product_elements = soup.find_all("span", class_="item")
 
+            #Defines what should look like
             for product_element in product_elements:
+
+                #product name 
                 product_name_element = product_element.find_previous(
                     "div", class_=["texts-wrp item-rows-1", "texts-wrp item-rows-2"]
                 )
@@ -140,13 +158,22 @@ class Scraper:
                     if product_name_element
                     else None
                 )
+                #Product ID
                 data_id = product_element.get("data-id")
+                
+                #Product ID Name
                 product_id_name = product_element.get("data-name")
+
+                #Product old price or price without discount
                 data_old_price = product_element.get("data-old-price")
 
+                #Product URL
                 product_url = product_element.get("data-url")
+
+                #Product current price
                 product_price = product_element.get("data-price")
 
+                #Creates product (item)
                 product = Product(
                     product_name,
                     product_id_name,
@@ -155,23 +182,35 @@ class Scraper:
                     data_old_price,
                     product_url,
                 )
+
+                #Appent product to all product list
                 self.products.append(product)
 
+#Scrape logic made according trushemp website.
     def scrape_trusthemp(self):
+
+        #Retrieves info from website via response and BeutifulSoup
         for url in self.urls:
+
+            #Retrieves info from website via response and BeutifulSoup
             response = requests.get(url)
             content = response.text
             soup = BeautifulSoup(content, "html.parser")
+            #Defines where it should look info 
             product_elements = soup.find_all(
                 "div", class_="ProductItem__Info ProductItem__Info--center"
             )
 
+            #Creates product 
             for product_element in product_elements:
+                
+                #Search for name
                 product_name_element = product_element.find("a", href=True)
                 product_name = (
                     product_name_element.text.strip() if product_name_element else None
                 )
 
+                #Search for discounted price
                 product_price_element = product_element.find(
                     "span",
                     class_="ProductItem__Price Price Price--highlight Text--subdued",
@@ -182,6 +221,7 @@ class Scraper:
                     else None
                 )
 
+                #Search for current price
                 product_old_price_element = product_element.find(
                     "span",
                     class_=[
@@ -195,14 +235,18 @@ class Scraper:
                     else None
                 )
 
+                #Search and return url. HTML code of trusthemp did not stored finite URL as supergarden. 
                 product_url_ending = product_name_element["href"]
                 product_url = urljoin(url, product_url_ending)
 
+                #Search for item ID
                 data_element = product_element.find("img", class_="data-media-id")
                 data_id = data_element.get("data-media-id") if data_element else None
 
+                #Website do not store product ID name, so it return None 
                 product_id_name = None
 
+                #Create product
                 product = Product(
                     product_name,
                     product_id_name,
@@ -211,17 +255,26 @@ class Scraper:
                     product_old_price,
                     product_url,
                 )
+
+                #Append product to products
                 self.products.append(product)
 
 
-
+# Define action to store scraped info into jsone file
     def save_to_json(self, domain):
+
+        #Check domain name with regex
         domain_name = re.sub(
             r"^www\.|\..*", "", self.urls[0].split("//")[1].split("/")[0]
         )
+
+        #defines current day
         today = date.today().strftime("%Y-%m-%d")
+
+        #Creates file name 
         filename = f"{domain_name}_{today}.json"
 
+        #Store file in dictionary
         data = []
         for product in self.products:
             data.append(
@@ -235,34 +288,21 @@ class Scraper:
                 }
             )
 
+        #Write product to jsone file. If same day program is run it will overwrite identical files. 
         with open(filename, "w", encoding="utf-8") as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
 
         return filename
 
-    def scrape_from_json(self, filename):
-        with open(filename, "r", encoding="utf-8") as json_file:
-            data = json.load(json_file)
-
-        for product_data in data:
-            product = Product(
-                product_data.get("Product Name"),
-                product_data.get("Item ID"),
-                product_data.get("ID"),
-                product_data.get("Price"),
-                product_data.get("Old Price"),
-                product_data.get("URL"),
-            )
-            self.products.append(product)
-
-        return self.products
-
+# Display products in this class. It was mostly used during programing to double check if returned info from url is correct 
     def display_products(self):
         for product in self.products:
             print(product)
 
-
+# Class made to retrieve info from saved files
 class FileRetriever:
+
+    #retrieve saves file names 
     @staticmethod
     def retrieve_filenames_and_dates_from_csv(file_path):
         try:
@@ -278,7 +318,8 @@ class FileRetriever:
         except FileNotFoundError:
             print("File not found:", file_path)
             return []
-
+    
+    #Converts json to csv files 
     @staticmethod
     def convert_json_to_csv(json_file_path):
         csv_file_path = os.path.splitext(json_file_path)[0] + ".csv"
@@ -288,9 +329,11 @@ class FileRetriever:
             return
 
         try:
+            # Read json file
             with open(json_file_path, "r", encoding="utf-8") as json_file:
                 data = json.load(json_file)
 
+            #Writes csv file
             with open(csv_file_path, "w", newline="", encoding="utf-8") as csv_file:
                 fieldnames = list(data[0].keys()) if data else []
                 writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
@@ -307,6 +350,7 @@ class FileRetriever:
         except Exception as e:
             print("An error occurred:", e)
 
+    #Print json file content 
     @staticmethod
     def print_json_file(file_path):
         try:
@@ -322,6 +366,7 @@ class FileRetriever:
         except json.JSONDecodeError as e:
             print("Error decoding JSON data:", e)
 
+    #Count items in json file
     @staticmethod
     def count_items(file_path):
         try:
@@ -334,7 +379,7 @@ class FileRetriever:
         except json.JSONDecodeError as e:
             print("Error decoding JSON data:", e)
 
-
+    #exit programs
 class ExitProgram:
     def __init__(self):
         self.message = "Exiting the program..."
@@ -343,11 +388,12 @@ class ExitProgram:
         print(self.message)
         sys.exit(0)
 
-
+    #saves Scraped files names to the csv file, in order to retrieve it in later stages. 
 class FileManager:
     def __init__(self, file_list):
         self.file_list = file_list
 
+    #Saves filenames into csv and checks if file with same name exists or not. If not add to the list 
     def save_file_list(self):
         filename = "scraped_files_list.csv"
 
@@ -375,11 +421,13 @@ class FileManager:
                     csv_writer.writerow(file_data)
 
 
+#main was done outside of class 
 def main():
     try:
         login = Login()
         login.greet_user()
 
+        #First level of program with a, b, c
         if login.login():
             # Continue with the program
             while True:
@@ -388,12 +436,8 @@ def main():
                 print("B. View stored information")
                 print("C. Quit")
                 choice = input("Enter your choice: ")
-                choice_functions = {
-                    "b": FileRetriever.convert_json_to_csv,
-                    "c": FileRetriever.print_json_file,
-                    "d": FileRetriever.count_items,
-                }
 
+                #Call scaper according user input
                 if choice.lower() == "a":
                     domain = input(
                         f"What domain would you like to scrape? ({', '.join(DOMAINS)}) "
@@ -405,19 +449,29 @@ def main():
 
                     urls = []
 
+                    #First domain from the list
                     if domain == DOMAINS[0]:
+                        #Gathers all links from domain and cleans them
                         web_names = Web_Names
                         urls = web_names.get_cleaned_links(DOMAINS[0])
 
+                    #Second domain from the list
                     elif domain == DOMAINS[1]:
+                        #Gathers all links from domain and clean them
                         web_names = Web_Names
                         urls = web_names.get_cleaned_links(DOMAINS[1])
 
+                    #Call scraping
                     scraper = Scraper(urls)
                     scraper.scrape_all(domain)
+
+                    #used during programing to check if gathered info is correct
                     # scraper.display_products()
+
+                    #Saves scraped info to json
                     filename = scraper.save_to_json(domain)
 
+                    #save file names to the csv
                     file_list = [
                         {
                             "filename": filename.split("_")[0],
@@ -427,6 +481,7 @@ def main():
                     file_manager = FileManager(file_list)
                     file_manager.save_file_list()
 
+                #View stored info
                 elif choice.lower() == "b":
                     while True:
                         print("\nSelect next action:")
@@ -437,6 +492,7 @@ def main():
                         print("E. Go back.")
                         choice = input("Enter your choice: ")
 
+                        #Read filename list from csv and print to user
                         if choice.lower() == "a":
                             fileretriever = FileRetriever()
                             file_path = "/workspaces/war_game/capstone_project/scraped_files_list.csv"
@@ -451,7 +507,7 @@ def main():
                             for filename in filenames:
                                 print(filename)
 
-
+                        #Converts files from json to csv. User defines name of file 
                         elif choice.lower() == "b":
                             retrieve = FileRetriever
                             input_str = input(f"\nPlease input file name: ")
@@ -459,6 +515,7 @@ def main():
                                 f"/workspaces/war_game/capstone_project/{input_str}.json"
                             )
 
+                        #Print files content. User defines name of file 
                         elif choice.lower() == "c":
                             retrieve = FileRetriever
                             input_str = input(f"\nPlease input file name: ")
@@ -466,6 +523,7 @@ def main():
                                 f"/workspaces/war_game/capstone_project/{input_str}.json"
                             )
 
+                        #Print number of product in file. User defines name of file 
                         elif choice.lower() == "d":
                             retrieve = FileRetriever
                             input_str = input(f"\nPlease input file name: ")
@@ -476,9 +534,11 @@ def main():
                                 ),
                             )
 
+                        #Get back
                         elif choice.lower() == "e":
                             break
-
+                
+                #Exit
                 elif choice.lower() == "c":
                     exit_program = ExitProgram()
                     exit_program.exit()
