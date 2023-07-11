@@ -269,9 +269,3 @@ class InteractiveLearningTool:
 if __name__ == "__main__":
     tool = InteractiveLearningTool()
     tool.main()
-
-
-# question id
-# clean lines
-# json 
-# input output class 
