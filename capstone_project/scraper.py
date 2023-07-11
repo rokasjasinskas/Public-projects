@@ -10,12 +10,13 @@ import os
 from dotenv import load_dotenv
 import json
 
-DOMAINS = ['www.supergarden.lt', 'www.trusthemp.eu']
+DOMAINS = ["www.supergarden.lt", "www.trusthemp.eu"]
 
 load_dotenv()
 
-# Program structure: 
-# Log in to program with username and pasword hardcoded in the program. It is Local variables. 
+# Program structure:
+# Log in to program with username and pasword hardcoded in the program. It is Local variables.
+
 
 class Login:
     def __init__(self):
@@ -23,9 +24,8 @@ class Login:
         self.password = os.getenv("PASSWORD")
 
     def greet_user(self):
-
-# * Greets user with random anime quote by https://animechan.xyz/docs API 
-# Added simple API to greet user with random anime qoutes 
+        # * Greets user with random anime quote by https://animechan.xyz/docs API
+        # Added simple API to greet user with random anime qoutes
         try:
             response = requests.get("https://animechan.xyz/api/random")
             quote = response.json()
@@ -33,23 +33,27 @@ class Login:
             anime = quote["anime"]
             character = quote["character"]
             quote_text = quote["quote"]
-        except (requests.RequestException, KeyError, ValueError, ):
+        except (
+            requests.RequestException,
+            KeyError,
+            ValueError,
+        ):
             pass
 
         try:
-            quote_str = f'''-------------
+            quote_str = f"""-------------
 {anime}
 {character}: 
 {quote_text}
 -------------
-    '''
+    """
             print(quote_str)
-        except (UnboundLocalError): 
+        except UnboundLocalError:
             pass
 
         print("Welcome to the program!")
         print("Please log in to continue.")
-
+# 
     def login(self):
         username = input("Username: ")
         password = getpass.getpass("Password: ")
@@ -60,6 +64,7 @@ class Login:
         else:
             print("Invalid credentials. Login failed.")
             return False
+
 
 class Web_Names:
     @staticmethod
@@ -81,8 +86,12 @@ class Web_Names:
         links = list(set(links))
         links = [link for link in links if link]
         irrelevant_keywords = ["facebook", "instagram", "mailto", "tel:"]
-        cleaned_links = [link for link in links if not any(keyword in link for keyword in irrelevant_keywords)]
-        
+        cleaned_links = [
+            link
+            for link in links
+            if not any(keyword in link for keyword in irrelevant_keywords)
+        ]
+
         # Join cleaned links with the main URL
         full_links = [urljoin(main_url, link) for link in cleaned_links]
 
@@ -101,7 +110,8 @@ class Product:
     def __str__(self):
         return f"Product: {self.name}\nItem ID: {self.item_id}\nID: {self.id}\nPrice: {self.price}\nOld price: {self.old_price}\nURL: {self.url}\n"
 
-class Scraper: 
+
+class Scraper:
     def __init__(self, urls):
         self.urls = urls
         self.products = []
@@ -111,105 +121,127 @@ class Scraper:
             self.scrape_supergarden()
         elif domain == DOMAINS[1]:
             self.scrape_trusthemp()
-        else: 
+        else:
             print("Error in domain name")
-        
 
     def scrape_supergarden(self):
         for url in self.urls:
             response = requests.get(url)
             content = response.text
-            soup = BeautifulSoup(content, 'html.parser')
-            product_elements = soup.find_all('span', class_='item')
+            soup = BeautifulSoup(content, "html.parser")
+            product_elements = soup.find_all("span", class_="item")
 
             for product_element in product_elements:
-                product_name_element = product_element.find_previous('div', class_=['texts-wrp item-rows-1', 'texts-wrp item-rows-2'])
-                product_name = product_name_element.find('span', class_='').text.strip() if product_name_element else None
-                data_id = product_element.get('data-id')
-                product_id_name = product_element.get('data-name')
-                data_old_price = product_element.get('data-old-price')
+                product_name_element = product_element.find_previous(
+                    "div", class_=["texts-wrp item-rows-1", "texts-wrp item-rows-2"]
+                )
+                product_name = (
+                    product_name_element.find("span", class_="").text.strip()
+                    if product_name_element
+                    else None
+                )
+                data_id = product_element.get("data-id")
+                product_id_name = product_element.get("data-name")
+                data_old_price = product_element.get("data-old-price")
 
-                product_url = product_element.get('data-url')
-                product_price = product_element.get('data-price')
+                product_url = product_element.get("data-url")
+                product_price = product_element.get("data-price")
 
-                product = Product(product_name, product_id_name, data_id, product_price, data_old_price, product_url)
+                product = Product(
+                    product_name,
+                    product_id_name,
+                    data_id,
+                    product_price,
+                    data_old_price,
+                    product_url,
+                )
                 self.products.append(product)
 
     def scrape_trusthemp(self):
         for url in self.urls:
             response = requests.get(url)
             content = response.text
-            soup = BeautifulSoup(content, 'html.parser')
-            product_elements = soup.find_all('div', class_='ProductItem__Info ProductItem__Info--center')
+            soup = BeautifulSoup(content, "html.parser")
+            product_elements = soup.find_all(
+                "div", class_="ProductItem__Info ProductItem__Info--center"
+            )
 
             for product_element in product_elements:
-                product_name_element = product_element.find('a', href=True)
-                product_name = product_name_element.text.strip() if product_name_element else None
+                product_name_element = product_element.find("a", href=True)
+                product_name = (
+                    product_name_element.text.strip() if product_name_element else None
+                )
 
-                product_price_element = product_element.find('span', class_='ProductItem__Price Price Price--highlight Text--subdued')
-                product_price = product_price_element.text.strip() if product_price_element else None
+                product_price_element = product_element.find(
+                    "span",
+                    class_="ProductItem__Price Price Price--highlight Text--subdued",
+                )
+                product_price = (
+                    product_price_element.text.strip()
+                    if product_price_element
+                    else None
+                )
 
-                product_old_price_element = product_element.find('span', class_=['ProductItem__Price Price Price--compareAt Text--subdued', 'ProductItem__Price Price Text--subdued'])
-                product_old_price = product_old_price_element.text.strip() if product_old_price_element else None
+                product_old_price_element = product_element.find(
+                    "span",
+                    class_=[
+                        "ProductItem__Price Price Price--compareAt Text--subdued",
+                        "ProductItem__Price Price Text--subdued",
+                    ],
+                )
+                product_old_price = (
+                    product_old_price_element.text.strip()
+                    if product_old_price_element
+                    else None
+                )
 
-                product_url_ending = product_name_element['href']
+                product_url_ending = product_name_element["href"]
                 product_url = urljoin(url, product_url_ending)
 
-                data_element = product_element.find('img', class_='data-media-id')
-                data_id = data_element.get('data-media-id') if data_element else None
+                data_element = product_element.find("img", class_="data-media-id")
+                data_id = data_element.get("data-media-id") if data_element else None
 
                 product_id_name = None
 
-                product = Product(product_name, product_id_name, data_id, product_price, product_old_price, product_url)
+                product = Product(
+                    product_name,
+                    product_id_name,
+                    data_id,
+                    product_price,
+                    product_old_price,
+                    product_url,
+                )
                 self.products.append(product)
 
-    # def save_to_csv(self, domain):
-    #     domain_name = re.sub(r'^www\.|\..*', '', self.urls[0].split('//')[1].split('/')[0])
-    #     today = date.today().strftime("%Y-%m-%d")
-    #     filename = f"{domain_name}_{today}.csv"
-
-    #     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-    #         fieldnames = ["Product Name", "Item ID", "ID", "Price", "Old Price", "URL"]
-    #         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    #         writer.writeheader()
-
-    #         for product in self.products:
-    #             writer.writerow({
-    #                 "Product Name": product.name,
-    #                 "Item ID": product.item_id,
-    #                 "ID": product.id,
-    #                 "Price": product.price,
-    #                 "Old Price": product.old_price,
-    #                 "URL": product.url
-    #             })
-
-    #     return filename
 
 
     def save_to_json(self, domain):
-        domain_name = re.sub(r'^www\.|\..*', '', self.urls[0].split('//')[1].split('/')[0])
+        domain_name = re.sub(
+            r"^www\.|\..*", "", self.urls[0].split("//")[1].split("/")[0]
+        )
         today = date.today().strftime("%Y-%m-%d")
         filename = f"{domain_name}_{today}.json"
 
         data = []
         for product in self.products:
-            data.append({
-                "Product Name": product.name,
-                "Item ID": product.item_id,
-                "ID": product.id,
-                "Price": product.price,
-                "Old Price": product.old_price,
-                "URL": product.url
-            })
+            data.append(
+                {
+                    "Product Name": product.name,
+                    "Item ID": product.item_id,
+                    "ID": product.id,
+                    "Price": product.price,
+                    "Old Price": product.old_price,
+                    "URL": product.url,
+                }
+            )
 
-        with open(filename, 'w', encoding='utf-8') as json_file:
+        with open(filename, "w", encoding="utf-8") as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
 
         return filename
-    
 
     def scrape_from_json(self, filename):
-        with open(filename, 'r', encoding='utf-8') as json_file:
+        with open(filename, "r", encoding="utf-8") as json_file:
             data = json.load(json_file)
 
         for product_data in data:
@@ -219,7 +251,7 @@ class Scraper:
                 product_data.get("ID"),
                 product_data.get("Price"),
                 product_data.get("Old Price"),
-                product_data.get("URL")
+                product_data.get("URL"),
             )
             self.products.append(product)
 
@@ -230,106 +262,77 @@ class Scraper:
             print(product)
 
 
-class FileManager:
-    def __init__(self, file_list):
-        self.file_list = file_list
+class FileRetriever:
+    @staticmethod
+    def retrieve_filenames_and_dates_from_csv(file_path):
+        try:
+            filenames = []
+            with open(file_path, "r", newline="", encoding="utf-8") as csv_file:
+                csv_reader = csv.DictReader(csv_file)
+                for entry in csv_reader:
+                    filename = entry.get("filename")
+                    date = entry.get("date")
+                    if filename and date:
+                        filenames.append(f"{filename}_{date}")
+            return filenames
+        except FileNotFoundError:
+            print("File not found:", file_path)
+            return []
 
-class FileManager:
-    def __init__(self, file_list):
-        self.file_list = file_list
+    @staticmethod
+    def convert_json_to_csv(json_file_path):
+        csv_file_path = os.path.splitext(json_file_path)[0] + ".csv"
 
-    def save_file_list(self):
-        filename = "scraped_files_list.json"
+        if os.path.isfile(csv_file_path):
+            print(f"CSV file '{csv_file_path}' already exists. Skipping conversion.")
+            return
 
-        existing_entries = set()
-        if os.path.isfile(filename):
-            with open(filename, "r", encoding="utf-8") as json_file:
-                try:
-                    existing_data = json.load(json_file)
-                    for entry in existing_data:
-                        if isinstance(entry, dict):
-                            file_name = entry.get("filename")
-                            date = entry.get("date")
-                            if file_name and date:
-                                existing_entries.add((file_name, date))
-                        else:
-                            print("Invalid entry in existing_data:", entry)
-                except json.JSONDecodeError as e:
-                    print("Error decoding existing data:", e)
+        try:
+            with open(json_file_path, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
 
-        with open(filename, "a", encoding="utf-8") as json_file:
-            for file_data in self.file_list:
-                file_name = file_data.get("filename")
-                date = file_data.get("date")
-                if file_name and date and (file_name, date) not in existing_entries:
-                    existing_entries.add((file_name, date))
-                    json.dump(file_data, json_file)
-                    json_file.write("\n")
+            with open(csv_file_path, "w", newline="", encoding="utf-8") as csv_file:
+                fieldnames = list(data[0].keys()) if data else []
+                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(data)
 
+            print(
+                f"JSON file '{json_file_path}' converted to CSV file '{csv_file_path}' successfully."
+            )
+        except FileNotFoundError:
+            print("File not found:", json_file_path)
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON data:", e)
+        except Exception as e:
+            print("An error occurred:", e)
 
+    @staticmethod
+    def print_json_file(file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as json_file:
+                products = json.load(json_file)
+                for product in products:
+                    for key, value in product.items():
+                        print(f"{key}: {value}")
+                    print("--------------------\n")
 
+        except FileNotFoundError:
+            print("File not found:", file_path)
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON data:", e)
 
-# class ViewData:
-#     @staticmethod
-#     def choose_file(files):
-#         print("Choose a file to view:")
-#         for index, file in enumerate(files):
-#             print(f"{index + 1}. {file['filename']} - {file['date']}")
-
-#         choice = int(input("Enter the file number: "))
-
-#         if 1 <= choice <= len(files):
-#             selected_file = files[choice - 1]
-#             file_path = f"{selected_file['filename']}_{selected_file['date']}"
-#             ViewData.view_file(file_path)
-#         else:
-#             print("Invalid choice.")
-
-#     @staticmethod
-#     def view_file(file_path):
-#         choice = input("Choose an option:\n1. Generate CSV file\n2. View in terminal (Print)\nEnter your choice: ")
-
-#         if choice == "1":
-#             ViewData.generate_csv(file_path)
-#         elif choice == "2":
-#             ViewData.print_file(file_path)
-#         else:
-#             print("Invalid choice.")
-
-#     @staticmethod
-#     def generate_csv(file_path):
-#         csv_filename = f"{file_path}.csv"
-#         json_filename = f"{file_path}.json"
-
-#         with open(json_filename, 'r', encoding='utf-8') as json_file:
-#             data = json.load(json_file)
-
-#         with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
-#             fieldnames = ["Product Name", "Item ID", "ID", "Price", "Old Price", "URL"]
-#             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-#             writer.writeheader()
-
-#             for product in data:
-#                 writer.writerow(product)
-
-#         print(f"CSV file generated: {csv_filename}")
-
-#     @staticmethod
-#     def print_file(file_path):
-#         json_filename = f"{file_path}.json"
-
-#         with open(json_filename, 'r', encoding='utf-8') as json_file:
-#             data = json.load(json_file)
-
-#         for product in data:
-#             print(f"Product Name: {product['Product Name']}")
-#             print(f"Item ID: {product['Item ID']}")
-#             print(f"ID: {product['ID']}")
-#             print(f"Price: {product['Price']}")
-#             print(f"Old Price: {product['Old Price']}")
-#             print(f"URL: {product['URL']}")
-#             print("-" * 20)
-
+    @staticmethod
+    def count_items(file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as json_file:
+                data = json.load(json_file)
+                item_count = len(data)
+                return item_count
+        except FileNotFoundError:
+            print("File not found:", file_path)
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON data:", e)
 
 
 class ExitProgram:
@@ -340,9 +343,39 @@ class ExitProgram:
         print(self.message)
         sys.exit(0)
 
-    
-def main():
 
+class FileManager:
+    def __init__(self, file_list):
+        self.file_list = file_list
+
+    def save_file_list(self):
+        filename = "scraped_files_list.csv"
+
+        existing_entries = set()
+        if os.path.isfile(filename):
+            with open(filename, "r", encoding="utf-8") as csv_file:
+                csv_reader = csv.DictReader(csv_file)
+                for entry in csv_reader:
+                    file_name = entry.get("filename")
+                    date = entry.get("date")
+                    if file_name and date:
+                        existing_entries.add((file_name, date))
+
+        with open(filename, "a", newline="", encoding="utf-8") as csv_file:
+            fieldnames = ["filename", "date"]
+            csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            if csv_file.tell() == 0:
+                csv_writer.writeheader()
+
+            for file_data in self.file_list:
+                file_name = file_data.get("filename")
+                date = file_data.get("date")
+                if file_name and date and (file_name, date) not in existing_entries:
+                    existing_entries.add((file_name, date))
+                    csv_writer.writerow(file_data)
+
+
+def main():
     try:
         login = Login()
         login.greet_user()
@@ -355,9 +388,16 @@ def main():
                 print("B. View stored information")
                 print("C. Quit")
                 choice = input("Enter your choice: ")
+                choice_functions = {
+                    "b": FileRetriever.convert_json_to_csv,
+                    "c": FileRetriever.print_json_file,
+                    "d": FileRetriever.count_items,
+                }
 
                 if choice.lower() == "a":
-                    domain = input(f"What domain would you like to scrape? ({', '.join(DOMAINS)}) ")
+                    domain = input(
+                        f"What domain would you like to scrape? ({', '.join(DOMAINS)}) "
+                    )
 
                     if domain not in DOMAINS:
                         print("\nInvalid domain.")
@@ -378,32 +418,68 @@ def main():
                     # scraper.display_products()
                     filename = scraper.save_to_json(domain)
 
-                    file_list = [{"filename": filename.split('_')[0], "date": filename.split('_')[1].split('.')[0]}]
+                    file_list = [
+                        {
+                            "filename": filename.split("_")[0],
+                            "date": filename.split("_")[1].split(".")[0],
+                        }
+                    ]
                     file_manager = FileManager(file_list)
                     file_manager.save_file_list()
-
 
                 elif choice.lower() == "b":
                     while True:
                         print("\nSelect next action:")
-                        print("A. Print stored information:")
+                        print("A. Print stored files names:")
                         print("B. Covert file to .csv: ")
-                        print("C. Quit")
+                        print("C. Print file content: ")
+                        print("D. Print number of products in the file: ")
+                        print("E. Go back.")
                         choice = input("Enter your choice: ")
 
-                            # if choice.lower() == "a":
-                            #     pass
-                        
-                            # elif choice.lower() == "b":
-                            #     pass
+                        if choice.lower() == "a":
+                            fileretriever = FileRetriever()
+                            file_path = "/workspaces/war_game/capstone_project/scraped_files_list.csv"
+                            filenames = (
+                                fileretriever.retrieve_filenames_and_dates_from_csv(
+                                    file_path
+                                )
+                            )
+                            print(
+                                f"\nAt this moment moment there is following saved files:"
+                            )
+                            for filename in filenames:
+                                print(filename)
 
-                    # file_manager = FileManager([])
-                    # files = file_manager.load_file_list()
-                    # ViewData.choose_file(files)
 
+                        elif choice.lower() == "b":
+                            retrieve = FileRetriever
+                            input_str = input(f"\nPlease input file name: ")
+                            retrieve.convert_json_to_csv(
+                                f"/workspaces/war_game/capstone_project/{input_str}.json"
+                            )
+
+                        elif choice.lower() == "c":
+                            retrieve = FileRetriever
+                            input_str = input(f"\nPlease input file name: ")
+                            retrieve.print_json_file(
+                                f"/workspaces/war_game/capstone_project/{input_str}.json"
+                            )
+
+                        elif choice.lower() == "d":
+                            retrieve = FileRetriever
+                            input_str = input(f"\nPlease input file name: ")
+                            print(
+                                f"Number of products:",
+                                retrieve.count_items(
+                                    f"/workspaces/war_game/capstone_project/{input_str}.json"
+                                ),
+                            )
+
+                        elif choice.lower() == "e":
+                            break
 
                 elif choice.lower() == "c":
-                    
                     exit_program = ExitProgram()
                     exit_program.exit()
 
@@ -418,29 +494,6 @@ def main():
         exit_program = ExitProgram()
         exit_program.exit()
 
-
-# * if a (gather):
-#     -URL input by user
-#     -User input check with regular expresions 
-#     -Gather information from website (scraping) + 
-#     -Data cleaning +
-#     -Data stored in separate files with date stamp +
-#     -/File name and date is added to separate file which stores all files names+ 
-# * if b (view)
-#     -Choose website from the list (stored files names)
-#     -Choose date from the list
-#     -Print file in user friendly form
-# * if c (compare)
-#     -Choose website 1
-#         -Check if such is already tested today
-#         -if not do gather info
-#     -Choose website 2 
-#         -Check if such is already tested today
-#         -if not do gather info
-#     -Compare gathered information
-#     -Print differences
-# * if d (exit)
-#     -exit program 
 
 
 if __name__ == "__main__":
