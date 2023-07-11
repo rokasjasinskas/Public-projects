@@ -206,113 +206,131 @@ class Scraper:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
 
         return filename
+    
 
+    def scrape_from_json(self, filename):
+        with open(filename, 'r', encoding='utf-8') as json_file:
+            data = json.load(json_file)
+
+        for product_data in data:
+            product = Product(
+                product_data.get("Product Name"),
+                product_data.get("Item ID"),
+                product_data.get("ID"),
+                product_data.get("Price"),
+                product_data.get("Old Price"),
+                product_data.get("URL")
+            )
+            self.products.append(product)
+
+        return self.products
 
     def display_products(self):
         for product in self.products:
             print(product)
+
+
+class FileManager:
+    def __init__(self, file_list):
+        self.file_list = file_list
 
 class FileManager:
     def __init__(self, file_list):
         self.file_list = file_list
 
     def save_file_list(self):
-        filename = "scraped_files_list_.json"
+        filename = "scraped_files_list.json"
 
         existing_entries = set()
         if os.path.isfile(filename):
             with open(filename, "r", encoding="utf-8") as json_file:
-                existing_data = json.load(json_file)
-                for entry in existing_data:
-                    file_name = entry["File Name"]
-                    date = entry["Date"]
-                    existing_entries.add((file_name, date))
+                try:
+                    existing_data = json.load(json_file)
+                    for entry in existing_data:
+                        if isinstance(entry, dict):
+                            file_name = entry.get("filename")
+                            date = entry.get("date")
+                            if file_name and date:
+                                existing_entries.add((file_name, date))
+                        else:
+                            print("Invalid entry in existing_data:", entry)
+                except json.JSONDecodeError as e:
+                    print("Error decoding existing data:", e)
 
         with open(filename, "a", encoding="utf-8") as json_file:
             for file_data in self.file_list:
-                file_name = file_data["filename"]
-                date = file_data["date"]
-                if (file_name, date) not in existing_entries:
+                file_name = file_data.get("filename")
+                date = file_data.get("date")
+                if file_name and date and (file_name, date) not in existing_entries:
                     existing_entries.add((file_name, date))
                     json.dump(file_data, json_file)
                     json_file.write("\n")
 
 
 
-class ViewData:
-    @staticmethod
-    def choose_file(files):
-        print("Choose a file to view:")
-        for index, file in enumerate(files):
-            print(f"{index + 1}. {file['filename']} - {file['date']}")
 
-        choice = int(input("Enter the file number: "))
+# class ViewData:
+#     @staticmethod
+#     def choose_file(files):
+#         print("Choose a file to view:")
+#         for index, file in enumerate(files):
+#             print(f"{index + 1}. {file['filename']} - {file['date']}")
 
-        if 1 <= choice <= len(files):
-            selected_file = files[choice - 1]
-            file_path = f"{selected_file['filename']}_{selected_file['date']}"
-            ViewData.view_file(file_path)
-        else:
-            print("Invalid choice.")
+#         choice = int(input("Enter the file number: "))
 
-    @staticmethod
-    def view_file(file_path):
-        choice = input("Choose an option:\n1. Generate CSV file\n2. View in terminal (Print)\nEnter your choice: ")
+#         if 1 <= choice <= len(files):
+#             selected_file = files[choice - 1]
+#             file_path = f"{selected_file['filename']}_{selected_file['date']}"
+#             ViewData.view_file(file_path)
+#         else:
+#             print("Invalid choice.")
 
-        if choice == "1":
-            ViewData.generate_csv(file_path)
-        elif choice == "2":
-            ViewData.print_file(file_path)
-        else:
-            print("Invalid choice.")
+#     @staticmethod
+#     def view_file(file_path):
+#         choice = input("Choose an option:\n1. Generate CSV file\n2. View in terminal (Print)\nEnter your choice: ")
 
-    @staticmethod
-    def generate_csv(file_path):
-        csv_filename = f"{file_path}.csv"
-        json_filename = f"{file_path}.json"
+#         if choice == "1":
+#             ViewData.generate_csv(file_path)
+#         elif choice == "2":
+#             ViewData.print_file(file_path)
+#         else:
+#             print("Invalid choice.")
 
-        with open(json_filename, 'r', encoding='utf-8') as json_file:
-            data = json.load(json_file)
+#     @staticmethod
+#     def generate_csv(file_path):
+#         csv_filename = f"{file_path}.csv"
+#         json_filename = f"{file_path}.json"
 
-        with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ["Product Name", "Item ID", "ID", "Price", "Old Price", "URL"]
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
+#         with open(json_filename, 'r', encoding='utf-8') as json_file:
+#             data = json.load(json_file)
 
-            for product in data:
-                writer.writerow(product)
+#         with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
+#             fieldnames = ["Product Name", "Item ID", "ID", "Price", "Old Price", "URL"]
+#             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+#             writer.writeheader()
 
-        print(f"CSV file generated: {csv_filename}")
+#             for product in data:
+#                 writer.writerow(product)
 
-    @staticmethod
-    def print_file(file_path):
-        json_filename = f"{file_path}.json"
+#         print(f"CSV file generated: {csv_filename}")
 
-        with open(json_filename, 'r', encoding='utf-8') as json_file:
-            data = json.load(json_file)
+#     @staticmethod
+#     def print_file(file_path):
+#         json_filename = f"{file_path}.json"
 
-        for product in data:
-            print(f"Product Name: {product['Product Name']}")
-            print(f"Item ID: {product['Item ID']}")
-            print(f"ID: {product['ID']}")
-            print(f"Price: {product['Price']}")
-            print(f"Old Price: {product['Old Price']}")
-            print(f"URL: {product['URL']}")
-            print("-" * 20)
+#         with open(json_filename, 'r', encoding='utf-8') as json_file:
+#             data = json.load(json_file)
+
+#         for product in data:
+#             print(f"Product Name: {product['Product Name']}")
+#             print(f"Item ID: {product['Item ID']}")
+#             print(f"ID: {product['ID']}")
+#             print(f"Price: {product['Price']}")
+#             print(f"Old Price: {product['Old Price']}")
+#             print(f"URL: {product['URL']}")
+#             print("-" * 20)
 
 
-class CompareData(): 
-    pass
-
-# * if c (compare)
-#     -Choose website 1
-#         -Check if such is already tested today
-#         -if not do gather info
-#     -Choose website 2 
-#         -Check if such is already tested today
-#         -if not do gather info
-#     -Compare gathered information
-#     -Print difference
 
 class ExitProgram:
     def __init__(self):
@@ -321,8 +339,6 @@ class ExitProgram:
     def exit(self):
         print(self.message)
         sys.exit(0)
-
-
 
     
 def main():
@@ -337,8 +353,7 @@ def main():
                 print("\nSelect an option:")
                 print("A. Gather information from website")
                 print("B. View stored information")
-                print("C. Compare files information")
-                print("D. Quit")
+                print("C. Quit")
                 choice = input("Enter your choice: ")
 
                 if choice.lower() == "a":
@@ -360,7 +375,7 @@ def main():
 
                     scraper = Scraper(urls)
                     scraper.scrape_all(domain)
-                    scraper.display_products()
+                    # scraper.display_products()
                     filename = scraper.save_to_json(domain)
 
                     file_list = [{"filename": filename.split('_')[0], "date": filename.split('_')[1].split('.')[0]}]
@@ -369,15 +384,26 @@ def main():
 
 
                 elif choice.lower() == "b":
-                    file_manager = FileManager([])
-                    files = file_manager.load_file_list()
-                    ViewData.choose_file(files)
+                    while True:
+                        print("\nSelect next action:")
+                        print("A. Print stored information:")
+                        print("B. Covert file to .csv: ")
+                        print("C. Quit")
+                        choice = input("Enter your choice: ")
+
+                            # if choice.lower() == "a":
+                            #     pass
+                        
+                            # elif choice.lower() == "b":
+                            #     pass
+
+                    # file_manager = FileManager([])
+                    # files = file_manager.load_file_list()
+                    # ViewData.choose_file(files)
+
 
                 elif choice.lower() == "c":
-                    # Compare files information
-                    pass
-
-                elif choice.lower() == "d":
+                    
                     exit_program = ExitProgram()
                     exit_program.exit()
 
