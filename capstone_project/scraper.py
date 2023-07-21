@@ -294,7 +294,7 @@ class Scraper:
 
         return filename
 
-# Display products in this class. It was mostly used during programing to double check if returned info from url is correct 
+    # Display products in this class. It was mostly used during programing to double check if returned info from url is correct 
     def display_products(self):
         for product in self.products:
             print(product)
