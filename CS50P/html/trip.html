@@ -9,6 +9,14 @@
 <body>
     <form>
         <div>
+          <label for="estination">Destination:</label>
+          <select id="destination" name="destination">
+            <option value="">Select destination</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+            <option value="San Francisco">San Francisco</option>
+          </select>
           <!-- label -->
           <!--
             destination select:
@@ -16,14 +24,20 @@
           -->
         </div>
         <div>
+          <label for="from-date">From:</label>
+          <input type="date" id="from-date" name="from-date">
           <!-- label -->
           <!-- from date -->
         </div>
         <div>
+          <label for="to-date">To:</label>
+          <input type="date" id="to-date" name="to-date">
           <!-- label -->
           <!-- to date -->
         </div>
         <div>
+          <label for="guests">Guests:</label>
+          <input type="number" id="guests" name="guests" min="1">
           <!-- label -->
           <!-- guests -->
         </div>
@@ -31,6 +45,9 @@
           <button type="submit">
             -&gt;
           </button>
+        </div>
+        <div>
+          <!-- <iframe src="https://www.supergarden.lt" width="1000" height="400"></iframe> -->
         </div>
       </form>
 </body>
