@@ -1,6 +1,8 @@
-import sys
+import cowsay
+import pyttsx3
 
-from sayings import goodbey
-
-if len(sys.argv) ==2:
-    goodbey(sys.argv[1])
+engine = pyttsx3.init()
+this = input ("What's this? ")
+cowsay.cow(this)
+engine.say(this)
+engine.runAndWait()
