@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form>
-        <div>
-          <label for="estination">Destination:</label>
-          <select id="destination" name="destination">
-            <option value="">Select destination</option>
-            <option value="Paris">Paris</option>
-            <option value="Tokyo">Tokyo</option>
-            <option value="Sydney">Sydney</option>
-            <option value="San Francisco">San Francisco</option>
-          </select>
-          <!-- label -->
-          <!--
-            destination select:
-            "Select destination, Paris, Tokyo, Sydney, San Francisco"
-          -->
-        </div>
-        <div>
-          <label for="from-date">From:</label>
-          <input type="date" id="from-date" name="from-date">
-          <!-- label -->
-          <!-- from date -->
-        </div>
-        <div>
-          <label for="to-date">To:</label>
-          <input type="date" id="to-date" name="to-date">
-          <!-- label -->
-          <!-- to date -->
-        </div>
-        <div>
-          <label for="guests">Guests:</label>
-          <input type="number" id="guests" name="guests" min="1">
-          <!-- label -->
-          <!-- guests -->
-        </div>
-        <div>
-          <button type="submit">
-            -&gt;
-          </button>
-        </div>
-        <div>
-          <!-- <iframe src="https://www.supergarden.lt" width="1000" height="400"></iframe> -->
-        </div>
-      </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Trip</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+  <body>
+    <form class="container">
+      <div id="destination">
+        <label for="destination">Destination:</label>
+        <select class="form-select" aria-label="destination">
+          <option value="">Select destination</option>
+          <option value="Paris">Paris</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Sydney">Sydney</option>
+          <option value="San Francisco">San Francisco</option>
+        </select>
+      </div>
+      <div class="from">
+        <label for="from-date">From:</label>
+        <input
+          type="date"
+          id="from-date"
+          name="from-date"
+          class="form-control"
+        />
+      </div>
+      <div class="to">
+        <label for="to-date">To:</label>
+        <input type="date" id="to-date" name="to-date" class="form-control" />
+      </div>
+      <div class="guests">
+        <label for="guests">Guests:</label>
+        <input
+          type="number"
+          id="guests"
+          name="guests"
+          min="1"
+          class="form-control"
+        />
+      </div>
+      <div class="button">
+        <button type="submit" class="btn btn-warning rounded-pill">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </button>
+      </div>
+    </form>
+  </body>
 </html>
