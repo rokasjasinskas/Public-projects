@@ -4,22 +4,28 @@ body {
 .container {
   margin-top: 100px;
 }
+
 label[for] {
   color: white;
 }
 
-@media (max-width: 768px) {
-  #destination .from,
+@media (min-width: 768px) {
+  .from,
   .to,
   .guests {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media (min-width: 767px) {
-  .container {
+@media (min-width: 1200px) {
+  .container,
+  .row2 {
     display: flex;
     justify-content: start;
     flex-direction: row;
