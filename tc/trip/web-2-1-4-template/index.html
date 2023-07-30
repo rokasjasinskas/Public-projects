@@ -22,22 +22,34 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="top-header">
         <!-- Search -->
-        <img src="./icons/globe-white.svg" alt="Logo" />
-        <div>
+        <div id="search">
+          <input
+            class="form-control"
+            autocomplete="off"
+            autofocus
+            name="q"
+            placeholder="Search"
+            name="q"
+            type="search"
+          />
+        </div>
+        <img src="./icons/globe-white.svg" alt="Logo" id="logo" />
+        <div id="menu">
           <img src="./icons/three-bars-white.svg" alt="Menu" />
         </div>
       </div>
       <!-- Text about travel - header  -->
-      <div>
-        <div>Year long travel</div>
+      <div class="big-text">
+        <div id="header-description">Year long travel</div>
         <h1>
           Book your next<br />
           destination
         </h1>
         <!-- Booking form -->
       </div>
+      <!-- END OF HEADER -->
     </header>
     <!-- Body for text and description of destinations -->
     <section>
