@@ -1,21 +1,56 @@
-<!DOCTYPE html> 
+body {
+  background-image: url("https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+}
+.container {
+  margin-top: 100px;
+  margin-right: 40%;
+}
 
-<html lang="en"> 
-    <head> 
-        <title>Hover</title>
-        <style>
-            button { 
-                width: 200px;
-                height: 50px;
-                font-size: 24px;
-                background-color: green;
-            }
-            button:hover { 
-                background-color: orange;
-            }
-        </style>
-    </head>
-    <body>
-        <button>Click me</button>
-    </body>
-</html>
+label[for] {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+
+    grid-gap: 10px;
+  }
+  .from,
+  .to,
+  .guests {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-start: 1%;
+    grid-gap: 10px;
+  }
+  .button {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .row2 {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+  }
+  label[for] {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+  }
+}
