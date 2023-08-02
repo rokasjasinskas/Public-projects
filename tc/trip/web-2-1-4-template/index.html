@@ -21,6 +21,7 @@
     <link href="./css/footer.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <div class="top-header">
         <!-- Search -->
@@ -43,40 +44,169 @@
       <!-- Text about travel - header  -->
       <div class="big-text">
         <div id="header-description">Year long travel</div>
-        <h1>
+        <h1 id="h1-text">
           Book your next<br />
           destination
         </h1>
-        <!-- Booking form -->
       </div>
+      <!-- Booking form -->
+      <form class="booking">
+        <div class="destination row1">
+          <label for="destination">Destination:</label>
+          <select class="form-select" aria-label="destination">
+            <option value="">Select destination</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+            <option value="San Francisco">San Francisco</option>
+          </select>
+        </div>
+        <div class="row2">
+          <div id="from">
+            <label for="from-date">From:</label>
+            <input
+              type="date"
+              id="from-date"
+              name="from-date"
+              class="form-control"
+            />
+          </div>
+          <div id="to">
+            <label for="to-date">To:</label>
+            <input
+              type="date"
+              id="to-date"
+              name="to-date"
+              class="form-control"
+            />
+          </div>
+          <div id="guests">
+            <label for="guests">Guests:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="button row3">
+          <button type="submit" class="btn btn-warning rounded-pill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+
       <!-- END OF HEADER -->
     </header>
+  </div>
     <!-- Body for text and description of destinations -->
+    <div class="container">
     <section>
+      <br></br>
       <h2>Destinations</h2>
-      <div>
+      <div class="destination-text">
+        <br></br>
         <p>
           Lorem ipsum dolor sit amet, adventure travel mountains, beach resorts
           and cultural experiences await. Pack your bags and get ready to
           explore the world! From bustling cities to tranquil countryside
           getaways, there's a destination for every type of traveler.
         </p>
-        <!-- remaining text -->
+        <p>
+          If you're a culture lover, the historic cities of London and Edinburgh
+          should be at the top of your list. Walk the streets of London's West
+          End, marvel at the architecture of Big Ben and Buckingham Palace, and
+          take in a show at the Globe Theatre. In Edinburgh, visit the Royal
+          Mile, explore the castle, and sample the local fare at the city's
+          world-famous restaurants.
+        </p>
+        <p>
+          For those seeking a bit of relaxation, head to the spas and resorts of
+          the English countryside. Indulge in a luxurious massage or take a dip
+          in a hot spring. If you're looking for something a bit more active,
+          strap on your hiking boots and tackle the rugged trails of the coastal
+          cliffs. Newsletter Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nulla euismod, nisl nec tincidunt dapibus, magna libero
+          fermentum augu.
+        </p>
       </div>
-      <div>
-        <!-- Destinations -->
+      <!-- End of destination-text -->
+      <!-- Destinations -->
+      <div class="photos-destination">
+        <div id="paris"><img src="images/destinations/paris.jpg" class="rounded float-start" alt="Paris">
+          <h2 class="text">Paris</h2> 
+          <h5>France</h5>    
+        </div>
+        <div id="san-francisco">
+        <img src="images/destinations/san-francisco.jpg" class="rounded float-start" alt="Paris">
+        <h2 class="text">San Francisco</h2> 
+        <h5>United States</h5>  
       </div>
+      <div id="sydney">
+        <img src="images/destinations/sydney.jpg" class="rounded float-start" alt="Paris">
+        <h2 class="text">Sydney</h2> 
+        <h5>Australia</h5> 
+      </div>
+      <div id="tokyo">
+        <img src="images/destinations/tokyo.jpg" class="rounded float-start" alt="Paris">
+        <h2 class="text">Tokyo</h2> 
+        <h5>Japan</h5> 
+      </div>
+      </div>
+      <!-- End of destinations -->
     </section>
-    <footer>
+    </div>
+    <div class="container">
+    <footer class="footer-container">
       <!-- links -->
+      <h3>Links</h3>
+      <a href="/none">Destination</a>
+      <br> 
+      <a href="/none">About</a>
+      <br> 
+      <a href="/none">Contact</a>
+
       <!-- newsletter form -->
-      <div>
+
+      <div class="news">
         <h3>Newsletter</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
         </p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Newsletter             <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg></button>
+      
+        </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

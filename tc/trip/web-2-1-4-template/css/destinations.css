@@ -1,0 +1,46 @@
+.destination-text {
+  text-align: justify;
+  padding-right: 4vh;
+}
+.photos-destination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photos-destination img {
+  width: 10vh;
+  height: 15vh;
+  object-fit: cover;
+}
+.text {
+  text-align: left;
+  position: relative;
+}
+
+footer {
+  background-color: #f8c32e;
+  padding: 1vh;
+}
+
+footer .btn {
+  background-color: green;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .destination-text {
+    padding-right: 7vh;
+  }
+}
+@media (min-width: 992px) {
+  .destination-text {
+    padding-right: 10vh;
+  }
+}
+@media (min-width: 1200px) {
+  .destination-tex {
+    padding-right: 10vh;
+  }
+}

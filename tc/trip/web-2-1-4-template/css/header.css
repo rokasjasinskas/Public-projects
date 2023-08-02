@@ -1,5 +1,5 @@
 header {
-  background-image: url("/tc/trip/web-2-1-4-template/images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,47 +8,82 @@ header {
   max-height: 60vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-rows: repeat(6, 1fr);
   align-items: start;
   grid-auto-rows: minmax(50px, 50px);
-  justify-content: center;
+  padding-left: 1vh;
+  padding-right: 10vh;
+  opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   header {
-    opacity: 0.8;
+    padding-left: 1vh;
+    padding-right: 10vh;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    padding-left: 3vh;
+    padding-right: 15vh;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding-left: 4vh;
+    padding-right: 18vh;
+  }
+  .booking {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+  }
+  /* label[for] {
+    display: flex;
+    flex-direction: column;
+  }*/
+
+  .button {
+    grid-template-columns: 70px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    padding-left: 4vh;
+    padding-right: 22vh;
   }
 }
 
 .top-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1f;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   justify-content: space-around;
+  justify-items: center;
   margin: 1vh;
   margin-top: 2vh;
-  margin-right: 12vh;
 }
 
 #search {
   display: grid;
   grid-column-start: 1;
   grid-row-start: 1;
+  justify-self: start;
 }
 
 #logo {
   display: grid;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row-start: 1;
+  justify-self: center;
 }
 #menu {
   display: grid;
-  grid-column-start: 5;
+  grid-column-start: 3;
   grid-row-start: 1;
-  min-width: 100px;
+  justify-self: end;
 }
 
 .big-text {
@@ -65,4 +100,26 @@ header {
 }
 .big-text > h1 {
   grid-area: 5 / 1 / 6 / 2;
+}
+
+.booking {
+  display: grid;
+  grid-row-start: 6;
+  color: white;
+  grid-gap: 20px;
+  margin: 1vh;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.button {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+label[for] {
+  opacity: 0.8;
 }
