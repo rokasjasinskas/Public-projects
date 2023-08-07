@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+  .container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4vh;
+  }
+  .container img {
+    width: 10vh;
+    height: 10vh;
+    object-fit: cover;
+    object-position: center;
+    padding: 0.2vh;
+  }
+
+  .container img:hover {
+    opacity: 0.5;
+    background-color: #f8c32e;
+  }
+}

@@ -1,14 +1,30 @@
-header {
+.main-head {
   background-image: url("../images/header.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 10vh;
   min-height: 60vh;
   max-height: 60vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  align-items: start;
+  grid-auto-rows: minmax(50px, 50px);
+  padding-left: 1vh;
+  padding-right: 10vh;
+  opacity: 0.8;
+}
+
+.in-page-header {
+  background-image: url("../images/header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   align-items: start;
   grid-auto-rows: minmax(50px, 50px);
   padding-left: 1vh;
