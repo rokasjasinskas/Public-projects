@@ -1,0 +1,28 @@
+footer {
+  background-color: #f8c32e;
+  padding: 1vh;
+}
+
+footer .btn {
+  background-color: green;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10vh;
+  align-items: center;
+  justify-content: start;
+}
+#links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-self: start;
+}
+
+#news {
+  display: flex;
+  justify-self: end;
+}

@@ -7,26 +7,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: stretch;
 }
 
 .photos-destination img {
   width: 10vh;
   height: 15vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 .text {
   text-align: left;
-  position: relative;
-}
-
-footer {
-  background-color: #f8c32e;
   padding: 1vh;
-}
-
-footer .btn {
-  background-color: green;
-  color: white;
 }
 
 @media (min-width: 768px) {

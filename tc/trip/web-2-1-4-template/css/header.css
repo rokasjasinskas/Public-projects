@@ -37,10 +37,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: column;
   }
-  /* label[for] {
-    display: flex;
-    flex-direction: column;
-  }*/
 
   .button {
     grid-template-columns: 70px;
