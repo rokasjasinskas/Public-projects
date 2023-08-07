@@ -1,0 +1,6 @@
+@media (min-width: 576px) {
+  .contact-form {
+    padding-bottom: 2vh;
+    gap: 5px;
+  }
+}
