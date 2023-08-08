@@ -35,9 +35,13 @@
             type="search"
           />
         </div>
+        <a href="index.html">
         <img src="./icons/globe-white.svg" alt="Logo" id="logo" />
+      </a>
         <div id="menu">
+          <a href="destinations.html">
           <img src="./icons/three-bars-white.svg" alt="Menu" />
+          </a>
         </div>
       </div>
       <!-- Text about travel - header  -->
@@ -108,7 +112,6 @@
           </button>
         </div>
       </form>
-
       <!-- END OF HEADER -->
     </header>
   </div>
@@ -116,7 +119,20 @@
     <div class="container">
     <section>
       <br></br>
-      <h2>Destinations</h2>
+      <a href="destinations.html" class="custom-link">
+        <h2>Destinations</h2>
+      </a>
+      
+      <style>
+        .custom-link {
+          color: inherit; /* Inherit the color from the parent element */
+          text-decoration: none; /* Remove underline */
+        }
+        .custom-link:hover {
+          color: inherit; /* Keep the color on hover the same as the normal state */
+          text-decoration: none; /* Remove underline on hover */
+        }
+      </style>
       <div class="destination-text">
         <br></br>
         <p>
@@ -145,28 +161,34 @@
       </div>
       <!-- End of destination-text -->
       <!-- Destinations -->
-      <div class="photos-destination">
-        <div id="paris"><img src="images/destinations/paris.jpg" class="rounded float-start" alt="Paris">
-          <h2 class="text">Paris</h2> 
-          <h5>France</h5>    
-        </div>
-        <div id="san-francisco">
-        <img src="images/destinations/san-francisco.jpg" class="rounded float-start" alt="Paris">
-        <h2 class="text">San Francisco</h2> 
-        <h5>United States</h5>  
+
+      <div class="container index-gallery">
+        <div>
+          <a href="paris.html">
+        <img id="paris1" src="images/destinations/paris.jpg" title="Paris">
+        </a> 
+        <h3 class="city">Paris</h3>
+        <h5 class="country">France</h5>
       </div>
-      <div id="sydney">
-        <img src="images/destinations/sydney.jpg" class="rounded float-start" alt="Paris">
-        <h2 class="text">Sydney</h2> 
-        <h5>Australia</h5> 
+        <div>
+        <img class="san-francisco" src="images/destinations/san-francisco.jpg" title="San-Francisco">
+        <h3 class="city" id="san-francisco">San Francisco</h3> 
+        <h5 class="country usa">United States</h5>
+ 
       </div>
-      <div id="tokyo">
-        <img src="images/destinations/tokyo.jpg" class="rounded float-start" alt="Paris">
-        <h2 class="text">Tokyo</h2> 
-        <h5>Japan</h5> 
+        <div>
+        <img class="sydney" src="images/destinations/sydney.jpg" title="Sydney">
+        <h3 class="city">Sydney</h3>  
+        <h5 class="country">Australia</h5>
       </div>
+        <div>
+        <img class="Tokyo" src="images/destinations/tokyo.jpg" title="Tokyo">
+        <h3 class="city">Tokyo</h3> 
+        <h5 class="country">Japan</h5>
       </div>
-      <!-- End of destinations -->
+       
+</div>
+
     </section>
     </div>
     <footer class="footer-container">
@@ -174,11 +196,10 @@
       <!-- links -->
       <div id="links">
       <h3>Links</h3>
-      <a href="/none">Destination</a>
-      <br> 
-      <a href="/none">About</a>
-      <br> 
-      <a href="/none">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destination</a>
+      <a href="about_us.html">About</a>
+      <a href="contact_us.html">Contact</a>
     </div>
       <!-- newsletter form -->
 

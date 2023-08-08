@@ -1,37 +1,90 @@
-.destination-text {
-  text-align: justify;
-  padding-right: 4vh;
-}
-.photos-destination {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: stretch;
-}
+@media (min-width: 576px) {
+  .container .index-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0vh;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    padding-bottom: 1vh;
+    padding: 1vh;
 
-.photos-destination img {
-  width: 10vh;
-  height: 15vh;
-  object-fit: contain;
+  }
+  .index-gallery img {
+    width: 10vh;
+    height: 12vh;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.7);
+    }
+  h3.city {
+    color: white;
+    position: relative;
+    bottom: 30%;
+    left: 35%;
+    font-family: 'Dancing Script';
+    font-size: 1.8vh;
+    font-weight: bold;
+
+  }
+  #san-francisco {
+    color: white;
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+  }
+
+  h5.country {
+  color: white;
+  position: relative;
+  bottom: 30%;
+  left: 40%;
+  font-family: 'Monserat';
 }
-.text {
-  text-align: left;
-  padding: 1vh;
+h5.usa {
+  color: white;
+  position: relative;
+  bottom: 30%;
+  left: 25%;
 }
 
 @media (min-width: 768px) {
   .destination-text {
     padding-right: 7vh;
   }
+  .index-gallery img {
+    width: 12vh;
+    height: 17vh;
+    }
+
+    #san-francisco {
+      left: 15%;
+    }
+    h5.usa {
+      left: 30%;
+}
 }
 @media (min-width: 992px) {
   .destination-text {
     padding-right: 10vh;
   }
+  .index-gallery img {
+    width: 20vh;
+    height: 22vh;
+    }
+    #san-francisco {
+      left: 25%;
+    }
+    h5.usa {
+      left: 35%;
+}
 }
 @media (min-width: 1200px) {
   .destination-tex {
     padding-right: 10vh;
   }
+}
+
+.video{
+  margin:2vh;
+  margin-left:0vh;
 }
