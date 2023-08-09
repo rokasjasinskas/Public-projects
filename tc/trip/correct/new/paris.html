@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel agency: Homepage</title>
+    <meta name="description" content="Travel agency: Homepage" />
+    <meta name="author" content="You" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="./css/header.css" rel="stylesheet" type="text/css" />
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/gallery.css" rel="stylesheet" type="text/css" />
+    <link href="./css/country.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header id="header" class="page-header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <form class="input-group">
+            <img src="./icons/search-white.svg" alt="Search" />
+            <input
+              class="form-control"
+              id="search-field"
+              name="query"
+              placeholder="Search"
+              type="text"
+            />
+          </form>
+          <div id="logo">
+            <img src="./icons/globe-white.svg" alt="Logo" />
+          </div>
+          <div id="menu">
+            <nav class="d-none d-md-block">
+              <a href="#destinations">Destinations</a>
+              <a href="#" class="btn btn-light">Contact</a>
+            </nav>
+            <img
+              class="menu-bars d-md-none"
+              src="./icons/three-bars-white.svg"
+              alt="Menu"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="destinations">
+      <div class="container-md">
+
+        <div class="return">
+            <a href="destinations.html">
+                    <button type="back" class="btn btn-warning">Return</button>
+                </a></div>
+        <h2>Paris</h2>
+        <div class="gallery-single">
+            <div class="destination-single">
+            <img id="paris1" src="https://plus.unsplash.com/premium_photo-1666283181610-b95ee7e55465?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" title="Paris">
+        </div>
+        <div class="description country-description">
+          <p>
+            Lorem ipsum dolor sit amet, adventure travel mountains, beach
+            resorts and cultural experiences await. Pack your bags and get ready
+            to <strong>explore the world</strong>! From bustling cities to
+            tranquil countryside getaways, there's a destination for every type
+            of traveler.
+          </p>
+          <p>
+            If you're a culture lover, the <em>historic cities</em> of London
+            and Edinburgh should be at the top of your list. Walk the streets of
+            London's West End, marvel at the architecture of Big Ben and
+            Buckingham Palace, and take in a show at the Globe Theatre. In
+            Edinburgh, visit the Royal Mile, explore the castle, and sample the
+            local fare at the city's world-famous restaurants.
+          </p>
+          <p>
+            For those seeking a bit of relaxation,
+            <strong>head to the spas</strong> and resorts of the English
+            countryside. Indulge in a luxurious massage or take a dip in a hot
+            spring. If you're looking for something a bit more active, strap on
+            your hiking boots and tackle the rugged trails of the coastal
+            cliffs.
+          </p>
+        </div>
+
+        <div id="book">
+            <div class="container-md wrap">
+              <div class="badge tagline">Year long travel</div>
+              <h2>
+                Book your next<br />
+                destination
+              </h2>
+              <form>
+                <div class="destination-select">
+                  <label><b>Destination</b></label>
+                  <select
+                    aria-label="Select destination"
+                    class="form-select"
+                    id="book-field-destination"
+                    name="destination"
+                    required
+                  >
+                    <option value="" disabled selected>Destination</option>
+                    <option value="paris" selected>Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="san-francisco">San Francisco</option>
+                  </select>
+                </div>
+                <div class="from">
+                  <label for="book-field-from"><b>From</b></label>
+                  <input
+                    aria-label="From"
+                    class="form-control"
+                    id="book-field-from"
+                    name="from"
+                    required
+                    type="date"
+                  />
+                </div>
+                <div class="to">
+                  <label><b>To</b></label>
+                  <input
+                    aria-label="To"
+                    class="form-control"
+                    id="book-field-to"
+                    name="to"
+                    required
+                    type="date"
+                  />
+                </div>
+                <div class="guests">
+                  <label><b>Guests</b></label>
+                  <input
+                    aria-label="Enter a number of guests"
+                    class="form-control"
+                    id="book-field-guests"
+                    max="10"
+                    min="1"
+                    name="guests"
+                    required
+                    type="number"
+                    value="2"
+                  />
+                </div>
+                <div class="submit">
+                  <button class="btn btn-warning" title="Search" type="submit">
+                    <img src="./icons/arrow-right.svg" alt="arrow" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        
+    </section>
+    <footer id="footer">
+      <div class="container-md">
+        <div>
+          <h3>Links</h3>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input
+              autocomplete="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required
+              type="email"
+            />
+            <button class="btn btn-success" type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Arrow" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

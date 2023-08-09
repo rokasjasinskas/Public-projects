@@ -1,0 +1,50 @@
+.destination-single {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 30px;
+}
+.destination-single img {
+  width: 240px;
+  height: 240px;
+  display: block; /* Added this to remove any inline-level spacing */
+  margin: auto; /* Center the image both horizontally and vertically */
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.destination-single img:hover {
+  opacity: 0.8;
+  border-color: #f8c32e;
+  border-width: 0.1rem; /* Add this line to set the border width */
+  border-style: solid; /* Ensure a border style is defined */
+}
+
+.country-description,
+.return {
+  margin-top: 20px;
+}
+
+.return {
+}
+
+@media screen and (min-width: 576px) {
+  .destination-single img {
+    width: 340px;
+    height: 340px;
+  }
+  .country-description,
+  .return {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .destination-single img {
+    width: 440px;
+    height: 440px;
+  }
+  .country-description,
+  .return {
+    margin-top: 40px;
+  }
+}

@@ -1,4 +1,47 @@
-#header-destination {
+.page-header {
   /* make the element take up the entire height of the screen */
   height: 20vh;
+  background-position: center center;
+}
+
+.container-md .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+.gallery img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  gap: 2px;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+  border-color: #f8c32e;
+  border-width: 0.3rem; /* Add this line to set the border width */
+  border-style: solid; /* Ensure a border style is defined */
+}
+
+.container-md h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .container-md .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-md .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }

@@ -1,0 +1,28 @@
+.container h2 {
+  text-align: center;
+}
+
+.contact-form .submit button[type="submit"] {
+  border-radius: 100px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1.5rem;
+  height: calc(100% - 1.5rem);
+  width: 100%;
+}
+
+#sucess-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust this value as needed */
+}
+
+#sucess-button a {
+  display: inline-block;
+}
+
+#success,
+.contact2 {
+  height: 100vh;
+}
