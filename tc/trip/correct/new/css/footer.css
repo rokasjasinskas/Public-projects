@@ -1,24 +1,26 @@
-#footer {
-  background: var(--color-theme);
-  padding: 4rem 0;
+footer {
+  background-color: #ffc107;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-#footer nav {
-  color: var(--text-black);
-  display: flex;
-  flex-flow: column nowrap;
+footer nav a {
+  display: block;
+  color: black;
 }
 
-#footer nav ul {
-  list-style: none;
-  padding: 0;
+footer nav {
+  margin-bottom: 20px;
 }
 
-#footer nav a {
-  color: inherit;
-}
+@media screen and (min-width: 576px) {
+  footer > .container-md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-#footer nav a:hover {
-  /* bootstrap link color */
-  color: var(--bs-link-hover-color);
+  footer nav {
+    margin-bottom: 0;
+  }
 }

@@ -1,0 +1,4 @@
+#header-destination {
+  /* make the element take up the entire height of the screen */
+  height: 20vh;
+}
