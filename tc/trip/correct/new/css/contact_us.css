@@ -1,7 +1,3 @@
-.container h2 {
-  text-align: center;
-}
-
 .contact-form .submit button[type="submit"] {
   border-radius: 100px;
   border: 0;
@@ -23,6 +19,22 @@
 }
 
 #success,
-.contact2 {
+.contact2,
+.about {
   height: 100vh;
+}
+.video iframe {
+  width: 100%;
+  height: 540px;
+}
+
+@media screen and (max-width: 576px) {
+  #success,
+  .contact2 {
+    height: 110vh;
+  }
+  .video iframe {
+    width: 100%;
+    height: 240px;
+  }
 }

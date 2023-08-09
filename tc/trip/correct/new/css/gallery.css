@@ -28,10 +28,6 @@
   border-style: solid; /* Ensure a border style is defined */
 }
 
-.container-md h2 {
-  text-align: center;
-}
-
 @media screen and (min-width: 576px) {
   .container-md .gallery {
     grid-template-columns: repeat(3, 1fr);
