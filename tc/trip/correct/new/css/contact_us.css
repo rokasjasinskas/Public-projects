@@ -31,7 +31,8 @@
 @media screen and (max-width: 576px) {
   #success,
   .contact2 {
-    min-width: 100vh;
+    min-width: 50vh;
+    min-height: 100vh;
   }
   .video iframe {
     width: 100%;
