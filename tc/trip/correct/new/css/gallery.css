@@ -28,6 +28,8 @@
   border-style: solid; /* Ensure a border style is defined */
 }
 
+/* add max widht 767px */
+
 @media screen and (min-width: 576px) {
   .container-md .gallery {
     grid-template-columns: repeat(3, 1fr);
