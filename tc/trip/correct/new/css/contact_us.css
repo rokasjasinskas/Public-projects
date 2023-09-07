@@ -25,6 +25,7 @@
 }
 .video iframe {
   width: 100%;
+  /* double check regarding video ratio for height*/
   height: 540px;
 }
 
