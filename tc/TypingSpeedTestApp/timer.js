@@ -1,38 +1,28 @@
-document
-  .getElementById("fetch-text-button")
-  .addEventListener("click", async () => {
-    function startTimer(durationInSeconds) {
-      let timerElement = document.getElementById("timer"); // Assuming you have an element with id "timer" to display the timer
-      let secondsRemaining = durationInSeconds;
+var countdownStarted = false; // Flag to track if countdown has started
+var countdownInterval; // Store the countdown interval ID
 
-      // Function to update the timer
-      function updateTimer() {
-        if (secondsRemaining <= 0) {
-          clearInterval(timerInterval); // Stop the timer when it reaches zero
-          timerElement.textContent = "Time's up!";
-          logTimerResults(durationInSeconds); // Log timer results when it's done
-        } else {
-          const minutes = Math.floor(secondsRemaining / 60);
-          const seconds = secondsRemaining % 60;
-          timerElement.textContent = `${minutes
-            .toString()
-            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-          secondsRemaining--;
-        }
+export function countdown() {
+  if (!countdownStarted) {
+    countdownStarted = true; // Set the flag to true so that the countdown starts only once
+
+    var minutesElement = document.getElementById("minutes");
+    var secondsElement = document.getElementById("seconds");
+
+    var totalSeconds = 60;
+
+    countdownInterval = setInterval(function () {
+      var minutes = Math.floor(totalSeconds / 60);
+      var seconds = totalSeconds % 60;
+
+      // Update the HTML elements with the current countdown values
+      minutesElement.textContent = minutes.toString().padStart(2, "0");
+      secondsElement.textContent = seconds.toString().padStart(2, "0");
+
+      totalSeconds--;
+
+      if (totalSeconds < 0) {
+        clearInterval(countdownInterval); // Stop the countdown when it reaches zero
       }
-
-      // Initial update
-      updateTimer();
-
-      // Start the timer and update it every 1000 milliseconds (1 second)
-      const timerInterval = setInterval(updateTimer, 1000);
-    }
-
-    // Function to log timer results
-    function logTimerResults(durationInSeconds) {
-      console.log(`Timer completed after ${durationInSeconds} seconds`);
-    }
-
-    // Example: Start a timer for 60 seconds
-    startTimer(2);
-  });
+    }, 1000); // Update every 1 second
+  }
+}
