@@ -7,13 +7,19 @@
     <meta name="description" content="Index" />
     <meta name="author" content="You" />
     <script>
-      function hello() {
-        document.querySelector("h1").innerHTML = "Goodbey";
-      }
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function () {
+          const name = document.querySelector("#name").value;
+          alert(`Hello, ${name}!`);
+        };
+      });
     </script>
   </head>
   <body>
-    <h1>Week5</h1>
-    <button onclick="hello()">Click Here</button>
+    <h1>Hello!</h1>
+    <form>
+      <input autofocus id="name" placeholder="Name" type="text" />
+      <input type="submit" />
+    </form>
   </body>
 </html>
