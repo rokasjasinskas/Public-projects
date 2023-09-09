@@ -1,0 +1,55 @@
+/* Global styles */
+body {
+  font-family: "Garamond", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typing container styles */
+.typing-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* Results box styles */
+.results-box {
+  margin-top: 20px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+  display: block;
+  margin: 10px auto; /* Center horizontally */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
