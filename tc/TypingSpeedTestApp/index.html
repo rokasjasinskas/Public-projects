@@ -9,30 +9,44 @@
     <title>Typing Speed Test</title>
     <link rel="stylesheet" type="text/css" href="TypingSpeedTestApp.css" />
   </head>
-
   <body>
-    <div class="header">
-      <h1>Typing Speed Test</h1>
-    </div>
     <div class="container">
-      <div id="typing-container" class="typing-box">
-        <p id="text-to-type" class="h4">Text will appear here</p>
-        <input
-          type="text"
-          id="user-input"
-          class="form-control mb-3"
-          placeholder="Start typing..."
-        />
-        <div id="results" class="results-box">
-          <p>Time Left: <span id="timer" class="fw-bold">60</span> seconds</p>
-          <p>Speed: <span id="speed" class="fw-bold">0</span> WPM</p>
-          <p>Accuracy: <span id="accuracy" class="fw-bold">0</span>%</p>
+      <div class="header">
+        <h1>Typing Speed Test</h1>
+      </div>
+      <div class="typing-box-with-timer"></div>
+      <div class="typing-box">
+        <div id="timer-clock" class="timer">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="typing-text-box">
+          <p class="h4" id="text-to-type">Text will appear here</p>
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="Start typing..."
+            id="user-input"
+          />
+        </div>
+        <div class="start-test-button">
+          <button class="btn btn-primary mt3" id="fetch-text-button">
+            Start Test
+          </button>
+        </div>
+        <div class="results-box">
+          <h3 id="results-text" class="results-text">Results</h3>
+          <p>Speed: <span class="fw-bold" id="speed">0</span> WPM</p>
+          <p>Accuracy: <span class="fw-bold" id="accuracy">0</span>%</p>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-primary mt-3" id="reset-button">Reset</button>
         </div>
       </div>
-      <div class="text-center">
-        <button id="reset-button" class="btn btn-primary mt-3">Reset</button>
-      </div>
     </div>
-    <script src="TypingSpeedTestApp.js"></script>
+    <script src="main.js"></script>
+    <script src="text.js"></script>
+    <script src="timer.js"></script>
   </body>
 </html>
