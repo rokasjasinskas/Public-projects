@@ -2,6 +2,16 @@ export let userInput = document.getElementById("user-input");
 export let activeLetterIndex = 0; // To keep track of the currently active letter
 export const resetButton = document.getElementById("reset-button");
 
+// Flag to track whether the timer has ended
+let timerEnded = false;
+
+// Event listener to handle the custom timer ended event
+document.addEventListener("timerEnded", () => {
+  timerEnded = true;
+  userInput.readOnly = true;
+  setActiveLetter();
+});
+
 // Function to add blue shadow to the active letter
 export function setActiveLetter() {
   // Get the text from the HTML element with id "text-to-type"
@@ -59,6 +69,7 @@ export function updateFocusLine() {
 export function resetInputField() {
   userInput.value = ""; // Set the value to an empty string
   activeLetterIndex = 0; // Reset the active letter index
+  userInput.readOnly = false; // Make the input field active again
   setActiveLetter();
 }
 

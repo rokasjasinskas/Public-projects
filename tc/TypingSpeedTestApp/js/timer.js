@@ -1,5 +1,11 @@
-var countdownStarted = false; // Flag to track if countdown has started
-var countdownInterval; // Store the countdown interval ID
+const initialTotalSeconds = 60; // Set the initial totalSeconds value
+
+let countdownStarted = false; // Flag to track if countdown has started
+let countdownInterval; // Store the countdown interval ID
+export let totalSeconds = initialTotalSeconds;
+
+// Create a custom event for timer ending
+export const timerEndedEvent = new Event("timerEnded");
 
 export function countdown() {
   if (!countdownStarted) {
@@ -8,11 +14,9 @@ export function countdown() {
     var minutesElement = document.getElementById("minutes");
     var secondsElement = document.getElementById("seconds");
 
-    var totalSeconds = 60;
-
     countdownInterval = setInterval(function () {
-      var minutes = Math.floor(totalSeconds / 60);
-      var seconds = totalSeconds % 60;
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
 
       // Update the HTML elements with the current countdown values
       minutesElement.textContent = minutes.toString().padStart(2, "0");
@@ -22,6 +26,8 @@ export function countdown() {
 
       if (totalSeconds < 0) {
         clearInterval(countdownInterval); // Stop the countdown when it reaches zero
+        const timerEndedEvent = new Event("timerEnded");
+        document.dispatchEvent(timerEndedEvent); // Dispatch the custom "timerEnded" event
       }
     }, 1000); // Update every 1 second
   }
@@ -30,6 +36,7 @@ export function countdown() {
 export function resetTimer() {
   clearInterval(countdownInterval); // Stop the countdown if running
   countdownStarted = false; // Reset the countdownStarted flag
+  totalSeconds = initialTotalSeconds;
   document.getElementById("minutes").textContent = "00"; // Reset the minutes display
   document.getElementById("seconds").textContent = "00"; // Reset the seconds display
 }

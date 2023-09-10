@@ -23,22 +23,24 @@
         <div id="timer-clock" class="timer">
           <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
-
+        <div class="centered-results-box">
+          <div class="results-box">
+            <h3 id="results-text" class="results-text">Current results:</h3>
+            <p>Speed: <span class="fw-bold" id="speed">0</span> WPM</p>
+            <p>Accuracy: <span class="fw-bold" id="accuracy">0</span>%</p>
+          </div>
+        </div>
         <div class="typing-text-box">
           <p class="h4" id="text-to-type">Text will appear here</p>
-          <input
-            type="text"
-            class="form-control mb-3"
-            placeholder="Start typing..."
-            id="user-input"
-          />
+          <div class="input-text-field">
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Start typing..."
+              id="user-input"
+            />
+          </div>
         </div>
-        <div class="results-box">
-          <h3 id="results-text" class="results-text">Results</h3>
-          <p>Speed: <span class="fw-bold" id="speed">0</span> WPM</p>
-          <p>Accuracy: <span class="fw-bold" id="accuracy">0</span>%</p>
-        </div>
-
         <div class="text-center">
           <button class="btn btn-primary mt-3" id="reset-button">Reset</button>
         </div>
@@ -47,7 +49,7 @@
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/text.js"></script>
     <script type="module" src="./js/timer.js"></script>
-    <script type="module" src="./js/input.js"></script>
     <script type="module" src="./js/metrics.js"></script>
+    <script type="module" src="./js/reset-with-keybord.js"></script>
   </body>
 </html>

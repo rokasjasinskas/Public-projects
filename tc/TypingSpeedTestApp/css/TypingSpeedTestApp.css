@@ -35,9 +35,21 @@ body {
   text-align: left;
 }
 
-/* Results box styles */
-.results-box,
+/* typin-text-box styles */
+
 .typing-text-box {
+  text-align: center; /* Center align the content */
+  background-color: lightblue; /* Set the background color to light blue */
+  border-radius: 10px; /* Apply rounded corners */
+  padding: 10px; /* Add some padding for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight box shadow */
+}
+
+.centered-results-box {
+  text-align: center; /* Center align the content */
+}
+
+.results-box {
   padding: 10px;
   border-radius: 5px;
 }
@@ -99,4 +111,20 @@ body {
 }
 .user-input-letter {
   text-shadow: 0 0 4px blue; /* Add a blue shadow to user input letters */
+}
+
+.form-control {
+  width: 100%; /* Set the width to 100% of its container */
+  padding: 10px; /* Add padding to the input field */
+  font-size: 16px; /* Set the font size */
+  border: 1px solid #ccc; /* Add a border with a color */
+  border-radius: 4px; /* Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in the input's total width */
+}
+
+/* Style the input field when it's focused */
+.form-control:focus {
+  border-color: #007bff; /* Change the border color when focused */
+  outline: none; /* Remove the outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow when focused */
 }
