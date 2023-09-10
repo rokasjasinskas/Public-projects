@@ -32,3 +32,5 @@ export async function fetchAndDisplayPoem() {
     console.error("Error:", error.message);
   }
 }
+
+window.fetchAndDisplayPoem = fetchAndDisplayPoem;

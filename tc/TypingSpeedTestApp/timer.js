@@ -26,3 +26,10 @@ export function countdown() {
     }, 1000); // Update every 1 second
   }
 }
+
+export function resetTimer() {
+  clearInterval(countdownInterval); // Stop the countdown if running
+  countdownStarted = false; // Reset the countdownStarted flag
+  document.getElementById("minutes").textContent = "00"; // Reset the minutes display
+  document.getElementById("seconds").textContent = "00"; // Reset the seconds display
+}

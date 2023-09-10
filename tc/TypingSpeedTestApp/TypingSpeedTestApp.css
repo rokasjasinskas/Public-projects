@@ -97,3 +97,6 @@ body {
 .incorrect-letter {
   color: red; /* Change the color to red for incorrect letters */
 }
+.user-input-letter {
+  text-shadow: 0 0 4px blue; /* Add a blue shadow to user input letters */
+}
