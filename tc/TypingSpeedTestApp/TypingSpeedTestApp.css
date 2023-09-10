@@ -89,3 +89,11 @@ body {
 #seconds {
   padding: 0 5px; /* Add spacing between minutes and seconds */
 }
+
+.correct-letter {
+  color: green; /* Change the color to green for correct letters */
+}
+
+.incorrect-letter {
+  color: red; /* Change the color to red for incorrect letters */
+}

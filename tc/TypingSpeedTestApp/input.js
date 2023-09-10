@@ -1,34 +1,44 @@
-// Select the text element and input element
-const textToTypeElement = document.getElementById("text-to-type");
-const userInputElement = document.getElementById("user-input");
+function checkUserInput() {
+  // Get the text from the HTML element with id "text-to-type"
+  const textToTypeElement = document.getElementById("text-to-type");
+  const textToType = textToTypeElement.textContent.trim(); // Remove leading/trailing white spaces
 
-// Event listener for user input
-userInputElement.addEventListener("input", () => {
-  const textToType = textToTypeElement.textContent;
-  const userInput = userInputElement.value;
+  // Get the user's input from the input field
+  const userInput = document.getElementById("user-input");
+  const userInputValue = userInput.value.trim(); // Remove leading/trailing white spaces
 
-  // Loop through each character in the text and compare it with the user's input
+  // Create a new HTML element to display the text with color-coded letters
+  const textWithColors = document.createElement("span");
+
+  // Check each letter of the user's input
   for (let i = 0; i < textToType.length; i++) {
-    const char = textToType[i];
-    const userChar = userInput[i];
+    const userLetter = userInputValue[i];
+    const expectedLetter = textToType[i];
 
-    // Create a span element for each character
-    const charSpan = document.createElement("span");
-    charSpan.textContent = char;
+    // Create a new span element for each letter
+    const letterSpan = document.createElement("span");
 
-    // Check correctness and apply CSS styles
-    if (userChar === undefined) {
-      // User hasn't typed this character yet
-      charSpan.style.color = "black";
-    } else if (char === userChar) {
-      // Correctly typed character
-      charSpan.style.color = "green";
+    if (userLetter === expectedLetter) {
+      // User entered the correct letter, apply green color
+      console.log("Correct letter:", userLetter);
+
+      letterSpan.textContent = userLetter;
+      letterSpan.classList.add("correct-letter");
     } else {
-      // Incorrectly typed character
-      charSpan.style.color = "red";
+      console.log("Incorrect letter:", userLetter);
+
+      // User entered an incorrect letter, apply red color
+      letterSpan.textContent = expectedLetter; // Show the expected letter in red
+      letterSpan.classList.add("incorrect-letter");
     }
 
-    // Append the span element to the text element
-    textToTypeElement.appendChild(charSpan);
+    // Append the letter span to the textWithColors element
+    textWithColors.appendChild(letterSpan);
   }
-});
+
+  // Replace the content of the "text-to-type" element with the colored letters
+  textToTypeElement.innerText = textWithColors.innerText;
+}
+
+// Add an event listener to trigger the check when the user types
+document.getElementById("user-input").addEventListener("input", checkUserInput);

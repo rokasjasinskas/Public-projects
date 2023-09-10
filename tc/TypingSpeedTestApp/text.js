@@ -28,8 +28,6 @@ export async function fetchAndDisplayPoem() {
       // Set the new text content
       textToTypeElement.textContent = combinedWords;
     }
-
-    // Optionally, you can perform other actions related to the text here.
   } catch (error) {
     console.error("Error:", error.message);
   }
