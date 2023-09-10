@@ -1,5 +1,6 @@
 export let userInput = document.getElementById("user-input");
 export let activeLetterIndex = 0; // To keep track of the currently active letter
+export const resetButton = document.getElementById("reset-button");
 
 // Function to add blue shadow to the active letter
 export function setActiveLetter() {
@@ -86,11 +87,3 @@ userInput.addEventListener("keydown", (event) => {
     updateFocusLine();
   }
 });
-
-// Add an event listener to the reset button
-const resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click", resetInputField);
-
-// Initial call to set the active letter and focus line
-setActiveLetter();
-updateFocusLine();

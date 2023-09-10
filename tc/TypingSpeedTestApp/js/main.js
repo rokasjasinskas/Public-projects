@@ -4,8 +4,9 @@ import {
   setActiveLetter,
   updateFocusLine,
   resetInputField,
-  userInput,
   activeLetterIndex,
+  userInput,
+  resetButton,
 } from "./input.js";
 
 //Text------------------------------------------------------------
@@ -25,32 +26,9 @@ document.getElementById("reset-button").addEventListener("click", function () {
 });
 
 //Input------------------------------------------------------------
-// Add an event listener to update the active letter when the input field is focused
-userInput.addEventListener("focus", () => {
-  activeLetterIndex = Math.min(activeLetterIndex, userInput.value.length - 1);
-  setActiveLetter();
-});
-// Add an event listener to trigger the check when the user types
-userInput.addEventListener("input", () => {
-  // Increment the active letter index when the user types
-  activeLetterIndex++;
-  updateFocusLine();
-});
-// Add an event listener to handle the backspace key
-userInput.addEventListener("keydown", (event) => {
-  if (event.key === "Backspace") {
-    // If the active letter index is greater than 0, decrement it
-    if (activeLetterIndex > 0) {
-      activeLetterIndex--;
-    } else {
-      userInput.focus(); // Set the focus back to the input field
-    }
-    updateFocusLine();
-  }
-});
-// Add an event listener to the reset button
-const resetButton = document.getElementById("reset-button");
-resetButton.addEventListener("click", resetInputField);
 // Initial call to set the active letter and focus line
+// This function hangles input tracking
 setActiveLetter();
 updateFocusLine();
+// Add an event listener to the reset button
+resetButton.addEventListener("click", resetInputField);
