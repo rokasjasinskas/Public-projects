@@ -22,7 +22,8 @@ document.addEventListener("keydown", (event) => {
 
 // Add event listener for the "Esc" key
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
+  if (event.key === "") {
+    event.preventDefault();
     resetTest();
   }
 });

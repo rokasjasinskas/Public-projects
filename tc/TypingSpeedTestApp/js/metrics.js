@@ -2,7 +2,7 @@ import { totalSeconds } from "./timer.js";
 import { userInput, resetButton } from "./input.js";
 
 // Function to calculate typing metrics
-function calculateTypingMetrics() {
+export function calculateTypingMetrics() {
   // Get the expected text to type from the HTML
   const textToTypeElement = document.getElementById("text-to-type");
   let textToType = textToTypeElement.textContent;
@@ -65,11 +65,8 @@ function calculateTypingMetrics() {
   });
 }
 
-// Call the function to start tracking typing metrics
-calculateTypingMetrics();
-
 // Function to reset the results display
-function resetResultsDisplay() {
+export function resetResultsDisplay() {
   // Get the HTML elements for speed and accuracy
   const speedElement = document.getElementById("speed");
   const accuracyElement = document.getElementById("accuracy");
@@ -78,9 +75,3 @@ function resetResultsDisplay() {
   speedElement.textContent = "0";
   accuracyElement.textContent = "0"; // Set accuracy to 0% initially
 }
-
-// Add a click event listener to the reset button
-resetButton.addEventListener("click", () => {
-  // Call the function to reset the results display
-  resetResultsDisplay();
-});

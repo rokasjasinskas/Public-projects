@@ -8,6 +8,16 @@ import {
   userInput,
   resetButton,
 } from "./input.js";
+import { calculateTypingMetrics, resetResultsDisplay } from "./metrics.js";
+
+//Metrics
+// Call the function to start tracking typing metrics
+calculateTypingMetrics();
+// Add a click event listener to the reset button
+resetButton.addEventListener("click", () => {
+  // Call the function to reset the results display
+  resetResultsDisplay();
+});
 
 //Text------------------------------------------------------------
 // Call the fetchAndDisplayPoem function when the page loads
