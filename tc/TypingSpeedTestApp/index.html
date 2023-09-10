@@ -25,12 +25,12 @@
         </div>
         <div class="centered-results-box">
           <div class="results-box">
-            <h3 id="results-text" class="results-text">Current results:</h3>
+            <h3 id="results-text" class="results-text">Current results</h3>
             <p>Speed: <span class="fw-bold" id="speed">0</span> WPM</p>
             <p>Accuracy: <span class="fw-bold" id="accuracy">0</span>%</p>
           </div>
         </div>
-        <div class="typing-text-box">
+        <div class="typing-text-box" id="typing-text-box-color">
           <p class="h4" id="text-to-type">Text will appear here</p>
           <div class="input-text-field">
             <input
@@ -41,10 +41,13 @@
             />
           </div>
         </div>
+        <div class="text-center">
+          <button class="btn btn-primary mt-3" id="reset-button">Reset</button>
+        </div>
         <div class="centered-previous-result-box">
           <div class="previous-results-box">
             <h3 id="previous-results-text" class="previous-results-text">
-              Previous results:
+              Previous results
             </h3>
             <table id="previous-results-table" class="table">
               <thead>
@@ -60,9 +63,6 @@
               </tbody>
             </table>
           </div>
-        </div>
-        <div class="text-center">
-          <button class="btn btn-primary mt-3" id="reset-button">Reset</button>
         </div>
       </div>
     </div>

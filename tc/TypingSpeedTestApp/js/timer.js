@@ -40,3 +40,10 @@ export function resetTimer() {
   document.getElementById("minutes").textContent = "00"; // Reset the minutes display
   document.getElementById("seconds").textContent = "00"; // Reset the seconds display
 }
+
+function endTimer() {
+  // ... (other timer end logic)
+
+  // Dispatch the custom "timerEnded" event
+  document.dispatchEvent(timerEndedEvent);
+}

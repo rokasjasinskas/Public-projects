@@ -6,6 +6,11 @@ body {
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
+  background-image: url("./background.jpg");
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
 }
 
 /* Container styles using CSS Grid */
@@ -23,12 +28,13 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
+  border-radius: 5px;
 }
 
 /* Typing container styles */
 .typing-box {
   display: grid;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -39,7 +45,12 @@ body {
 
 .typing-text-box {
   text-align: center; /* Center align the content */
-  background-color: lightblue; /* Set the background color to light blue */
+  background-color: rgba(
+    142,
+    210,
+    233,
+    0.9
+  ); /* Set the background color to light blue */
   border-radius: 10px; /* Apply rounded corners */
   padding: 10px; /* Add some padding for spacing */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight box shadow */
@@ -89,7 +100,7 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
   text-align: center;
-  background-color: #007bff;
+  background-color: rgba(142, 210, 233, 1);
   color: white; /* Text color */
   padding: 5px 10px; /* Padding for spacing */
   border-radius: 10px; /* Rounded corners */
@@ -120,6 +131,7 @@ body {
   border: 1px solid #ccc; /* Add a border with a color */
   border-radius: 4px; /* Add rounded corners */
   box-sizing: border-box; /* Include padding and border in the input's total width */
+  height: 60px;
 }
 
 /* Style the input field when it's focused */
@@ -127,4 +139,48 @@ body {
   border-color: #007bff; /* Change the border color when focused */
   outline: none; /* Remove the outline */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow when focused */
+}
+
+.centered-previous-result-box {
+  text-align: center; /* Center align the content horizontally */
+}
+
+#previous-results-table {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+#previous-results-table th {
+  background-color: rgba(142, 210, 233, 0.9);
+  color: #black;
+  padding: 10px;
+  border-radius: 8px; /* Add rounded corners */
+}
+
+#previous-results-table td,
+#previous-results-table th {
+  border: 1px solid rgba(142, 210, 233, 0.9); /* Add a border to table cells */
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px; /* Add rounded corners */
+}
+
+#previous-results-table tbody tr:hover {
+  background-color: #cce5ff; /* Hovered row background color */
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .form-control {
+    height: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 700px;
+  }
 }
