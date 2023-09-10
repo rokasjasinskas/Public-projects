@@ -4,11 +4,10 @@ import {
   setActiveLetter,
   updateFocusLine,
   resetInputField,
-  activeLetterIndex,
-  userInput,
   resetButton,
 } from "./input.js";
 import { calculateTypingMetrics, resetResultsDisplay } from "./metrics.js";
+import { restartTest } from "./reset-with-keyboard.js";
 
 //Metrics
 // Call the function to start tracking typing metrics
@@ -42,3 +41,22 @@ setActiveLetter();
 updateFocusLine();
 // Add an event listener to the reset button
 resetButton.addEventListener("click", resetInputField);
+
+//Reset with keybord
+
+// Add event listener for the "Enter" key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    restartTest();
+    console.log("enter");
+  }
+});
+
+// Add event listener for the "Esc" key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    restartTest();
+    console.log("esc");
+  }
+});

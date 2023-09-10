@@ -41,6 +41,26 @@
             />
           </div>
         </div>
+        <div class="centered-previous-result-box">
+          <div class="previous-results-box">
+            <h3 id="previous-results-text" class="previous-results-text">
+              Previous results:
+            </h3>
+            <table id="previous-results-table" class="table">
+              <thead>
+                <tr>
+                  <th>Attempt</th>
+                  <th>Speed (WPM)</th>
+                  <th>Accuracy (%)</th>
+                  <th>Improvement</th>
+                </tr>
+              </thead>
+              <tbody id="previous-results-table-body">
+                <!-- Results will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div class="text-center">
           <button class="btn btn-primary mt-3" id="reset-button">Reset</button>
         </div>
@@ -50,6 +70,7 @@
     <script type="module" src="./js/text.js"></script>
     <script type="module" src="./js/timer.js"></script>
     <script type="module" src="./js/metrics.js"></script>
+    <script type="module" src="./js/previous-metrics.js"></script>
     <script type="module" src="./js/reset-with-keyboard.js"></script>
   </body>
 </html>
