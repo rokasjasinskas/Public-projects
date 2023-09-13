@@ -1,0 +1,24 @@
+{
+  "name": "installandusepackage",
+  "version": "1.0.0",
+  "description": "Test for Install And Use a Packages in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "None"
+  },
+  "repository": {
+    "type": "git",
+    "url": "None"
+  },
+  "keywords": [
+    "Test",
+    "Install",
+    "Packages",
+    "JavaScript"
+  ],
+  "author": "Rokas",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
