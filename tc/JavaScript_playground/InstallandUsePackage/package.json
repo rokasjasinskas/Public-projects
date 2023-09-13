@@ -19,6 +19,8 @@
   "author": "Rokas",
   "license": "ISC",
   "dependencies": {
+    "date-fns": "^2.30.0",
     "lodash-es": "^4.17.21"
-  }
+  },
+  "type": "module"
 }
