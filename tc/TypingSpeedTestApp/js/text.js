@@ -1,5 +1,6 @@
 export async function fetchAndDisplayPoem() {
   try {
+    // debugger;
     const response = await fetch("https://poetrydb.org/random/1");
     if (!response.ok) {
       throw new Error("Failed to fetch data from PoetryDB");
