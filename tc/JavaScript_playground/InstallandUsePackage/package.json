@@ -4,7 +4,8 @@
   "description": "Learning file",
   "main": "index.js",
   "scripts": {
-    "test": "None"
+    "test": "None",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
