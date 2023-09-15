@@ -1,14 +1,5 @@
-import { format } from "date-fns";
-import { intersection } from "lodash-es";
+import { formatDistanceToNow } from "date-fns";
 
-const date = new Date();
-const dateFormatted = format(date, "yyyy.MM.dd");
+const result = formatDistanceToNow(new Date(2021, 11, 25, 12, 0));
 
-console.log("dateFormatted", dateFormatted);
-
-const words = ["hello", "earth", "hello", "mars"];
-const planets = ["venus", "earth", "mars"];
-
-const planetsMentioned = intersection(words, planets);
-
-console.log("planetsMentioned", planetsMentioned);
+console.log(result);

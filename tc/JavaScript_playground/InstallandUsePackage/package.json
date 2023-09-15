@@ -1,7 +1,7 @@
 {
   "name": "installandusepackage",
   "version": "1.0.0",
-  "description": "Test for Install And Use a Packages in JavaScript",
+  "description": "Learning file",
   "main": "index.js",
   "scripts": {
     "test": "None"
@@ -11,15 +11,13 @@
     "url": "None"
   },
   "keywords": [
-    "Test",
-    "Install",
-    "Packages",
-    "JavaScript"
+    "None"
   ],
   "author": "Rokas",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^2.30.0",
+    "lodash": "^4.17.21",
     "lodash-es": "^4.17.21"
   },
   "type": "module"
