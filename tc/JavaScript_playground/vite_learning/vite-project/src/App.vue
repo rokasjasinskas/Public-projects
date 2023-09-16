@@ -1,6 +1,8 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import { counter, setCount } from "./components/counter";
+import HelloWorld from "./components/HelloWorld/index.vue";
+import { useCounter } from "./composables/useCounter";
+
+const { counter, setCount } = useCounter();
 </script>
 
 <template>
