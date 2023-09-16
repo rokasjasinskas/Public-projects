@@ -11,8 +11,8 @@ export function countdown() {
   if (!countdownStarted) {
     countdownStarted = true; // Set the flag to true so that the countdown starts only once
 
-    var minutesElement = document.getElementById("minutes");
-    var secondsElement = document.getElementById("seconds");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
 
     countdownInterval = setInterval(function () {
       const minutes = Math.floor(totalSeconds / 60);
