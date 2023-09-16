@@ -1,5 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import { counter, setCount } from "./components/counter";
 </script>
 
 <template>
@@ -12,6 +13,16 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <h3>{{ counter }}</h3>
+  <div>
+    <button @click="setCount(1)" id="increment" type="button">
+      Increment +1
+    </button>
+    <button @click="setCount(-1)" id="decrement" type="button">
+      Decrement -1
+    </button>
+    <button @click="counter = 0" id="reset" type="button">Reset</button>
+  </div>
 </template>
 
 <style scoped>
