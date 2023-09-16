@@ -1,29 +1,29 @@
-const cells = document.querySelectorAll("[data-cell]");
-const restartButton = document.getElementById("restart-btn");
-const winnerMessage = document.getElementById("winner-message");
-const aiButton = document.getElementById("ai-btn");
+const cells = document.querySelectorAll('[data-cell]');
+const restartButton = document.getElementById('restart-btn');
+const winnerMessage = document.getElementById('winner-message');
+const aiButton = document.getElementById('ai-btn');
 
 let isAITurn = false;
 let isHumanVsAI = false; // Added to track the game mode
 
-let currentPlayer = "X";
+let currentPlayer = 'X';
 let gameBoard = [
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
 ];
 let gameEnded = false;
 
@@ -31,7 +31,7 @@ let gameEnded = false;
 function makeAIMove() {
   // Find all available empty cells
   const emptyCells = [...cells].filter(
-    (cell, index) => gameBoard[index] === ""
+    (cell, index) => gameBoard[index] === ''
   );
 
   // If there are empty cells, pick a random one
@@ -46,7 +46,7 @@ function makeAIMove() {
 
       // Check for a winner or draw
       const winner = checkWinner();
-      if (winner === "draw") {
+      if (winner === 'draw') {
         winnerMessage.textContent = "It's a draw!";
         gameEnded = true;
       } else if (winner) {
@@ -54,7 +54,7 @@ function makeAIMove() {
         gameEnded = true;
       } else {
         // Switch back to human player's turn
-        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
         winnerMessage.textContent = `Player ${currentPlayer}'s turn`;
         isAITurn = false; // AI's turn is over
       }
@@ -89,8 +89,8 @@ function checkWinner() {
     }
   }
 
-  if (!gameBoard.includes("")) {
-    return "draw";
+  if (!gameBoard.includes('')) {
+    return 'draw';
   }
 
   return null;
@@ -98,14 +98,14 @@ function checkWinner() {
 
 function highlightWinner(combination) {
   for (const index of combination) {
-    cells[index].style.backgroundColor = "green";
+    cells[index].style.backgroundColor = 'green';
   }
 }
 
 function handleClick(event) {
   const cellIndex = [...cells].indexOf(event.target);
 
-  if (gameEnded || gameBoard[cellIndex] !== "") {
+  if (gameEnded || gameBoard[cellIndex] !== '') {
     return;
   }
 
@@ -114,30 +114,30 @@ function handleClick(event) {
     cells[cellIndex].textContent = currentPlayer;
 
     const winner = checkWinner();
-    if (winner === "draw") {
+    if (winner === 'draw') {
       winnerMessage.textContent = "It's a draw!";
       gameEnded = true;
     } else if (winner) {
       winnerMessage.textContent = `Player ${winner} wins!`;
       gameEnded = true;
     } else {
-      currentPlayer = currentPlayer === "X" ? "O" : "X";
+      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
       winnerMessage.textContent = `Player ${currentPlayer}'s turn`;
     }
-  } else if (currentPlayer === "X") {
+  } else if (currentPlayer === 'X') {
     // Only allow human player X to make a move in human vs AI mode
     gameBoard[cellIndex] = currentPlayer;
     cells[cellIndex].textContent = currentPlayer;
 
     const winner = checkWinner();
-    if (winner === "draw") {
+    if (winner === 'draw') {
       winnerMessage.textContent = "It's a draw!";
       gameEnded = true;
     } else if (winner) {
       winnerMessage.textContent = `Player ${winner} wins!`;
       gameEnded = true;
     } else {
-      currentPlayer = "O"; // Switch to AI's turn
+      currentPlayer = 'O'; // Switch to AI's turn
       winnerMessage.textContent = "AI's turn";
       isAITurn = true;
       makeAIMove();
@@ -146,27 +146,27 @@ function handleClick(event) {
 }
 
 function restartGame() {
-  gameBoard = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+  gameBoard = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
   gameEnded = false;
-  winnerMessage.textContent = "";
-  cells.forEach((cell) => {
-    cell.textContent = "";
-    cell.style.backgroundColor = "#eee";
+  winnerMessage.textContent = '';
+  cells.forEach(cell => {
+    cell.textContent = '';
+    cell.style.backgroundColor = '#eee';
   });
-  currentPlayer = "X";
+  currentPlayer = 'X';
 }
 
-cells.forEach((cell) => cell.addEventListener("click", handleClick));
-restartButton.addEventListener("click", restartGame);
-aiButton.addEventListener("click", toggleGameMode);
+cells.forEach(cell => cell.addEventListener('click', handleClick));
+restartButton.addEventListener('click', restartGame);
+aiButton.addEventListener('click', toggleGameMode);
 
 function toggleGameMode() {
   isHumanVsAI = !isHumanVsAI; // Toggle the game mode
   restartGame(); // Reset the game
   if (isHumanVsAI) {
-    aiButton.textContent = "Switch to Human vs. Human?";
+    aiButton.textContent = 'Switch to Human vs. Human?';
     isAITurn = false; // Reset isAITurn when switching to human vs. human mode
   } else {
-    aiButton.textContent = "Switch to Player vs. AI?";
+    aiButton.textContent = 'Switch to Player vs. AI?';
   }
 }
