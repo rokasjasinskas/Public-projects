@@ -2,14 +2,18 @@
 
 <template>
   <header>
-    <h1>Hello World!</h1>
+    <h1>{{ message }}</h1>
   </header>
 
-  <main></main>
+  <main>
+    <button type="button">Reverse Message</button>
+    <button type="button">Append !</button>
+  </main>
 </template>
 
 <style scoped>
-header {
-  text-align: center;
+button {
+  display: block;
+  margin-bottom: 1rem;
 }
 </style>
