@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const message = ref('Hello World!');
+
+function reversetext() {
+  message.value = message.value.split('').reverse().join('');
+}
+function append() {
+  message.value += '!';
+}
+</script>
 
 <template>
   <header>
@@ -6,8 +17,8 @@
   </header>
 
   <main>
-    <button type="button">Reverse Message</button>
-    <button type="button">Append !</button>
+    <button @click="reversetext" class="reverse" type="button">Reverse Message</button>
+    <button @click="append" class="append" type="button">Append !</button>
   </main>
 </template>
 
