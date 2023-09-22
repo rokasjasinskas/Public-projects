@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import GroceryItem from './components/GroceryItem.vue';
 
 const products = ref([
   {
@@ -18,8 +19,6 @@ const products = ref([
     id: '3'
   }
 ]);
-
-const groceryitem = ref();
 </script>
 
 <template>
@@ -27,9 +26,9 @@ const groceryitem = ref();
     <h1>Hello World!</h1>
   </header>
   <main>
-    <li v-for="product in products" :key="product.id">
-      {{ product.text }}
-    </li>
+    <ol>
+      <GroceryItem v-for="product in products" :key="product.id" :item="product" />
+    </ol>
   </main>
 </template>
 
