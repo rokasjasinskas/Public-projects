@@ -27,14 +27,14 @@ import HabitsList from '@/components/habits/HabitsList.vue';
 </template>
 
 <style scoped>
-header {
-  text-align: center;
-}
-
 /* Made app.container to cover background header and footer as well */
 .app-container {
+  display: grid;
   position: relative;
   min-height: 100vh;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 20% 80%;
 }
 
 .app-container::before {
@@ -64,7 +64,6 @@ main {
   grid-template-rows: repeat(5, 1fr);
   padding: 10px;
   border-radius: 10px;
-  margin-top: 40px;
   height: 80vh;
   width: 90vw;
   align-items: stretch;
@@ -92,12 +91,20 @@ main {
     height: 60vh;
     width: 60vw;
   }
+
+  .app-container {
+    grid-template-rows: 20% 60%;
+  }
 }
 
 @media (width >= 1024px) {
   .container {
     height: 50vh;
     width: 50vw;
+  }
+
+  .app-container {
+    grid-template-rows: 20% 42%;
   }
 }
 </style>
