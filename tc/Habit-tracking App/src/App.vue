@@ -1,24 +1,24 @@
-<script setup></script>
+<!-- eslint-disable import/no-unresolved -->
+<script setup>
+// eslint-disable-next-line import/no-unresolved
+import ViewContentHeader from '@/components/viewcontent/ViewContentHeader.vue';
+import ViewContent from '@/components/viewcontent/ViewContent.vue';
+import AppHeader from '@/components/appheader/AppHeader.vue';
+import DailySection from '@/components/dailysection/DailySection.vue';
+import MonthlySection from '@/components/monthlysection/MonthlySection.vue';
+import HabitsList from '@/components/habits/HabitsList.vue';
+</script>
 
 <template>
   <div class="app-container">
-    <header>
-      <h1>Hello World!</h1>
-    </header>
-
+    <AppHeader />
     <main>
       <div class="container">
-        <div class="daily"><h3>Daily</h3></div>
-        <div class="view-header"><h3>View Header</h3></div>
-        <div class="monthly"><h3>Monthly</h3></div>
-        <div class="placeholder span-4-cells"><p>View Content</p></div>
-        <div class="habits">
-          <h3 class="habits-header">HABITS:</h3>
-          <div class="habits-item">Habit Name</div>
-          <div class="habits-item">Habit Name</div>
-          <div class="habits-item">Habit Name</div>
-          <div class="habits-item">Habit Name</div>
-        </div>
+        <DailySection />
+        <ViewContentHeader />
+        <MonthlySection />
+        <ViewContent />
+        <HabitsList />
         <div>Emty1</div>
         <div>Emty2</div>
       </div>
@@ -31,22 +31,22 @@ header {
   text-align: center;
 }
 
-/* made this to cover background header and footer as well */
+/* Made app.container to cover background header and footer as well */
 .app-container {
   position: relative;
   min-height: 100vh;
 }
 
 .app-container::before {
-  content: ''; /* Essential for the pseudo-element to show */
-  position: absolute; /* Absolute positioning */
-  inset: 0; /* Cover the entire parent element */
-  background: url('@/components/pictures/background.jpg');
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('@/assets/images/background.jpg');
   filter: blur(20px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Place it behind the content of .app-container */
+  z-index: -1;
 }
 
 main {
@@ -85,10 +85,6 @@ main {
   max-width: 100%;
   max-height: 100%;
   padding: 5px;
-}
-
-.span-4-cells {
-  grid-row: span 4;
 }
 
 @media (width >= 768px) {
