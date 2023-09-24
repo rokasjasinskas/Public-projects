@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import HabitItem from '@/components/habits/HabitItem.vue';
 import HabitsListActions from '@/components/habits/HabitsListActions.vue';
 
+// This comment means I havent uploaded data to separate file
 const habitlist = ref([
   {
     id: 1,
