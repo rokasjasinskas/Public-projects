@@ -50,7 +50,10 @@ const habitlist = ref([
 
 <template>
   <div class="habits span-3-cells">
-    <HabitsListActions />
+    <HabitsListActions
+      :habitlist="habitlist"
+      @header-habit-clicked="$emit('header-habit-clicked', $event)"
+    />
     <ul class="habits-list">
       <HabitItem
         v-for="item in habitlist"

@@ -10,9 +10,14 @@ import MonthlySection from '@/components/monthlysection/MonthlySection.vue';
 import HabitsList from '@/components/habits/HabitsList.vue';
 
 const selectedHabit = ref(null);
+const habitList = ref(null);
 
 const handleHabitClick = habit => {
   selectedHabit.value = habit;
+};
+const handleHabitHeaderClick = list => {
+  selectedHabit.value = null; // Set selectedHabit to null to user would see only one block at the time
+  habitList.value = list;
 };
 </script>
 
@@ -24,8 +29,15 @@ const handleHabitClick = habit => {
         <DailySection />
         <ViewContentHeader />
         <MonthlySection />
-        <ViewContent :selectedHabit="selectedHabit" />
-        <HabitsList @habit-clicked="handleHabitClick" />
+        <ViewContent
+          :selectedHabit="selectedHabit"
+          :habitList="habitList"
+          @habit-clicked="handleHabitClick"
+        />
+        <HabitsList
+          @habit-clicked="handleHabitClick"
+          @header-habit-clicked="handleHabitHeaderClick"
+        />
       </div>
     </main>
   </div>

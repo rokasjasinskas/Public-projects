@@ -1,11 +1,17 @@
 <!-- eslint-disable vue/require-default-prop -->
 <script setup>
-import { ref } from 'vue';
+import { defineProps, defineEmits, ref } from 'vue';
 
+const props = defineProps({
+  habitlist: Object
+});
 const headerClicked = ref(false);
+
+const emit = defineEmits(['header-habit-clicked']);
 
 const handleHeaderClick = () => {
   headerClicked.value = !headerClicked.value;
+  emit('header-habit-clicked', props.habitlist);
 
   setTimeout(() => {
     headerClicked.value = false;
