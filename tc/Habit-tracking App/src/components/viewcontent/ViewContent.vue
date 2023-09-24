@@ -17,7 +17,7 @@ const handleHabitClick = habit => {
 </script>
 
 <template>
-  <div class="view-content span-4-cells">
+  <div class="view-content span-cells">
     <!-- Check if there's a selected habit -->
     <div v-if="selectedHabit">
       <h2>{{ selectedHabit.title }}</h2>
@@ -36,19 +36,12 @@ const handleHabitClick = habit => {
 </template>
 
 <style scoped>
-.span-4-cells {
-  grid-row: span 4;
+.span-cells {
+  grid-row: span 5;
+  grid-column: span 0;
 }
 
 h2 {
   font-weight: bold;
-}
-
-.habits-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 1px;
 }
 </style>

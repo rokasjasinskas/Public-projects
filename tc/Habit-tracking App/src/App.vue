@@ -2,7 +2,6 @@
 <script setup>
 // eslint-disable-next-line import/no-unresolved
 import { ref } from 'vue';
-import ViewContentHeader from '@/components/viewcontent/ViewContentHeader.vue';
 import ViewContent from '@/components/viewcontent/ViewContent.vue';
 import AppHeader from '@/components/appheader/AppHeader.vue';
 import DailySection from '@/components/dailysection/DailySection.vue';
@@ -27,13 +26,12 @@ const handleHabitHeaderClick = list => {
     <main>
       <div class="container">
         <DailySection />
-        <ViewContentHeader />
-        <MonthlySection />
         <ViewContent
           :selectedHabit="selectedHabit"
           :habitList="habitList"
           @habit-clicked="handleHabitClick"
         />
+        <MonthlySection />
         <HabitsList
           @habit-clicked="handleHabitClick"
           @header-habit-clicked="handleHabitHeaderClick"
@@ -78,7 +76,7 @@ main {
 .container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
   padding: 10px;
   border-radius: 10px;
   height: 80vh;
