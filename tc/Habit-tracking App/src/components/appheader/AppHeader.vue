@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 @media (width >= 768px) {
   .header-container {
     height: 15vh;

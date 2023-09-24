@@ -1,12 +1,19 @@
 <!-- eslint-disable import/no-unresolved -->
 <script setup>
 // eslint-disable-next-line import/no-unresolved
+import { ref } from 'vue';
 import ViewContentHeader from '@/components/viewcontent/ViewContentHeader.vue';
 import ViewContent from '@/components/viewcontent/ViewContent.vue';
 import AppHeader from '@/components/appheader/AppHeader.vue';
 import DailySection from '@/components/dailysection/DailySection.vue';
 import MonthlySection from '@/components/monthlysection/MonthlySection.vue';
 import HabitsList from '@/components/habits/HabitsList.vue';
+
+const selectedHabit = ref(null);
+
+const handleHabitClick = habit => {
+  selectedHabit.value = habit;
+};
 </script>
 
 <template>
@@ -17,10 +24,8 @@ import HabitsList from '@/components/habits/HabitsList.vue';
         <DailySection />
         <ViewContentHeader />
         <MonthlySection />
-        <ViewContent />
-        <HabitsList />
-        <div>Emty1</div>
-        <div>Emty2</div>
+        <ViewContent :selectedHabit="selectedHabit" />
+        <HabitsList @habit-clicked="handleHabitClick" />
       </div>
     </main>
   </div>
@@ -34,7 +39,7 @@ import HabitsList from '@/components/habits/HabitsList.vue';
   min-height: 100vh;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 15% 85%;
 }
 
 .app-container::before {
@@ -61,7 +66,7 @@ main {
 .container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   padding: 10px;
   border-radius: 10px;
   height: 80vh;
@@ -79,8 +84,8 @@ main {
   box-sizing: border-box;
   margin: 0;
   display: grid;
-  align-items: top;
-  justify-content: left;
+  align-items: start;
+  justify-content: start;
   max-width: 100%;
   max-height: 100%;
   padding: 5px;
