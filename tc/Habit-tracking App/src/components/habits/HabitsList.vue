@@ -10,40 +10,35 @@ const habitlist = ref([
     title: 'Reading',
     description: 'Reading books',
     repeat: false,
-    startdate: '',
-    enddate: ''
+    completedDates: ['2023-09-24', '2023-09-23', '2023-09-22']
   },
   {
     id: 2,
     title: 'Exercise',
     description: 'Morning workout',
     repeat: true,
-    startdate: '2023-09-01',
-    enddate: '2023-12-31'
+    completedDates: ['2023-09-24', '2023-09-23', '2023-09-22']
   },
   {
     id: 3,
     title: 'Meditation',
     description: 'Evening relaxation',
     repeat: true,
-    startdate: '2023-09-15',
-    enddate: ''
+    completedDates: ['2023-09-24', '2023-09-23', '2023-09-22']
   },
   {
     id: 4,
     title: 'Journaling',
     description: 'Writing daily thoughts',
     repeat: false,
-    startdate: '',
-    enddate: ''
+    completedDates: ['2023-09-24', '2023-09-23', '2023-09-22']
   },
   {
     id: 5,
     title: 'Learning',
     description: 'Studying a new topic',
     repeat: true,
-    startdate: '2023-09-20',
-    enddate: '2023-11-20'
+    completedDates: ['2023-09-24', '2023-09-23', '2023-09-22']
   }
 ]);
 </script>

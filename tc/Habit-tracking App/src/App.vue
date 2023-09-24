@@ -4,19 +4,26 @@
 import { ref } from 'vue';
 import ViewContent from '@/components/viewcontent/ViewContent.vue';
 import AppHeader from '@/components/appheader/AppHeader.vue';
-import DailySection from '@/components/dailysection/DailySection.vue';
-import MonthlySection from '@/components/monthlysection/MonthlySection.vue';
+import ChooseCalendar from '@/components/calendar/ChooseCalendar.vue';
 import HabitsList from '@/components/habits/HabitsList.vue';
 
 const selectedHabit = ref(null);
 const habitList = ref(null);
+const showCalendar = ref(true);
 
 const handleHabitClick = habit => {
   selectedHabit.value = habit;
+  showCalendar.value = !showCalendar.value;
 };
 const handleHabitHeaderClick = list => {
+  showCalendar.value = !showCalendar.value;
   selectedHabit.value = null; // Set selectedHabit to null to user would see only one block at the time
   habitList.value = list;
+};
+const handleToggleCalendar = () => {
+  selectedHabit.value = null;
+  habitList.value = null;
+  showCalendar.value = true;
 };
 </script>
 
@@ -25,13 +32,13 @@ const handleHabitHeaderClick = list => {
     <AppHeader />
     <main>
       <div class="container">
-        <DailySection />
+        <ChooseCalendar @toggleCalendar="handleToggleCalendar" />
         <ViewContent
           :selectedHabit="selectedHabit"
           :habitList="habitList"
+          :showCalendar="showCalendar"
           @habit-clicked="handleHabitClick"
         />
-        <MonthlySection />
         <HabitsList
           @habit-clicked="handleHabitClick"
           @header-habit-clicked="handleHabitHeaderClick"
@@ -71,6 +78,7 @@ main {
   justify-items: center;
   align-items: center;
   font-family: sans-serif;
+  align-self: start;
 }
 
 .container {
@@ -90,7 +98,7 @@ main {
 }
 
 .container > div {
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   box-sizing: border-box;
   margin: 0;
   display: grid;
@@ -102,24 +110,11 @@ main {
 }
 
 @media (width >= 768px) {
-  .container {
-    height: 60vh;
-    width: 60vw;
-  }
-
-  .app-container {
-    grid-template-rows: 20% 60%;
-  }
 }
 
 @media (width >= 1024px) {
   .container {
-    height: 50vh;
-    width: 50vw;
-  }
-
-  .app-container {
-    grid-template-rows: 20% 42%;
+    grid-template-columns: 20% 80%;
   }
 }
 </style>

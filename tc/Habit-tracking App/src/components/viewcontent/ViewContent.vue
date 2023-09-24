@@ -2,13 +2,16 @@
 import { defineProps } from 'vue';
 // eslint-disable-next-line import/no-unresolved
 import HabitViewList from '@/components/habits/HabitViewList.vue';
+// eslint-disable-next-line import/no-unresolved
+import AppCalendar from '@/components/calendar/AppCalendar.vue';
 
 // eslint-disable-next-line no-unused-vars
 const props = defineProps({
   // eslint-disable-next-line vue/require-default-prop
   selectedHabit: Object,
   // eslint-disable-next-line vue/require-default-prop
-  habitList: Object
+  habitList: Object,
+  showCalendar: Boolean
 });
 const emit = defineEmits(['habit-clicked']);
 const handleHabitClick = habit => {
@@ -30,6 +33,8 @@ const handleHabitClick = habit => {
     <div v-else-if="habitList">
       <HabitViewList @habit-clicked="handleHabitClick" :habitList="habitList" />
     </div>
+    <!-- Calendar view  -->
+    <div v-else-if="showCalendar"><AppCalendar /></div>
     <!-- Default content if nothins is selected -->
     <p v-else>View Content</p>
   </div>
@@ -37,7 +42,7 @@ const handleHabitClick = habit => {
 
 <style scoped>
 .span-cells {
-  grid-row: span 5;
+  grid-row: span 4;
   grid-column: span 0;
 }
 
