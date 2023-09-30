@@ -11,7 +11,7 @@ const toggleCalendarView = () => {
 <template>
   <div class="daily">
     <h3 @click="toggleCalendarView" @keydown.enter="toggleCalendarView">View calendar</h3>
-    <AppCalendar v-if="showCalendar" :height="1000" />
+    <AppCalendar v-if="showCalendar" />
   </div>
 </template>
 

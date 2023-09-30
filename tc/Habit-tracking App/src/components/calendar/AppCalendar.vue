@@ -3,11 +3,13 @@ import FullCalendar from '@fullcalendar/vue3';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { computed } from 'vue';
+// eslint-disable-next-line import/extensions, import/no-unresolved
+import { habitlist } from '@/data/habitlist';
 
 function handleDateClick(arg) {
   alert(`Date clicked! ${arg.dateStr}`);
 
-  const habitsDoneToday = habitsData.value.filter(habit =>
+  const habitsDoneToday = habitlist.value.filter(habit =>
     habit.completedDates.includes(arg.dateStr)
   );
   // Here, you can display habitsDoneToday somewhere or allow marking other habits as done

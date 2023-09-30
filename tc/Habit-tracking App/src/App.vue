@@ -109,9 +109,6 @@ main {
   padding: 5px;
 }
 
-@media (width >= 768px) {
-}
-
 @media (width >= 1024px) {
   .container {
     grid-template-columns: 20% 80%;
