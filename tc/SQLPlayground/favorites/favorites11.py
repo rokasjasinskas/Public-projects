@@ -11,7 +11,8 @@ db = SQL("sqlite:///favorites.db")
 favorite = input("Favorite: ")
 
 # Search for title
-rows = db.execute("SELECT COUNT(*) FROM favorites WHERE problem LIKE ?", "%" + favorite + "%")
+rows = db.execute(
+    "SELECT COUNT(*) FROM favorites WHERE problem LIKE ?", "%" + favorite + "%")
 
 # Get first (and only) row
 row = rows[0]
