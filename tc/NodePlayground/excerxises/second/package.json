@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "npx tsx src",
+    "dev": "npx tsx watch src",
+    "lint": "npx eslint ./src --ext .js,.jsx,.ts,.tsx"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^20.8.0",
     "@types/react": "^18.2.24",
     "@types/react-dom": "^18.2.8",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
   },
