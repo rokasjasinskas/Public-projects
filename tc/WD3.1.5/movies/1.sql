@@ -1,2 +1,2 @@
-SELECT * FROM people
-LIMIT 5;
+SELECT title FROM movies 
+WHERE year = 2008;
