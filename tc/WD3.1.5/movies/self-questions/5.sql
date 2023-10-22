@@ -1,0 +1,108 @@
+SELECT people.name, MAX(ratings.rating) AS highest_rating
+FROM people
+JOIN stars ON people.id = stars.person_id
+JOIN ratings ON stars.movie_id = ratings.movie_id
+WHERE ratings.votes > 20000
+GROUP BY people.name
+LIMIT 100;
+
+-- 'Weird Al' Yankovic|6.9
+-- 50 Cent|7.0
+-- A. Michael Baldwin|6.6
+-- A.J. Cook|6.2
+-- A.J. Langer|6.4
+-- AJ Bowen|6.5
+-- AJ Meijer|6.3
+-- AJ Michalka|7.0
+-- Aadhi|8.2
+-- Aahana Kumra|7.2
+-- Aaliyah|6.1
+-- Aamir Khan|8.4
+-- Aamir Naik|7.3
+-- Aaran Thomas|6.1
+-- Aaron Abrams|6.5
+-- Aaron Burns|5.3
+-- Aaron Davis|4.9
+-- Aaron Eckhart|9.0
+-- Aaron Glenane|4.6
+-- Aaron Moorhead|6.5
+-- Aaron Paul|7.3
+-- Aaron Poole|5.8
+-- Aaron Ruell|6.9
+-- Aaron Schwartz|6.6
+-- Aaron Taylor-Johnson|7.6
+-- Aaron Yoo|6.8
+-- Aasif Mandvi|7.0
+-- Aavi Haas|6.5
+-- Aayush Sharma|6.7
+-- Abbi Jacobson|7.6
+-- Abbie Cornish|7.4
+-- Abbie Murphy|6.3
+-- Abby Craden|7.5
+-- Abdel Ahmed Ghili|8.1
+-- Abdellatif Chaouqi|5.7
+-- Abdolrahman Bagheri|7.7
+-- Abdullrahman Al Gohani|7.5
+-- Abe Vigoda|5.7
+-- Abhay Deol|8.2
+-- Abhin Galeya|6.2
+-- Abhinay Raj Singh|4.4
+-- Abhishek Bachchan|7.7
+-- Abigail Breslin|7.8
+-- Abigail Spencer|7.1
+-- Abraham Attah|7.7
+-- Abraham Benrubi|7.4
+-- Abraham Clinkscales|6.1
+-- Abrar Zahoor|7.6
+-- Achita Sikamana|7.0
+-- Achyuth Kumar|9.4
+-- Adain Bradley|5.5
+-- Adam Arkin|6.9
+-- Adam Baldwin|8.3
+-- Adam Beach|6.1
+-- Adam Bessa|7.1
+-- Adam Bousdoukos|7.2
+-- Adam Brody|6.8
+-- Adam Brooks|7.1
+-- Adam Bryant|7.5
+-- Adam Campbell|2.8
+-- Adam Chubbuck|5.8
+-- Adam Cockburn|6.2
+-- Adam Demos|5.6
+-- Adam Devine|6.5
+-- Adam Driver|7.9
+-- Adam Garcia|6.5
+-- Adam Goldberg|7.0
+-- Adam Herschman|6.4
+-- Adam Lamberg|5.5
+-- Adam Levine|7.4
+-- Adam O'Brian|7.5
+-- Adam Pascal|7.2
+-- Adam Rodriguez|5.6
+-- Adam Sandler|7.4
+-- Adam Scott|6.4
+-- Adam Sevani|6.2
+-- Adam Trese|5.6
+-- Adam Wingard|6.0
+-- Adam Wood|8.0
+-- Adam Young|6.0
+-- Adamo Dionisi|7.2
+-- Adar Beck|6.8
+-- Adarsh Gourav|7.1
+-- Addison Christie|7.3
+-- Addison Rae|4.4
+-- Addison Timlin|6.6
+-- Adeel Akhtar|7.3
+-- Adel Bencherif|7.8
+-- Adelaide Clemens|5.9
+-- Adelaide Kane|5.7
+-- Aden Young|6.1
+-- Adewale Akinnuoye-Agbaje|7.7
+-- Adil Hussain|7.9
+-- Adile Nasit|8.9
+-- Adithya Bhaskar|8.5
+-- Aditi Rao Hydari|7.0
+-- Aditya Roy Kapoor|7.2
+-- Aditya Seal|2.1
+-- Aditya Srivastav|8.4
+-- Adivi Sesh|8.2
